@@ -8,7 +8,7 @@ function App() {
       <Navbar />
       
       
-      <div className="min-h-screen bg-gradient-to-br from-emerald-400 to-emerald-400 flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden">
       
       </div>
 
