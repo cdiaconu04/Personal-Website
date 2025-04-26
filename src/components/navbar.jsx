@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between mx-auto p-4">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span className="self-center text-2xl font-bold whitespace-nowrap">Cristian Diaconu</span>
+                    <span className="self-center text-2xl font-bold whitespace-nowrap">CD</span>
                 </a>
 
                 <div id="navbar-default">

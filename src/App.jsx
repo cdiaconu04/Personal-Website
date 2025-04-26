@@ -10,9 +10,9 @@ function App() {
       {/* First section */}
       <div className="w-full bg-black">
 
-        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center relative overflow-hidden">
 
-          <div className="absolute start-0 top-90">
+          <div>
 
             <p className="text-4xl text-white font-bold">
               Hello, I'm
@@ -22,6 +22,9 @@ function App() {
             </h1>
             
           </div>
+
+          
+          
         </div>
       </div>
     </div>
