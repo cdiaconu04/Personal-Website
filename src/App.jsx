@@ -15,7 +15,7 @@ function App() {
           <div className="absolute start-0 top-90">
 
             <p className="text-4xl text-white font-bold">
-              Hi, I'm
+              Hello, I'm
             </p>
             <h1 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed">
               Cristian Diaconu
