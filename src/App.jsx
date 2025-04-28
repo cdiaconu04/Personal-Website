@@ -1,6 +1,8 @@
 import logo from './logo.svg';
+import headshot from './images/1727488282356.jpg';
 import './App.css';
 import Navbar from "./components/navbar"
+import motion from 'framer-motion';
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       {/* First section */}
       <div className="w-full bg-black">
 
-        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
 
           <div>
 
@@ -23,11 +25,28 @@ function App() {
             
           </div>
 
+          <div>
+            <img className="rounded-full ms-auto w-80 h-80" src={headshot} />
+
+
+          </div>
+
           
           
         </div>
       </div>
+
+      {/* Second section */}
+      <div className="w-full bg-black">
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
+
+        </div>
+      </div>
+
+
     </div>
+
+    
     
   );
 }

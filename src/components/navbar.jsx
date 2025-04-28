@@ -11,15 +11,15 @@ const Navbar = () => {
 
                 <div id="navbar-default">
 
-                    <ul className="font-medium flex flex-row space-x-8 rtl:space-x-reverse">
+                    <ul className="font-medium flex flex-row space-x-4 rtl:space-x-reverse">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0">About</a>
+                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0 hover:text-white">About</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0">Experience</a>
+                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0 hover:text-white">Experience</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0">Projects</a>
+                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0 hover:text-white">Projects</a>
                         </li>
                     </ul>
                     
