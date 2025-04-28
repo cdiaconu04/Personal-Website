@@ -1,4 +1,5 @@
 import React from 'react';
+import { Disc3 } from 'lucide-react';
 
 const Navbar = () => {
     return (
@@ -6,7 +7,8 @@ const Navbar = () => {
             <div className="flex items-center justify-between mx-auto p-4">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span className="self-center text-2xl font-bold whitespace-nowrap">CD</span>
+                    {/* <span className="self-center text-2xl font-bold whitespace-nowrap">CD</span> */}
+                    <Disc3 className="animate-spin"/>
                 </a>
 
                 <div id="navbar-default">
@@ -20,6 +22,9 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0 hover:text-white">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm border-0 hover:text-white">Connect</a>
                         </li>
                     </ul>
                     
