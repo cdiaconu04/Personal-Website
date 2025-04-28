@@ -14,16 +14,16 @@ export default function ScrollLine() {
             <motion.div
                 id="scroll-indicator"
                 style={{
-                    scaleY: scrollYProgress,
+                    scaleX: scrollYProgress,
                     position: "fixed",
-                    top: 220,
-                    bottom: 150,
-                    left: 150,
-                    width: 20,
-                    originY: 0,
+                    top: 905,
+                    bottom: 0,
+                    left: 450,
+                    width: 1000,
+                    originY: 300,
                     
                 }}
-                className='bg-gradient-to-b from-pink-400 via-pink-500 to-rose-400'
+                className='bg-gradient-to-b from-emerald-600 via-green-600 to-green-700'
             />
         </>
     )
