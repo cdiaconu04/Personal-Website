@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import { motion, useSpring, useScroll } from "framer-motion"
 
 export default function ScrollLine() {
@@ -9,6 +9,14 @@ export default function ScrollLine() {
         restDelta: 0.001,
     })
 
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <>
             <motion.div
@@ -18,8 +26,8 @@ export default function ScrollLine() {
                     position: "fixed",
                     top: 905,
                     bottom: 0,
-                    left: 450,
-                    width: 1000,
+                    left: 0,
+                    width: `${width}px`,
                     originY: 300,
                     
                 }}
