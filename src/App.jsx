@@ -45,14 +45,21 @@ function App() {
             <br/>
 
             <div className="justify-start flex space-x-3">
-              <motion.div
-                className="onHover:scale-150">
-                <FaLinkedin color="white" className="w-8 h-8"/>
-              </motion.div>
 
-              <motion.div>
-                <FaGithub color="white" className="w-8 h-8"/>
-              </motion.div>
+              <a href="www.linkedin.com/in/cristian-diaconu04" target="_blank">
+                <motion.div
+                  whileHover={{ scale: 1.09 }}
+                  >
+                  <FaLinkedin color="white" className="w-8 h-8"/>
+                </motion.div>
+              </a>
+              
+              <a href="https://github.com/CristianDiaconu04" target="_blank">
+                <motion.div
+                  whileHover={{ scale: 1.09 }}>
+                  <FaGithub color="white" className="w-8 h-8"/>
+                </motion.div>
+              </a>
             </div>
             
             
