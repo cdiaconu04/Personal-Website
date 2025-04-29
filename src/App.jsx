@@ -1,15 +1,14 @@
 import logo from './logo.svg';
 import headshot from './images/1727488282356.jpg';
-import linkedinOriginal from './images/linkedin--v2.png';
-import githubOriginal from './images/github.png';
 import './App.css';
 import Navbar from "./components/navbar"
 import { motion } from "motion/react"
 import ScrollLine from './components/scrollLine';
 
 
-import { FaG, FaLinkedin } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+
 
 function App() {
   return (
@@ -46,7 +45,7 @@ function App() {
 
             <div className="justify-start flex space-x-3">
 
-              <a href="www.linkedin.com/in/cristian-diaconu04" target="_blank">
+              <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
                 <motion.div
                   whileHover={{ scale: 1.09 }}
                   >
@@ -105,6 +104,8 @@ function App() {
             Experience
           </h2>
 
+
+
         </div>
       </div>
 
@@ -117,6 +118,8 @@ function App() {
           </h2>
 
         </div>
+
+
       </div>
 
 
