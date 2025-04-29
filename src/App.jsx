@@ -5,9 +5,12 @@ import Navbar from "./components/navbar"
 import { motion } from "motion/react"
 import ScrollLine from './components/scrollLine';
 
+import {MoveDown} from "lucide-react";
+
 
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+
 
 
 function App() {
@@ -17,11 +20,16 @@ function App() {
       <ScrollLine/>
       
       
-      {/* First section */}
+      {/* 1st section */}
       <div className="w-full bg-black">
 
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
+          {/* <div>
 
+
+          </div> */}
+
+          
           <div>
 
             <motion.p className="text-4xl text-white font-bold"
@@ -63,19 +71,30 @@ function App() {
             
             
           </div>
-
-          <div>
-            <img className="rounded-full ms-auto w-80 h-80" src={headshot} />
+          
+          <div className="relative">
+            <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
+            <div>
+              <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
+            </div>
           </div>
 
-          
-
-          
-          
         </div>
+
+        {/* <div className="text-center items-center animate-bounce w-full">
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            className="border-none group bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 w-12 h-12 font-bold py-2 px-3 rounded-full"
+          >          
+            <MoveDown className="h-6 w-6 text-black group-hover:text-white" />
+          </motion.button>
+        </div> */}
+
+        
       </div>
 
-      {/* Second section */}
+      {/* 2nd section */}
       <div className="w-full bg-black">
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
 
@@ -96,7 +115,7 @@ function App() {
         </div>
       </div>
 
-      {/* Third section */}
+      {/* 3rd section */}
       <div className="w-full bg-black">
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
 
@@ -109,7 +128,7 @@ function App() {
         </div>
       </div>
 
-      {/* Fourth section */}
+      {/* 4th section */}
       <div className="w-full bg-black">
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
 
