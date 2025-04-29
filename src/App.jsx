@@ -11,6 +11,10 @@ import {MoveDown} from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+import { CursorifyProvider } from '@cursorify/react';
+
+import AnimatedCursor from "react-animated-cursor";
+
 
 
 function App() {
@@ -19,6 +23,14 @@ function App() {
       <Navbar/>
       <ScrollLine/>
       
+      
+      <AnimatedCursor
+        innerSize={14}
+        outerSize={0}
+        outerAlpha={0}
+        color="255, 255, 255"
+        innerScale={1}
+      />
       
       {/* 1st section */}
       <div className="w-full bg-black">
@@ -143,9 +155,6 @@ function App() {
 
 
     </div>
-
-    
-    
   );
 }
 
