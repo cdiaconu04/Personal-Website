@@ -22,18 +22,55 @@ function App() {
     <div className="w-full">
       <Navbar/>
       <ScrollLine/>
-      
-      
-      <AnimatedCursor
-        innerSize={14}
-        outerSize={0}
-        outerAlpha={0}
-        color="255, 255, 255"
-        innerScale={1}
-      />
-      
+
       {/* 1st section */}
       <div className="w-full bg-black">
+
+        {/* Background stuff */}
+        <div className="absolute inset-0 pointer-events-none h-screen">
+          <svg
+            width="600"
+            height="600"
+            viewBox="0 0 600 600"
+            className="w-full h-full"
+          >
+            {/* <circle
+              cx="-200"
+              cy="200"
+              r="40"
+              stroke="#059669"
+              style={{
+                strokeWidth: 4,
+                strokeLinecap: "round",
+                fill: "transparent",
+              }}
+            /> */}
+            <line
+              x1="-400"
+              y1="500"
+              x2="260"
+              y2="500"
+              stroke="#059669"
+              style={{
+                strokeWidth: 4,
+                strokeLinecap: "round",
+                fill: "transparent",
+              }}
+            />
+            {/* <line
+              x1="260"
+              y1="500"
+              x2="330"
+              y2="450"
+              stroke="#059669"
+              style={{
+                strokeWidth: 4,
+                strokeLinecap: "round",
+                fill: "transparent",
+              }}
+            /> */}
+          </svg>
+        </div>
 
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
           {/* <div>
@@ -52,7 +89,7 @@ function App() {
             >
               Hello, I'm
             </motion.p>
-            <motion.h1 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed"
+            <motion.h1 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed "
                       // style={{ overflow: "hidden", whiteSpace: "nowrap" }}
                       // initial={{ width : 0 }}
                       // animate={{ width: "100%" }}
