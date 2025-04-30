@@ -15,6 +15,13 @@ import { CursorifyProvider } from '@cursorify/react';
 
 import AnimatedCursor from "react-animated-cursor";
 
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Typography,
+} from "@material-tailwind/react";
+
 
 
 function App() {
@@ -35,40 +42,40 @@ function App() {
             className="w-full h-full"
           >
             {/* <circle
-              cx="-200"
+              cx="-117"
               cy="200"
-              r="40"
+              r="5"
               stroke="#059669"
               style={{
-                strokeWidth: 4,
+                strokeWidth: 3,
                 strokeLinecap: "round",
                 fill: "transparent",
               }}
             /> */}
             <line
-              x1="-400"
+              x1="-110"
               y1="500"
               x2="260"
               y2="500"
               stroke="#059669"
               style={{
-                strokeWidth: 4,
+                strokeWidth: 3,
                 strokeLinecap: "round",
                 fill: "transparent",
               }}
             />
-            {/* <line
-              x1="260"
-              y1="500"
-              x2="330"
-              y2="450"
+            <line
+              x1="-110"
+              y1="200"
+              x2="260"
+              y2="200"
               stroke="#059669"
               style={{
-                strokeWidth: 4,
+                strokeWidth: 3,
                 strokeLinecap: "round",
                 fill: "transparent",
               }}
-            /> */}
+            />
           </svg>
         </div>
 
@@ -171,6 +178,8 @@ function App() {
           <h2 className="text-5xl text-white font-bold">
             Experience
           </h2>
+
+          
 
 
 
