@@ -11,6 +11,9 @@ import {Car, MoveDown} from "lucide-react";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+import IndosoftLogo from './images/IndosoftLogo.jpg';
+import DynamixwareLogo from './images/DynamixwareLogo.jpg';
+
 
 function App() {
   return (
@@ -68,11 +71,6 @@ function App() {
         </div>
 
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
-          {/* <div>
-
-
-          </div> */}
-
           
           <div>
 
@@ -163,52 +161,99 @@ function App() {
             <br/>
             <br/>
 
-            <div className="">
-
-
+            {/* Experiences */}
+            <div className="flex flex-row min-w-full justify-between space-x-4">
+                
               {/* Indosoft */}
-              <div className="flex flex-col space-y-4 w-full max-w-[50%]">
+              <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-emerald-600 to-green-600 rounded-lg p-7 min-w-[50%]">
 
-                <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 rounded-lg p-7">
-                    
+                <div className="flex flex-row">
+                  <div>
+                    <h3 className="text-3xl text-white font-bold">
+                      Indosoft Inc.
+                    </h3>
 
-                  <h3 className="text-3xl text-white font-bold">
-                    Indosoft Inc.
-                  </h3>
+                    <h3 className="text-xl text-white">
+                      Software Developer Intern
+                    </h3>
+                  </div>  
 
-                  <h3 className="text-xl text-white">
-                    Software Developer Intern
-                  </h3>
-                  <br/>
-                  <p className="text-md text-white">
-                    Currently working on a project that involves creating a web application for a client using React and Node.js. The project is in the early stages of development, and I am responsible for implementing the front-end components and integrating them with the back-end API.
-                  </p>
+                  <div className="flex flex-col ms-auto">
+                    <img className="w-9 h-9 ms-auto rounded-full" src={IndosoftLogo} />
+                    <p className="text-white"> May - August (2025)</p>
+                  </div>
+
+                </div>
+                <br/>
+                
+                <div className="px-8">
+                  <ul className="list-disc">
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                  </ul>
                 </div>
 
-                {/* Dynamixware */}
-                <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 rounded-lg p-7">
-                    
+              </motion.div>
 
-                  <h3 className="text-3xl text-white font-bold">
-                    Dynamixware
-                  </h3>
+              {/* Dynamixware */}
+              <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-7 min-w-[50%]">
+                <div className="flex flex-row">
+                  <div>
+                    <h3 className="text-3xl text-white font-bold">
+                      Dynamixware
+                    </h3>
 
-                  <h3 className="text-xl text-white">
-                    Junior Developer
-                  </h3>
-                  <br/>
-                  <p className="text-md text-white">
-                    Currently working on a project that involves creating a web application for a client using React and Node.js. The project is in the early stages of development, and I am responsible for implementing the front-end components and integrating them with the back-end API.
-                  </p>
+                    <h3 className="text-xl text-white">
+                      Junior Developer
+                    </h3>
+                  </div> 
+
+                  <div className="flex flex-col ms-auto">
+                    <img className="w-9 h-9 ms-auto rounded-full" src={DynamixwareLogo} />
+                    <p className="text-white"> May - August (2023)</p>
+                  </div>
+
                 </div>
                 
-
-              </div>
+                
+                <br/>
+                
+                <div className="px-8">
+                  <ul className="list-disc">
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                  </ul>
+                </div>
+              </motion.div>
+                
             </div>
-            
-            
 
-            
           </div>
         </div>
       </div>
