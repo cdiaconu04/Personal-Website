@@ -5,23 +5,11 @@ import Navbar from "./components/navbar"
 import { motion } from "motion/react"
 import ScrollLine from './components/scrollLine';
 
-import {MoveDown} from "lucide-react";
+import {Car, MoveDown} from "lucide-react";
 
 
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
-
-import { CursorifyProvider } from '@cursorify/react';
-
-import AnimatedCursor from "react-animated-cursor";
-
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Typography,
-} from "@material-tailwind/react";
-
 
 
 function App() {
@@ -89,18 +77,10 @@ function App() {
           <div>
 
             <motion.p className="text-4xl text-white font-bold"
-              // style={{ overflow: "hidden", whiteSpace: "nowrap" }}
-              // initial={{ width : 0 }}
-              // animate={{ width: "100%" }}
-              // transition={{ duration: 1, ease: "easeInOut" }}
             >
               Hello, I'm
             </motion.p>
             <motion.h1 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed "
-                      // style={{ overflow: "hidden", whiteSpace: "nowrap" }}
-                      // initial={{ width : 0 }}
-                      // animate={{ width: "100%" }}
-                      // transition={{ duration: 3, ease: "easeInOut" }}
             >
               Cristian Diaconu
             </motion.h1>
@@ -174,15 +154,62 @@ function App() {
       {/* 3rd section */}
       <div className="w-full bg-black">
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
-
-          <h2 className="text-5xl text-white font-bold">
-            Experience
-          </h2>
-
           
+          <div>
+            <h2 className="text-5xl text-white font-bold">
+              Experience
+            </h2>
+            
+            <br/>
+            <br/>
+
+            <div className="">
 
 
+              {/* Indosoft */}
+              <div className="flex flex-col space-y-4 w-full max-w-[50%]">
 
+                <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 rounded-lg p-7">
+                    
+
+                  <h3 className="text-3xl text-white font-bold">
+                    Indosoft Inc.
+                  </h3>
+
+                  <h3 className="text-xl text-white">
+                    Software Developer Intern
+                  </h3>
+                  <br/>
+                  <p className="text-md text-white">
+                    Currently working on a project that involves creating a web application for a client using React and Node.js. The project is in the early stages of development, and I am responsible for implementing the front-end components and integrating them with the back-end API.
+                  </p>
+                </div>
+
+                {/* Dynamixware */}
+                <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 rounded-lg p-7">
+                    
+
+                  <h3 className="text-3xl text-white font-bold">
+                    Dynamixware
+                  </h3>
+
+                  <h3 className="text-xl text-white">
+                    Junior Developer
+                  </h3>
+                  <br/>
+                  <p className="text-md text-white">
+                    Currently working on a project that involves creating a web application for a client using React and Node.js. The project is in the early stages of development, and I am responsible for implementing the front-end components and integrating them with the back-end API.
+                  </p>
+                </div>
+                
+
+              </div>
+            </div>
+            
+            
+
+            
+          </div>
         </div>
       </div>
 
