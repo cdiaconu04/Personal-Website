@@ -18,8 +18,16 @@ import IndosoftLogo from './images/IndosoftLogo.jpg';
 import DynamixwareLogo from './images/DynamixwareLogo.jpg';
 
 
+import { useParallax } from 'react-scroll-parallax';
+
 function App() {
+  const { ref: headshotRef } = useParallax({
+    translateY: [35, -50], // from 0 to -50px as you scroll
+    easing: 'easeInOut',
+  });
+
   return (
+    
     <div className="w-full">
       <Navbar/>
       <ScrollLine/>
@@ -36,12 +44,12 @@ function App() {
             className="w-full h-full"
           >
             {/* <circle
-              cx="-117"
+              cx="-240"
               cy="200"
-              r="5"
-              stroke="#059669"
+              r="30"
+              stroke="#FFFFFF"
               style={{
-                strokeWidth: 3,
+                strokeWidth: 5,
                 strokeLinecap: "round",
                 fill: "transparent",
               }}
@@ -84,7 +92,7 @@ function App() {
           
         </div>
 
-        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden" >
           
           <div>
 
@@ -120,7 +128,7 @@ function App() {
             
           </div>
           
-          <div className="relative">
+          <div className="relative" ref={headshotRef}>
             <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
             <div>
               <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
@@ -407,6 +415,7 @@ function App() {
 
 
     </div>
+    
   );
 }
 
