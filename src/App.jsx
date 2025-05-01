@@ -5,7 +5,10 @@ import Navbar from "./components/navbar"
 import { motion } from "motion/react"
 import ScrollLine from './components/scrollLine';
 
-import {Car, MoveDown} from "lucide-react";
+import { TypeAnimation } from 'react-type-animation';
+
+
+import {Car, LoaderCircle, MoveDown} from "lucide-react";
 
 
 import { FaLinkedin } from "react-icons/fa6";
@@ -68,6 +71,17 @@ function App() {
               }}
             />
           </svg>
+
+          {/* <div className="text-center items-center animate-bounce w-full">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="border-none group bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 w-12 h-12 font-bold py-2 px-3 rounded-full"
+            >          
+              <MoveDown className="h-6 w-6 text-black group-hover:text-white" />
+            </motion.button>
+          </div> */}
+          
         </div>
 
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
@@ -262,9 +276,129 @@ function App() {
       <div className="w-full bg-black">
         <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
 
-          <h2 className="text-5xl text-white font-bold">
-            Projects
-          </h2>
+        <div>
+            <h2 className="text-5xl text-white font-bold">
+              Projects
+            </h2>
+            
+            <br/>
+            <br/>
+
+            {/* Experiences */}
+            <div className="flex flex-row min-w-full justify-between space-x-4">
+                
+              {/* Proj1 */}
+              <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-emerald-600 to-green-600 rounded-lg p-7 min-w-[32%]">
+
+                <div className="flex flex-row">
+                  <div>
+                    <h3 className="text-3xl text-white font-bold">
+                      Project 1
+                    </h3>
+
+                   
+                  </div>  
+
+                </div>
+                <br/>
+                
+                <div className="px-8">
+                  <ul className="list-disc">
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                  </ul>
+                </div>
+
+              </motion.div>
+
+              {/* Dynamixware */}
+              <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-7 min-w-[32%]">
+                <div className="flex flex-row">
+                  <div>
+                    <h3 className="text-3xl text-white font-bold">
+                      Project 2
+                    </h3>
+
+                  </div> 
+
+                </div>
+                
+                
+                <br/>
+                
+                <div className="px-8">
+                  <ul className="list-disc">
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                  </ul>
+                </div>
+              </motion.div>
+
+              {/* Project 3 */}
+              <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-7 min-w-[32%]">
+                <div className="flex flex-row">
+                  <div>
+                    <h3 className="text-3xl text-white font-bold">
+                      Project 2
+                    </h3>
+
+                  </div> 
+
+                </div>
+                
+                
+                <br/>
+                
+                <div className="px-8">
+                  <ul className="list-disc">
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                    <li className="text-md text-white">
+                      Did this and that and this and that and this and that and this and that and this and that and this and that and
+                    </li>
+                  </ul>
+                </div>
+              </motion.div>
+                
+            </div>
+
+          </div>
 
         </div>
 
