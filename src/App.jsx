@@ -7,10 +7,6 @@ import ScrollLine from './components/scrollLine';
 
 import { TypeAnimation } from 'react-type-animation';
 
-
-import {Car, LoaderCircle, MoveDown} from "lucide-react";
-
-
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
@@ -20,15 +16,43 @@ import DynamixwareLogo from './images/DynamixwareLogo.jpg';
 
 import { useParallax } from 'react-scroll-parallax';
 
+import LocomotiveScroll from 'locomotive-scroll';
+
+import { useScroll, useTransform } from "motion/react";
+
+import AnimatedCursor from "react-animated-cursor"
+
 function App() {
-  const { ref: headshotRef } = useParallax({
-    translateY: [35, -50], // from 0 to -50px as you scroll
-    easing: 'easeInOut',
-  });
+  // const { ref: headshotRef } = useParallax({
+  //   translateY: [35, -50], 
+  //   easing: 'easeInOut',
+  // });
 
   return (
     
     <div className="w-full">
+
+    <AnimatedCursor
+          innerSize={15}
+          outerSize={0}
+          color='255, 255, 255'
+          outerAlpha={0}
+          innerScale={1.4}
+          outerScale={0}
+          clickables={[
+            'a',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link'
+          ]}
+        />
       <Navbar/>
       <ScrollLine/>
 
@@ -92,11 +116,11 @@ function App() {
           
         </div>
 
-        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden" >
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
           
-          <div>
+          <motion.div>
 
-            <motion.p className="text-4xl text-white font-bold"
+            <motion.p className="text-4xl text-white font-bold" 
             >
               Hello, I'm
             </motion.p>
@@ -126,9 +150,9 @@ function App() {
             </div>
             
             
-          </div>
+          </motion.div>
           
-          <div className="relative" ref={headshotRef}>
+          <div className="relative">
             <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
             <div>
               <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
@@ -160,11 +184,11 @@ function App() {
             </h2>
 
             <br/>
+            <br/>
 
-
-            <p className="text-1xl text-white font-bold">
-              Hello! Here is some info about me
-            </p>
+            
+            
+            
           </div>
 
           
@@ -173,9 +197,9 @@ function App() {
 
       {/* 3rd section */}
       <div className="w-full bg-black">
-        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
+        <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden" >
           
-          <div>
+          <div >
             <h2 className="text-5xl text-white font-bold underline decoration-emerald-600">
               Experience
             </h2>
