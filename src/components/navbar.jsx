@@ -1,6 +1,5 @@
 import React from 'react';
 import { Disc3 } from 'lucide-react';
-import { motion } from "motion/react"
 
 const Navbar = () => {
 
@@ -9,7 +8,6 @@ const Navbar = () => {
             <div className="flex items-center justify-between mx-auto p-4">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                    {/* <span className="self-center text-2xl font-bold whitespace-nowrap">CD</span> */}
                     <Disc3 className="animate-spin text-white"/>
                 </a>
 
