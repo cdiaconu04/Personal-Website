@@ -16,8 +16,8 @@ const IntroPage = () => {
                 viewBox="0 0 600 600"
                 className="w-full h-full"
             >
-                {/* <circle
-                cx="-240"
+                <circle
+                cx="-330"
                 cy="200"
                 r="30"
                 stroke="#FFFFFF"
@@ -26,7 +26,56 @@ const IntroPage = () => {
                     strokeLinecap: "round",
                     fill: "transparent",
                 }}
-                /> */}
+                />
+
+                <circle
+                cx="800"
+                cy="90"
+                r="80"
+                stroke="#FFFFFF"
+                style={{
+                    strokeWidth: 7,
+                    strokeLinecap: "round",
+                    fill: "transparent",
+                }}
+                />
+
+                <circle
+                cx="400"
+                cy="440"
+                r="45"
+                stroke="#FFFFFF"
+                style={{
+                    strokeWidth: 3,
+                    strokeLinecap: "round",
+                    fill: "transparent",
+                }}
+                />
+
+                <circle
+                cx="200"
+                cy="130"
+                r="10"
+                stroke="#FFFFFF"
+                style={{
+                    strokeWidth: 4,
+                    strokeLinecap: "round",
+                    fill: "transparent",
+                }}
+                />
+
+                <circle
+                cx="930"
+                cy="550"
+                r="30"
+                stroke="#FFFFFF"
+                style={{
+                    strokeWidth: 2,
+                    strokeLinecap: "round",
+                    fill: "transparent",
+                }}
+                />
+
                 <line
                 x1="-110"
                 y1="500"
@@ -39,6 +88,7 @@ const IntroPage = () => {
                     fill: "transparent",
                 }}
                 />
+
                 <line
                 x1="-110"
                 y1="200"
