@@ -16,91 +16,159 @@ const IntroPage = () => {
                 viewBox="0 0 600 600"
                 className="w-full h-full"
             >
-                <circle
-                cx="-330"
-                cy="200"
-                r="30"
-                stroke="#FFFFFF"
-                style={{
-                    strokeWidth: 5,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                {/* TOP LEFT */}
+                <line x1="-1000" y1="170" x2="250" y2="170" stroke="#059669" // Horizontal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <line x1="10" y1="170" x2="75" y2="230" stroke="#059669" //Diagonal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <line x1="75" y1="230" x2="200" y2="230" stroke="#059669" // Horizontal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <circle
-                cx="800"
-                cy="90"
-                r="80"
-                stroke="#FFFFFF"
-                style={{
-                    strokeWidth: 7,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                <line x1="-65" y1="170" x2="-5" y2="110" stroke="#059669" //Diagonal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <line x1="-5" y1="110" x2="150" y2="110" stroke="#059669" // Horizontal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <circle cx="255" cy="170" r="5" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <circle cx="205" cy="230" r="5" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <circle cx="155" cy="110" r="5" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <circle
-                cx="400"
-                cy="440"
-                r="45"
-                stroke="#FFFFFF"
-                style={{
-                    strokeWidth: 3,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                {/* Bottom left */}
+                <line x1="-1000" y1="530" x2="140" y2="530" stroke="#059669" // Horizontal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <line x1="-20" y1="530" x2="40" y2="470" stroke="#059669" //Diagonal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <line x1="40" y1="470" x2="240" y2="470" stroke="#059669" // Horizontal
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <circle cx="145" cy="530" r="5" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+                <circle cx="245" cy="470" r="5" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                />
+            
+                {/* <circle cx="-330" cy="200" r="30" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 5,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <circle
-                cx="200"
-                cy="130"
-                r="10"
-                stroke="#FFFFFF"
-                style={{
-                    strokeWidth: 4,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                <circle cx="800" cy="90" r="80" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 7,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <circle
-                cx="930"
-                cy="550"
-                r="30"
-                stroke="#FFFFFF"
-                style={{
-                    strokeWidth: 2,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                <circle cx="400" cy="440" r="45" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 3,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <line
-                x1="-110"
-                y1="500"
-                x2="260"
-                y2="500"
-                stroke="#059669"
-                style={{
-                    strokeWidth: 3,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                <circle cx="200" cy="130" r="10" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 4,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
 
-                <line
-                x1="-110"
-                y1="200"
-                x2="260"
-                y2="200"
-                stroke="#059669"
-                style={{
-                    strokeWidth: 3,
-                    strokeLinecap: "round",
-                    fill: "transparent",
-                }}
+                <circle cx="930" cy="550" r="30" stroke="#FFFFFF"
+                    style={{
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                /> */}
+                
+
+                {/* Border lines here */}
+                {/* <line x1="-110" y1="500" x2="260" y2="500" stroke="#059669"
+                    style={{
+                        strokeWidth: 3,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
                 />
+
+                <line x1="-110" y1="200" x2="260" y2="200" stroke="#059669"
+                    style={{
+                        strokeWidth: 3,
+                        strokeLinecap: "round",
+                        fill: "transparent",
+                    }}
+                /> */}
             </svg>
 
             {/* <div className="text-center items-center animate-bounce w-full">
@@ -177,4 +245,3 @@ const IntroPage = () => {
 }
 
 export default IntroPage;
-
