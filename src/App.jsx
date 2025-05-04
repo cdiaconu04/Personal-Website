@@ -22,10 +22,7 @@ import Projects from './components/Projects'
 import { ReactLenis } from "lenis/dist/lenis-react"
 
 function App() {
-  // const { ref: headshotRef } = useParallax({
-  //   translateY: [35, -50], 
-  //   easing: 'easeInOut',
-  // });
+  
 
   return (
     <div className="w-full">
