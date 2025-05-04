@@ -81,6 +81,7 @@ const IntroBackground = () => {
                         custom={1}
                     />
                     <motion.circle cx="255" cy="170" r="5" stroke="#FFFFFF"
+                        pathOffset={0.5}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -156,77 +157,97 @@ const IntroBackground = () => {
                     />
 
                     {/* TOP RIGHT */}
-                    <line x1="2000" y1="100" x2="550" y2="100" stroke="#059669" // Horizontal
+                    <motion.line x1="2000" y1="100" x2="550" y2="100" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0, 2.1)}
+                        custom={1}
                     />
-                    <line x1="740" y1="100" x2="675" y2="160" stroke="#059669" //Diagonal
+                    <motion.line x1="740" y1="100" x2="675" y2="160" stroke="#059669" //Diagonal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0.8, 0.9)}
+                        custom={1}
                     />
-                    <line x1="675" y1="160" x2="470" y2="160" stroke="#059669" // Horizontal
+                    <motion.line x1="675" y1="160" x2="470" y2="160" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(1.21, 1.2)}
+                        custom={1}
                     />
-                    <circle cx="545" cy="100" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="545" cy="100" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(2.1, 2.1)}
+                        custom={1}
                     />
-                    <circle cx="465" cy="160" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="465" cy="160" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(2.41, 2.1)}
+                        custom={1}
                     />
 
-                    {/* TOP LEFT */}
-                    <line x1="2000" y1="550" x2="400" y2="550" stroke="#059669" // Horizontal
+                    {/* BOTTOM RIGHT */}
+                    <motion.line x1="2000" y1="550" x2="400" y2="550" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0, 2.5)}
+                        custom={1}
                     />
-                    <circle cx="395" cy="550" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="395" cy="550" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(2.5, 2.1)}
+                        custom={1}
                     />
-                    <line x1="500" y1="490" x2="565" y2="550" stroke="#059669" //Diagonal
+                    <motion.line x1="565" y1="550" x2="500" y2="490" stroke="#059669" //Diagonal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(1.0, 1.1)}
+                        custom={1}
                     />
-                    <line x1="500" y1="490" x2="350" y2="490" stroke="#059669" // Horizontal
+                    <motion.line x1="500" y1="490" x2="350" y2="490" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(1.6, 1.7)}
+                        custom={1}
                     />
-                    <circle cx="345" cy="490" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="345" cy="490" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(3.3, 2.1)}
+                        custom={1}
                     />
                 
                     {/* <circle cx="-330" cy="200" r="30" stroke="#FFFFFF"
