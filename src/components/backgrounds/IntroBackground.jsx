@@ -1,79 +1,114 @@
 import '../../App.css';
 import { motion } from "motion/react"
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
 import React from 'react';
+
+function drawAnimate(baseDelay, duration) {
+    return {
+        hidden: { pathLength: 0, opacity: 0 },
+        visible: (i: number) => {
+            const delay = i * 0.5 + baseDelay
+            return {
+                pathLength: 1,
+                opacity: 1,
+                transition: {
+                    pathLength: { delay, type: "spring", duration: duration, bounce: 0 },
+                    opacity: { delay, duration: 0.1 },
+                },
+            }
+        }
+    }
+    
+}
 
 const IntroBackground = () => {
 
     return (
         <div className="absolute inset-0 pointer-events-none h-screen">
-                <svg
+                <motion.svg
                     width="600"
                     height="600"
                     viewBox="0 0 600 600"
                     className="w-full h-full"
+                    initial="hidden"
+            animate="visible"
+            // style={image}
                 >
                     {/* TOP LEFT */}
-                    <line x1="-1000" y1="170" x2="250" y2="170" stroke="#059669" // Horizontal
+                    <motion.line x1="-400" y1="170" x2="250" y2="170" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0, 3)}
+                        custom={1}
                     />
-                    <line x1="10" y1="170" x2="75" y2="230" stroke="#059669" //Diagonal
+                    <motion.line x1="10" y1="170" x2="75" y2="230" stroke="#059669" //Diagonal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0.7, 0.8)}
+                        custom={1}
                     />
-                    <line x1="75" y1="230" x2="200" y2="230" stroke="#059669" // Horizontal
+                    <motion.line x1="75" y1="230" x2="200" y2="230" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
-                    />
-
-                    <line x1="-65" y1="170" x2="-5" y2="110" stroke="#059669" //Diagonal
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-                    <line x1="-5" y1="110" x2="150" y2="110" stroke="#059669" // Horizontal
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-                    <circle cx="255" cy="170" r="5" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-                    <circle cx="205" cy="230" r="5" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-                    <circle cx="155" cy="110" r="5" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
+                        variants={drawAnimate(1.05, 1)}
+                        custom={1}
                     />
 
-                    {/* Bottom left */}
+                    <motion.line x1="-65" y1="170" x2="-5" y2="110" stroke="#059669" //Diagonal
+                        style={{
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            fill: "transparent",
+                        }}
+                        variants={drawAnimate(0.5, 0.8)}
+                        custom={1}
+                    />
+                    <motion.line x1="-5" y1="110" x2="150" y2="110" stroke="#059669" // Horizontal
+                        style={{
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            fill: "transparent",
+                        }}
+                        variants={drawAnimate(0.9, 1.2)}
+                        custom={1}
+                    />
+                    <motion.circle cx="255" cy="170" r="5" stroke="#FFFFFF"
+                        style={{
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            fill: "transparent",
+                        }}
+                        variants={drawAnimate(3, 1.2)}
+                        custom={1}
+                    />
+                    <motion.circle cx="205" cy="230" r="5" stroke="#FFFFFF"
+                        style={{
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            fill: "transparent",
+                        }}
+                        variants={drawAnimate(2.05, 1.2)}
+                        custom={1}
+                    />
+                    <motion.circle cx="155" cy="110" r="5" stroke="#FFFFFF"
+                        style={{
+                            strokeWidth: 2,
+                            strokeLinecap: "round",
+                            fill: "transparent",
+                        }}
+                        variants={drawAnimate(2.1, 1.2)}
+                        custom={1}
+                    />
+
+                    {/* BOTTOM LEFT */}
                     <line x1="-1000" y1="530" x2="140" y2="530" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
@@ -110,7 +145,7 @@ const IntroBackground = () => {
                         }}
                     />
 
-                    {/* Top right */}
+                    {/* TOP RIGHT */}
                     <line x1="2000" y1="100" x2="550" y2="100" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
@@ -147,7 +182,7 @@ const IntroBackground = () => {
                         }}
                     />
 
-                    {/* Top left */}
+                    {/* TOP LEFT */}
                     <line x1="2000" y1="550" x2="400" y2="550" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
@@ -241,17 +276,7 @@ const IntroBackground = () => {
                             fill: "transparent",
                         }}
                     /> */}
-                </svg>
-
-            {/* <div className="text-center items-center animate-bounce w-full">
-                <motion.button 
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
-                className="border-none group bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 w-12 h-12 font-bold py-2 px-3 rounded-full"
-                >          
-                <MoveDown className="h-6 w-6 text-black group-hover:text-white" />
-                </motion.button>
-            </div> */}
+                </motion.svg>
             
             </div>
     )
