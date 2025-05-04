@@ -19,6 +19,7 @@ import Experience from "./components/Experience"
 import IntroPage from "./components/Intropage"
 import About from './components/About';
 import Projects from './components/Projects'
+import { ReactLenis } from "lenis/dist/lenis-react"
 
 function App() {
   // const { ref: headshotRef } = useParallax({
@@ -54,13 +55,15 @@ function App() {
       <Navbar/>
       <ScrollLine/>
 
-      <IntroPage/>
+      <ReactLenis root>
+        <IntroPage/>
 
-      <About/>
+        <About/>
 
-      <Experience/>
+        <Experience/>
 
-      <Projects/>
+        <Projects/>
+      </ReactLenis>
 
     </div>
     

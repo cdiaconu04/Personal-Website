@@ -4,10 +4,13 @@ import { motion } from "motion/react"
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
+import { ReactLenis } from "lenis/dist/lenis-react"
+import React from 'react';
+
 const IntroPage = () => {
     return (
         <div className="w-full bg-black">
-
+            
             {/* Background stuff */}
             <div className="absolute inset-0 pointer-events-none h-screen">
             <svg
@@ -311,7 +314,7 @@ const IntroPage = () => {
                 <MoveDown className="h-6 w-6 text-black group-hover:text-white" />
             </motion.button>
             </div> */}
-
+            
         
         </div>
     )
