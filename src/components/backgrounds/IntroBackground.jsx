@@ -109,40 +109,50 @@ const IntroBackground = () => {
                     />
 
                     {/* BOTTOM LEFT */}
-                    <line x1="-1000" y1="530" x2="140" y2="530" stroke="#059669" // Horizontal
+                    <motion.line x1="-1000" y1="530" x2="140" y2="530" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0, 2.2)}
+                        custom={1}
                     />
-                    <line x1="-20" y1="530" x2="40" y2="470" stroke="#059669" //Diagonal
+                    <motion.line x1="-20" y1="530" x2="40" y2="470" stroke="#059669" //Diagonal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(0.75, 1)}
+                        custom={1}
                     />
-                    <line x1="40" y1="470" x2="240" y2="470" stroke="#059669" // Horizontal
+                    <motion.line x1="40" y1="470" x2="240" y2="470" stroke="#059669" // Horizontal
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(1.25, 1.7)}
+                        custom={1}
                     />
-                    <circle cx="145" cy="530" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="145" cy="530" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(2.2, 1.2)}
+                        custom={1}
                     />
-                    <circle cx="245" cy="470" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="245" cy="470" r="5" stroke="#FFFFFF"
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
                             fill: "transparent",
                         }}
+                        variants={drawAnimate(2.95, 1.2)}
+                        custom={1}
                     />
 
                     {/* TOP RIGHT */}
