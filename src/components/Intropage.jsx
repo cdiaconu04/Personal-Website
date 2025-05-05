@@ -16,10 +16,12 @@ const IntroPage = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
+    const slideControls = useAnimation();
 
     useEffect(() => {
         if (isInView) {
             mainControls.start("visible");
+            slideControls.start("visible");
         }
     }, [isInView]);
 
@@ -40,23 +42,40 @@ const IntroPage = () => {
                     initial="hidden"
                     animate={mainControls}
                     transition={{ duration: 0.8, delay: 0.25 }}
+                    className="flex flex-col"
                 >
 
+
+                    <div className="relative inline-block">
+                        <motion.div
+                            initial={{ left: 0 }}
+                            animate={{ left: "100%" }}
+                            transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
+                            className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
+                        />
+                        <motion.p className="relative text-4xl text-white font-bold" 
+                        >
+                        Hello, I'm
+                        </motion.p>
+                    </div>
                     
-
-                    <motion.p className="text-4xl text-white font-bold" 
+                    <div className="relative inline-block">
+                        <motion.div
+                            initial={{ right: 0 }}
+                            animate={{ right: "100%" }}
+                            transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
+                            className="absolute top-0 bottom-0 left-0 right-0 bg-gray-300 z-10 rounded-xl"
+                        />
+                        <motion.h1 className="relative text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed "
                     >
-                    Hello, I'm
-                    </motion.p>
-
-                    <motion.h1 className="text-7xl font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed "
-                    >
-                    Cristian Diaconu
+                        Cristian Diaconu
                     </motion.h1>
+                    </div>
+                    
 
                     <br/>
 
-                    <div className="justify-start flex space-x-3">
+                    <div className="relative justify-start flex space-x-3">
 
                         <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
                             <motion.div
@@ -80,6 +99,8 @@ const IntroPage = () => {
                         </div>
 
                     </div>
+
+                    
                     
                     
                 </motion.div>
