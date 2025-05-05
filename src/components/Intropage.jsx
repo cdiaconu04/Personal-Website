@@ -17,11 +17,13 @@ const IntroPage = () => {
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
     const slideControls = useAnimation();
+    const buttonControls = useAnimation();
 
     useEffect(() => {
         if (isInView) {
             mainControls.start("visible");
             slideControls.start("visible");
+            buttonControls.start("visible");
         }
     }, [isInView]);
 
@@ -74,12 +76,18 @@ const IntroPage = () => {
                     
 
                     <br/>
+                    
 
-                    <div className="relative justify-start flex space-x-3">
+                    <motion.div className="relative justify-start flex space-x-3"
+                        
+                    >
 
                         <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
                             <motion.div
-                            whileHover={{ scale: 1.09 }}
+                                whileHover={{ scale: 1.09 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1, ease: "easeIn", delay: 1}}
                             >
                             <FaLinkedin color="white" className="w-8 h-8"/>
                             </motion.div>
@@ -87,18 +95,27 @@ const IntroPage = () => {
                         
                         <a href="https://github.com/CristianDiaconu04" target="_blank">
                             <motion.div
-                            whileHover={{ scale: 1.09 }}>
+                                whileHover={{ scale: 1.09 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1, ease: "easeIn", delay: 2}}
+                            >
+                                    
                             <FaGithub color="white" className="w-8 h-8"/>
                             </motion.div>
                         </a>
 
-                        <div className="border border-green-700 rounded-full p-1 px-2">
+                        <motion.div className="border border-green-700 rounded-full p-1 px-2"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1, ease: "easeIn", delay: 3}}
+                        >
                             <p className="font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed ">
                                 Software Developer
                             </p>
-                        </div>
+                        </motion.div>
 
-                    </div>
+                    </motion.div>
 
                     
                     
@@ -117,7 +134,7 @@ const IntroPage = () => {
                 >
                     <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
                     <div>
-                    <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
+                        <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
                     </div>
                 </motion.div>
 
