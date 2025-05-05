@@ -32,31 +32,31 @@ const IntroPage = () => {
 
                 <div className="justify-start flex space-x-3">
 
-                <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
-                    <motion.div
-                    whileHover={{ scale: 1.09 }}
-                    >
-                    <FaLinkedin color="white" className="w-8 h-8"/>
-                    </motion.div>
-                </a>
-                
-                <a href="https://github.com/CristianDiaconu04" target="_blank">
-                    <motion.div
-                    whileHover={{ scale: 1.09 }}>
-                    <FaGithub color="white" className="w-8 h-8"/>
-                    </motion.div>
-                </a>
+                    <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
+                        <motion.div
+                        whileHover={{ scale: 1.09 }}
+                        >
+                        <FaLinkedin color="white" className="w-8 h-8"/>
+                        </motion.div>
+                    </a>
+                    
+                    <a href="https://github.com/CristianDiaconu04" target="_blank">
+                        <motion.div
+                        whileHover={{ scale: 1.09 }}>
+                        <FaGithub color="white" className="w-8 h-8"/>
+                        </motion.div>
+                    </a>
                 </div>
                 
                 
             </motion.div>
             
-            <div className="relative">
+            <motion.div className="relative">
                 <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
                 <div>
                 <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
                 </div>
-            </div>
+            </motion.div>
 
             </div>
 
