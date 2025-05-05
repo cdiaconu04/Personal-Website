@@ -30,8 +30,7 @@ const IntroBackground = () => {
                     viewBox="0 0 600 600"
                     className="w-full h-full"
                     initial="hidden"
-            animate="visible"
-            // style={image}
+                    animate="visible"
                 >
                     {/* TOP LEFT */}
                     <motion.line x1="-400" y1="170" x2="250" y2="170" stroke="#059669" // Horizontal

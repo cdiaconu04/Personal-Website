@@ -8,7 +8,7 @@ export default {
       extend: {
         screens: {
           '3xl': '1850px',
-        }
+        },
       },
     },
     plugins: [],

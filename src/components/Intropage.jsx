@@ -4,11 +4,15 @@ import { motion } from "motion/react"
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import React from 'react';
+import { useEffect } from 'react';
 
 import IntroBackground from './backgrounds/IntroBackground'
 
-const IntroPage = () => {
+import SplitType from 'split-type'
 
+import { gsap } from "gsap";
+
+const IntroPage = () => {
 
     return (
         <div className="w-full bg-black">
@@ -46,6 +50,13 @@ const IntroPage = () => {
                         <FaGithub color="white" className="w-8 h-8"/>
                         </motion.div>
                     </a>
+
+                    {/* <div className="outline-1 rounded-lg p-1 px-2">
+                        <p className="font-bold bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 text-transparent bg-clip-text leading-relaxed ">
+                            Software Developer
+                        </p>
+                    </div> */}
+
                 </div>
                 
                 
@@ -69,7 +80,6 @@ const IntroPage = () => {
                 <MoveDown className="h-6 w-6 text-black group-hover:text-white" />
             </motion.button>
             </div> */}
-            
         
         </div>
     )
