@@ -73,7 +73,7 @@ const About = () => {
                         }}
                         className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
                     />
-                    <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden z-10">
+                    <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
 
                         <div>
                             <h2 className="text-5xl text-white font-bold underline decoration-emerald-600">
