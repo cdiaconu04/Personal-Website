@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 const Projects = () => {
     return (
         <div className="w-full bg-black">
-            <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden">
+            <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden">
 
                 <div>
                     <h2 className="text-5xl text-white font-bold underline decoration-emerald-600">

@@ -35,7 +35,7 @@ const Experience = () => {
 
     return (
         <div className="w-full bg-black">
-            <div className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden" >
+            <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden" >
                 <motion.section
                     ref={sectionRef}
                     variants={{

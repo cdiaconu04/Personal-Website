@@ -25,7 +25,7 @@ function App() {
   
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-black">
 
       <AnimatedCursor
         innerSize={15}
@@ -58,7 +58,6 @@ function App() {
         <About/>
 
         <Experience/>
-
         <Projects/>
       </ReactLenis>
 
