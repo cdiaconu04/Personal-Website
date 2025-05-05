@@ -4,14 +4,15 @@ import { useEffect, useRef } from 'react';
 
 const About = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, amount: 0.5 });
+    const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
+    const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
 
     useEffect(() => {
-        if (isInView) {
+        if (isHalfInView) {
             mainControls.start("visible");
         }
-    }, [isInView]);
+    }, [isHalfInView]);
 
     return (
         <div ref={ref}>
