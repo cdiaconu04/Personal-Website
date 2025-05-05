@@ -4,7 +4,7 @@ import { Disc3 } from 'lucide-react';
 const Navbar = () => {
 
     return (
-        <nav className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 sticky top-0 z-50">
+        <nav className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 fixed top-0 left-0 w-full z-50">
             <div className="flex items-center justify-between mx-auto p-4">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
