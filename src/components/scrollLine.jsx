@@ -31,7 +31,7 @@ export default function ScrollLine() {
                     originY: 300,
                     
                 }}
-                className='bg-gradient-to-b from-emerald-600 via-green-600 to-green-700'
+                className='bg-gradient-to-b from-emerald-600 via-green-600 to-green-700 z-50'
             />
         </>
     )

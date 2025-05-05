@@ -27,6 +27,8 @@ const IntroPage = () => {
         }
     }, [isInView]);
 
+    
+
     return (
         <div className="w-full bg-black">
             <IntroBackground/>
