@@ -82,7 +82,7 @@ const IntroPage = () => {
                         
                     >
 
-                        <a href="https://linkedin.com/in/cristian-diaconu04" target="_blank">
+                        <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <motion.div
                                 whileHover={{ scale: 1.09 }}
                                 initial={{ opacity: 0 }}
@@ -91,9 +91,9 @@ const IntroPage = () => {
                             >
                             <FaLinkedin color="white" className="w-8 h-8"/>
                             </motion.div>
-                        </a>
+                        </motion.a>
                         
-                        <a href="https://github.com/CristianDiaconu04" target="_blank">
+                        <motion.a href="https://github.com/CristianDiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <motion.div
                                 whileHover={{ scale: 1.09 }}
                                 initial={{ opacity: 0 }}
@@ -103,7 +103,7 @@ const IntroPage = () => {
                                     
                             <FaGithub color="white" className="w-8 h-8"/>
                             </motion.div>
-                        </a>
+                        </motion.a>
 
                         <motion.div className="border border-green-700 rounded-full p-1 px-2"
                             initial={{ opacity: 0 }}
