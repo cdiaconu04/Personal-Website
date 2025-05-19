@@ -71,7 +71,7 @@ const About = () => {
                         variants={{
                             visible: { right: "100%", transition: { duration: 0.8, ease: "easeIn" } }
                         }}
-                        className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
+                        className="absolute bottom-0 left-0 right-0 h-1/2 bg-gray-300 z-10 rounded-xl"
                     />
                     <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
 
