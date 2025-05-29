@@ -13,8 +13,8 @@ import SplitType from 'split-type'
 
 import { gsap } from "gsap";
 
-const IntroPage = forwardRef((props, ref1) => {
-    const ref = useRef(null);
+const IntroPage = forwardRef((props, ref) => {
+    // const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
     const slideControls = useAnimation();
@@ -31,7 +31,7 @@ const IntroPage = forwardRef((props, ref1) => {
     
 
     return (
-        <div className="w-full bg-black" ref={ref1}>
+        <div className="w-full bg-black" ref={ref}>
             <IntroBackground/>
 
             <div 
