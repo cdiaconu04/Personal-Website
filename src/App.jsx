@@ -19,6 +19,7 @@ import Experience from "./components/Experience"
 import IntroPage from "./components/Intropage"
 import About from './components/About';
 import Projects from './components/Projects'
+import Footer from './components/Footer';
 import { ReactLenis } from "lenis/dist/lenis-react"
 import React, { useRef } from "react";
 
@@ -62,6 +63,7 @@ function App() {
         <About ref={aboutRef}/>
         <Experience ref={experienceRef}/>
         <Projects ref={projectsRef}/>
+        <Footer/>
       </ReactLenis>
 
     </div>
