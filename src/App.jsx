@@ -30,6 +30,8 @@ function App() {
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
 
+  const [greenSection, setGreenSection] = React.useState(false);
+
   return (
     <div className="w-full bg-black">
 
@@ -56,14 +58,14 @@ function App() {
       />
 
       <Navbar intro={introRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
-      <ScrollLine/>
+      <ScrollLine greenSection={greenSection}/>
 
       <ReactLenis root>
         <IntroPage ref={introRef}/>
         <About ref={aboutRef}/>
         <Experience ref={experienceRef}/>
         <Projects ref={projectsRef}/>
-        <Footer/>
+        <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>
       </ReactLenis>
 
     </div>

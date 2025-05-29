@@ -1,10 +1,37 @@
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "motion/react"
+import { useEffect, useRef, useState } from 'react';
 
-const Footer = () => {
+const Footer = ({onInView, onOutOfView}) => {
+    const ref = useRef(null);
+        
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    onInView();
+                } else {
+                    onOutOfView();
+                }
+            },
+        
+            { threshold: 0.01 }
+        );
+            
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+            
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, [onInView, onOutOfView]);
+
     return (
-        <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-600 z-10">
+        <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-600 z-10" ref={ref}>
             <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
                 <div className="flex flex-col gap-3">
                     <h1 className="text-white text-4xl font-bold">Cristian Diaconu</h1>

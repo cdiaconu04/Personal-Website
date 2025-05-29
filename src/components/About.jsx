@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import { forwardRef } from 'react';
 
 const About = forwardRef((props, ref) => {
-    // const ref = useRef(null);
     const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
     const mainControls = useAnimation();
 

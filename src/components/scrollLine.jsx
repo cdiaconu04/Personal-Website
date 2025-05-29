@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Component } from 'react';
 import { motion, useSpring, useScroll } from "framer-motion"
 
-export default function ScrollLine() {
+export default function ScrollLine({greenSection}) {
     const { scrollYProgress } = useScroll()
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -10,6 +10,9 @@ export default function ScrollLine() {
     })
 
     const [width, setWidth] = useState(window.innerWidth);
+
+    const greenStyle = 'bg-gradient-to-b from-emerald-600 via-green-600 to-green-700 z-50'
+    const whiteStyle = 'bg-white z-50'
 
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);
@@ -31,7 +34,7 @@ export default function ScrollLine() {
                     originY: 300,
                     
                 }}
-                className='bg-gradient-to-b from-emerald-600 via-green-600 to-green-700 z-50'
+                className={greenSection ? whiteStyle : greenStyle}
             />
         </>
     )
