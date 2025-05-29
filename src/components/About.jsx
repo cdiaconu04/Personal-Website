@@ -1,8 +1,9 @@
 import '../App.css';
 import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { useEffect, useRef, useState } from 'react';
+import { forwardRef } from 'react';
 
-const About = () => {
+const About = forwardRef((props, ref1) => {
     const ref = useRef(null);
     const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
     const mainControls = useAnimation();
@@ -41,6 +42,7 @@ const About = () => {
     }, []);
 
     return (
+        <div ref={ref1}>
         <div ref={ref}>
             <div className="w-full bg-black relative inline-block border-b-2 border-t-2 border-emerald-600 z-10">
                 <motion.section
@@ -105,9 +107,10 @@ const About = () => {
                 </motion.section>
             </div>
         </div>
+        </div>
         
 
     )
-}
+})
 
 export default About;

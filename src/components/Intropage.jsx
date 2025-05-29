@@ -7,12 +7,13 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 
 import IntroBackground from './backgrounds/IntroBackground'
+import { forwardRef } from 'react';
 
 import SplitType from 'split-type'
 
 import { gsap } from "gsap";
 
-const IntroPage = () => {
+const IntroPage = forwardRef((props, ref1) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
@@ -30,7 +31,7 @@ const IntroPage = () => {
     
 
     return (
-        <div className="w-full bg-black">
+        <div className="w-full bg-black" ref={ref1}>
             <IntroBackground/>
 
             <div 
@@ -155,6 +156,6 @@ const IntroPage = () => {
         </div>
     )
 
-}
+})
 
 export default IntroPage;

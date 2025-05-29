@@ -1,7 +1,11 @@
 import React from 'react';
 import { Disc3 } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({intro, about, experience, projects}) => {
+
+    const scrollTo = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
 
     return (
         <nav className="bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 fixed top-0 left-0 w-full z-50">
@@ -15,22 +19,22 @@ const Navbar = () => {
 
                     <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
                         <li className="flex flex-col">
-                            <a href="#" className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">About
+                            <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Home
                                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                             </a>
                         </li>
                         <li className="flex flex-col">
-                            <a href="#" className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Experience
+                            <a href="#About" onClick={() => scrollTo(about)} className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">About
                                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                             </a>
                         </li>
                         <li className="flex flex-col">
-                            <a href="#" className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Projects
+                            <a href="#Experience" onClick={() => scrollTo(experience)} className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Experience
                                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                             </a>
                         </li>
                         <li className="flex flex-col">
-                            <a href="#" className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Connect
+                            <a href="#Projects" onClick={() => scrollTo(projects)} className="group block py-2 px-3 text-white rounded-sm border-0 hover:text-white transition duration-300">Projects
                                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"></span>
                             </a>
                         </li>

@@ -20,9 +20,14 @@ import IntroPage from "./components/Intropage"
 import About from './components/About';
 import Projects from './components/Projects'
 import { ReactLenis } from "lenis/dist/lenis-react"
+import React, { useRef } from "react";
 
 function App() {
   
+  const introRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
 
   return (
     <div className="w-full bg-black">
@@ -49,16 +54,14 @@ function App() {
         ]}
       />
 
-      <Navbar/>
+      <Navbar intro={introRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
       <ScrollLine/>
 
       <ReactLenis root>
-        <IntroPage/>
-
-        <About/>
-
-        <Experience/>
-        <Projects/>
+        <IntroPage ref={introRef}/>
+        <About ref={aboutRef}/>
+        <Experience ref={experienceRef}/>
+        <Projects ref={projectsRef}/>
       </ReactLenis>
 
     </div>

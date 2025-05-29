@@ -248,64 +248,6 @@ const IntroBackground = () => {
                         variants={drawAnimate(3.3, 2.1)}
                         custom={1}
                     />
-                
-                    {/* <circle cx="-330" cy="200" r="30" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 5,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-
-                    <circle cx="800" cy="90" r="80" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 7,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-
-                    <circle cx="400" cy="440" r="45" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 3,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-
-                    <circle cx="200" cy="130" r="10" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 4,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-
-                    <circle cx="930" cy="550" r="30" stroke="#FFFFFF"
-                        style={{
-                            strokeWidth: 2,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    /> */}
-                    
-
-                    {/* Border lines here */}
-                    {/* <line x1="-110" y1="500" x2="260" y2="500" stroke="#059669"
-                        style={{
-                            strokeWidth: 3,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    />
-
-                    <line x1="-110" y1="200" x2="260" y2="200" stroke="#059669"
-                        style={{
-                            strokeWidth: 3,
-                            strokeLinecap: "round",
-                            fill: "transparent",
-                        }}
-                    /> */}
                 </motion.svg>
             
             </div>

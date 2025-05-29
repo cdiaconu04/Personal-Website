@@ -1,7 +1,8 @@
 import { motion } from "motion/react"
 import React, { useState, useEffect, useRef } from 'react';
+import { forwardRef } from 'react';
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
     
@@ -31,7 +32,7 @@ const Projects = () => {
 
 
     return (
-        <div className="w-full bg-black">
+        <div className="w-full bg-black" ref={ref}>
             <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden">
                 <motion.section
                     ref={sectionRef}
@@ -179,7 +180,7 @@ const Projects = () => {
 
       </div>
     )
-}
+})
 
 export default Projects;
 
