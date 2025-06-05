@@ -123,20 +123,22 @@ const About = forwardRef((props, ref) => {
                         About me
                 </h2>
 
-                <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 min-w-[50%] flex flex-col gap-2 transition duration-200">
-                    <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                        Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
-                    </p>
-                    <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                        I am interested in this and that and this and that and this and that.
-                    </p>
-                    <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                        In my free time, I love weightlifting, making electronic music, and 
-                    </p>
-                    <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                        I am currently looking for internships for summer 2026.
-                    </p>
+                <motion.div whileHover={{ y: -7 }}>
+                    <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 min-w-[50%] flex flex-col gap-2 transition duration-200">
+                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                            Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
+                        </p>
+                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                            I am interested in this and that and this and that and this and that.
+                        </p>
+                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                            In my free time, I love weightlifting, making electronic music, and 
+                        </p>
+                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                            I am currently looking for internships for summer 2026.
+                        </p>
 
+                    </div>
                 </motion.div>
 
             </div>
