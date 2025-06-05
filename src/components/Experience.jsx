@@ -35,7 +35,7 @@ const Experience = forwardRef((props, ref) => {
     }, []);
 
     return (
-        <div className="w-full bg-black" ref={ref}>
+        <div className="w-full bg-gray-100 dark:bg-black" ref={ref}>
             <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden" >
                 <motion.section
                     ref={sectionRef}
@@ -53,8 +53,8 @@ const Experience = forwardRef((props, ref) => {
                 >
 
                     <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-                        <h2 className="text-5xl text-white font-bold underline decoration-emerald-600">
-                        Experience
+                        <h2 className="text-5xl text-gray-950 dark:text-white font-bold underline decoration-emerald-600">
+                            Experience
                         </h2>
                         
                         <br/>
@@ -68,18 +68,18 @@ const Experience = forwardRef((props, ref) => {
 
                                 <div className="flex flex-row">
                                 <div>
-                                    <h3 className="text-3xl text-white font-bold">
+                                    <h3 className="text-3xl text-gray-950 dark:text-white font-bold">
                                     Indosoft Inc.
                                     </h3>
 
-                                    <h3 className="text-xl text-white ">
+                                    <h3 className="text-xl text-gray-950 dark:text-white">
                                     Software Developer Intern
                                     </h3>
                                 </div>  
 
                                 <div className="flex flex-col ms-auto">
                                     <img className="w-9 h-9 ms-auto rounded-full" src={IndosoftLogo} />
-                                    <p className="text-white"> May - August (2025)</p>
+                                    <p className="text-gray-950 dark:text-white"> May - August (2025)</p>
                                 </div>
 
                                 </div>
@@ -87,19 +87,19 @@ const Experience = forwardRef((props, ref) => {
                                 
                                 <div className="px-8">
                                 <ul className="list-disc">
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
                                 </ul>
@@ -111,18 +111,18 @@ const Experience = forwardRef((props, ref) => {
                             <motion.div whileHover={{ y: -7 }} className="bg-gradient-to-r from-green-600 to-green-700 rounded-lg p-7 min-w-[50%]">
                                 <div className="flex flex-row">
                                 <div>
-                                    <h3 className="text-3xl text-white font-bold">
+                                    <h3 className="text-3xl text-gray-950 dark:text-white font-bold">
                                     Dynamixware
                                     </h3>
 
-                                    <h3 className="text-xl text-white">
+                                    <h3 className="text-xl text-gray-950 dark:text-white">
                                     Junior Developer
                                     </h3>
                                 </div> 
 
                                 <div className="flex flex-col ms-auto">
                                     <img className="w-9 h-9 ms-auto rounded-full" src={DynamixwareLogo} />
-                                    <p className="text-white"> May - August (2023)</p>
+                                    <p className="text-gray-950 dark:text-white"> May - August (2023)</p>
                                 </div>
 
                                 </div>                       
@@ -131,19 +131,19 @@ const Experience = forwardRef((props, ref) => {
                                 
                                 <div className="px-8">
                                 <ul className="list-disc">
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
-                                    <li className="text-md text-white">
+                                    <li className="text-md text-gray-950 dark:text-white">
                                     Did this and that and this and that and this and that and this and that and this and that and this and that and
                                     </li>
                                 </ul>
