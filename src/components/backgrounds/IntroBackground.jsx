@@ -5,7 +5,7 @@ import React from 'react';
 function drawAnimate(baseDelay, duration) {
     return {
         hidden: { pathLength: 0, opacity: 0 },
-        visible: (i: number) => {
+        visible: (i) => {
             const delay = i * 0.5 + baseDelay
             return {
                 pathLength: 1,
@@ -21,6 +21,9 @@ function drawAnimate(baseDelay, duration) {
 }
 
 const IntroBackground = () => {
+
+    let isDarkMode = document.documentElement.classList.contains('dark');
+    let colour = isDarkMode ? "#FFFFFF" : "#0a0a0a"
 
     return (
         <div className="absolute inset-0 pointer-events-none h-screen">
@@ -79,7 +82,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(0.9, 1.2)}
                         custom={1}
                     />
-                    <motion.circle cx="255" cy="150" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="255" cy="150" r="5" stroke={colour}
                         pathOffset={0.5}
                         style={{
                             strokeWidth: 2,
@@ -89,7 +92,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(3, 1.2)}
                         custom={1}
                     />
-                    <motion.circle cx="205" cy="210" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="205" cy="210" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -98,7 +101,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(2.05, 1.2)}
                         custom={1}
                     />
-                    <motion.circle cx="155" cy="90" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="155" cy="90" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -136,7 +139,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(1.25, 1.7)}
                         custom={1}
                     />
-                    <motion.circle cx="145" cy="500" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="145" cy="500" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -145,7 +148,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(2.2, 1.2)}
                         custom={1}
                     />
-                    <motion.circle cx="245" cy="440" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="245" cy="440" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -183,7 +186,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(1.21, 1.2)}
                         custom={1}
                     />
-                    <motion.circle cx="545" cy="90" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="545" cy="90" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -192,7 +195,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(2.1, 2.1)}
                         custom={1}
                     />
-                    <motion.circle cx="465" cy="150" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="465" cy="150" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -212,7 +215,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(0, 2.5)}
                         custom={1}
                     />
-                    <motion.circle cx="395" cy="530" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="395" cy="530" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",
@@ -239,7 +242,7 @@ const IntroBackground = () => {
                         variants={drawAnimate(1.6, 1.7)}
                         custom={1}
                     />
-                    <motion.circle cx="345" cy="470" r="5" stroke="#FFFFFF"
+                    <motion.circle cx="345" cy="470" r="5" stroke={colour}
                         style={{
                             strokeWidth: 2,
                             strokeLinecap: "round",

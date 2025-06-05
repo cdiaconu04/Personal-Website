@@ -31,7 +31,7 @@ const IntroPage = forwardRef((props, ref) => {
     
 
     return (
-        <div className="w-full bg-black" ref={ref}>
+        <div className="w-full bg-gray-100 dark:bg-black" ref={ref}>
             <IntroBackground/>
 
             <div 
@@ -58,7 +58,7 @@ const IntroPage = forwardRef((props, ref) => {
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
                             className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
                         />
-                        <motion.p className="relative text-4xl text-white font-bold" 
+                        <motion.p className="relative text-4xl text-gray-950 dark:text-white font-bold" 
                         >
                         Hello, I'm
                         </motion.p>
