@@ -54,7 +54,7 @@ const IntroBackground = () => {
                     width="600"
                     height="600"
                     viewBox="0 0 600 600"
-                    className="w-full h-full"
+                    className="w-full h-full transition duration-200"
                     initial="hidden"
                     animate="visible"
                 >

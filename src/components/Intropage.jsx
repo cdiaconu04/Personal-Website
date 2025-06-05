@@ -49,9 +49,9 @@ const IntroPage = forwardRef((props, ref) => {
         }
     }, [isInView]);
 
-    
+
     return (
-        <div className="w-full bg-white dark:bg-black" ref={ref}>
+        <div className="w-full bg-white dark:bg-black transition duration-200" ref={ref}>
             <IntroBackground/>
 
             <div 
@@ -78,7 +78,7 @@ const IntroPage = forwardRef((props, ref) => {
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
                             className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
                         />
-                        <motion.p className="relative text-4xl text-gray-800 dark:text-white font-bold" 
+                        <motion.p className="relative text-4xl text-gray-800 dark:text-white font-bold transition duration-200" 
                         >
                             Hello, I'm
                         </motion.p>
@@ -91,7 +91,7 @@ const IntroPage = forwardRef((props, ref) => {
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
                             className="absolute top-0 bottom-0 left-0 right-0 bg-gray-300 z-10 rounded-xl"
                         />
-                        <motion.h1 className="relative text-7xl font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed "
+                        <motion.h1 className="relative text-7xl font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200"
                         >
                             Cristian Diaconu
                         </motion.h1>
@@ -112,7 +112,7 @@ const IntroPage = forwardRef((props, ref) => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1, ease: "easeIn", delay: 1}}
                             >
-                                <FaLinkedin color={buttonColour} className="w-8 h-8"/>
+                                <FaLinkedin color={buttonColour} className="w-8 h-8 transition duration-200"/>
                             </motion.div>
                         </motion.a>
                         
@@ -124,7 +124,7 @@ const IntroPage = forwardRef((props, ref) => {
                                 transition={{ duration: 1, ease: "easeIn", delay: 2}}
                             >
                                     
-                                <FaGithub color={buttonColour} className="w-8 h-8"/>
+                                <FaGithub color={buttonColour} className="w-8 h-8 transition duration-200"/>
                             </motion.div>
                         </motion.a>
 
@@ -133,7 +133,7 @@ const IntroPage = forwardRef((props, ref) => {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "easeIn", delay: 3}}
                         >
-                            <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed ">
+                            <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200">
                                 Software Developer
                             </p>
                         </motion.div>
