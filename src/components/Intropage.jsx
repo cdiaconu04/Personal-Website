@@ -4,7 +4,7 @@ import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import React from 'react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import IntroBackground from './backgrounds/IntroBackground'
 import { forwardRef } from 'react';
@@ -20,6 +20,27 @@ const IntroPage = forwardRef((props, ref) => {
     const slideControls = useAnimation();
     const buttonControls = useAnimation();
 
+    const [buttonColour, setButtonColour] = useState("white")
+
+    useEffect(() => {
+        const updateColour = () => {
+            const isDarkMode = document.documentElement.classList.contains('dark');
+            setButtonColour(isDarkMode ? "white" : "#1f2937")
+        }
+        
+        updateColour()
+        
+        const observer = new MutationObserver(updateColour);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        })
+        
+        return () => observer.disconnect()
+        
+    }, [])
+
+
     useEffect(() => {
         if (isInView) {
             mainControls.start("visible");
@@ -29,7 +50,6 @@ const IntroPage = forwardRef((props, ref) => {
     }, [isInView]);
 
     
-
     return (
         <div className="w-full bg-white dark:bg-black" ref={ref}>
             <IntroBackground/>
@@ -92,7 +112,7 @@ const IntroPage = forwardRef((props, ref) => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1, ease: "easeIn", delay: 1}}
                             >
-                            <FaLinkedin color="white" className="w-8 h-8"/>
+                                <FaLinkedin color={buttonColour} className="w-8 h-8"/>
                             </motion.div>
                         </motion.a>
                         
@@ -104,7 +124,7 @@ const IntroPage = forwardRef((props, ref) => {
                                 transition={{ duration: 1, ease: "easeIn", delay: 2}}
                             >
                                     
-                            <FaGithub color="white" className="w-8 h-8"/>
+                                <FaGithub color={buttonColour} className="w-8 h-8"/>
                             </motion.div>
                         </motion.a>
 

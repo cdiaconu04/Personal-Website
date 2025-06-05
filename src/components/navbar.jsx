@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import { Disc3 } from 'lucide-react';
 import { Sun } from 'lucide-react';
+import { Moon } from 'lucide-react';
+import { motion } from "motion/react"
 
 const Navbar = ({intro, about, experience, projects}) => {
 
@@ -64,9 +66,24 @@ const Navbar = ({intro, about, experience, projects}) => {
 
 
                         <button>
-                            <Sun className="text-gray-800 dark:text-white"
-                                onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
-                            />
+                            {theme === "dark" ? 
+                                <motion.div className="group hover:bg-white rounded-full p-1"
+                                    whileHover={{ scale: 1.03 }}
+                                >
+                                    <Sun className="text-white group-hover:bg-white group-hover:text-black rounded-full"
+                                        onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
+                                    /> 
+                                </motion.div>
+                                
+                            
+                            :   
+                                <motion.div className="group hover:bg-gray-800 rounded-full p-1">
+                                    <Moon className="text-gray-800 group-hover:text-white"
+                                        onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
+                                    />
+                                </motion.div>
+
+                            }
                         </button>
                     </div>
 

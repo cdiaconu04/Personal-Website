@@ -5,6 +5,25 @@ import { useEffect, useRef, useState } from 'react';
 
 const Footer = ({onInView, onOutOfView}) => {
     const ref = useRef(null);
+    const [buttonColour, setButtonColour] = useState("white")
+
+    useEffect(() => {
+        const updateColour = () => {
+        const isDarkMode = document.documentElement.classList.contains('dark');
+            setButtonColour(isDarkMode ? "white" : "#1f2937")
+        }
+            
+        updateColour()
+            
+        const observer = new MutationObserver(updateColour);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        })
+            
+        return () => observer.disconnect()
+            
+    }, [])
         
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -41,14 +60,14 @@ const Footer = ({onInView, onOutOfView}) => {
                 <div className="flex flex-row gap-3">
                     <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
-                            <FaLinkedin color="white" className="w-8 h-8"/>
+                            <FaLinkedin color={buttonColour} className="w-8 h-8"/>
                         </div>
                     </motion.a>
                                             
                     <motion.a href="https://github.com/CristianDiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
                                                         
-                            <FaGithub color="white" className="w-8 h-8"/>
+                            <FaGithub color={buttonColour} className="w-8 h-8"/>
                         </div>
                     </motion.a>
                 </div>

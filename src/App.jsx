@@ -21,7 +21,7 @@ import About from './components/About';
 import Projects from './components/Projects'
 import Footer from './components/Footer';
 import { ReactLenis } from "lenis/dist/lenis-react"
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 function App() {
   
@@ -32,13 +32,31 @@ function App() {
 
   const [greenSection, setGreenSection] = React.useState(false);
 
+  const [cursorColour, setCursorColour] = useState('255, 255, 255')
+  useEffect(() => {
+    const updateColour = () => {
+    const isDarkMode = document.documentElement.classList.contains('dark');
+      setCursorColour(isDarkMode ? '255, 255, 255' : '31, 41, 55')
+    }
+      
+    updateColour()
+      
+    const observer = new MutationObserver(updateColour);
+      observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class']
+      })
+      
+      return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="w-full bg-black">
 
       <AnimatedCursor
         innerSize={15}
         outerSize={0}
-        color='255, 255, 255'
+        color={cursorColour}
         outerAlpha={0}
         innerScale={1.4}
         outerScale={0}
