@@ -41,7 +41,7 @@ const About = forwardRef((props, ref) => {
     }, []);
 
     return (
-        <div className="w-full bg-gray-100 dark:bg-black relative inline-block border-b-2 border-t-2 border-emerald-600 z-10" ref={ref}>
+        <div className="w-full bg-white dark:bg-black relative inline-block border-b-2 border-t-2 border-emerald-600 z-10" ref={ref}>
             <motion.section
                 ref={sectionRef}
                 variants={{
@@ -75,26 +75,26 @@ const About = forwardRef((props, ref) => {
                 <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
 
                     <div>
-                        <h2 className="text-5xl text-gray-950 dark:text-white font-bold underline decoration-emerald-600">
+                        <h2 className="text-5xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600">
                             About me
                         </h2>
 
                         <br/>
                         <br/>
 
-                        <p className="text-gray-950 dark:text-white text-lg">
+                        <p className="text-gray-800 dark:text-white text-lg">
                             Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
                         </p>
                         <br/>
-                        <p className="text-gray-950 dark:text-white text-lg">
+                        <p className="text-gray-800 dark:text-white text-lg">
                             I am interested in this and that and this and that and this and that.
                         </p>
                         <br/>
-                        <p className="text-gray-950 dark:text-white text-lg">
+                        <p className="text-gray-800 dark:text-white text-lg">
                             In my free time, I love this and that and this and that and this and that.
                         </p>
                         <br/>
-                        <p className="text-gray-950 dark:text-white text-lg">
+                        <p className="text-gray-800 dark:text-white text-lg">
                             I am currently looking for internships for summer 2026.
                         </p>
 

@@ -31,11 +31,11 @@ const Footer = ({onInView, onOutOfView}) => {
     }, [onInView, onOutOfView]);
 
     return (
-        <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-600 z-10" ref={ref}>
+        <div className="w-full bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-400 dark:border-emerald-600 z-10" ref={ref}>
             <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-gray-950 dark:text-white text-4xl font-bold">Cristian Diaconu</h1>
-                    <p className="text-gray-950 dark:text-white"> cristian.diaconu0423@gmail.com </p>
+                    <h1 className="text-gray-800 dark:text-white text-4xl font-bold">Cristian Diaconu</h1>
+                    <p className="text-gray-800 dark:text-white"> cristian.diaconu0423@gmail.com </p>
                 </div>
 
                 <div className="flex flex-row gap-3">
