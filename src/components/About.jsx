@@ -2,6 +2,7 @@ import '../App.css';
 import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { useEffect, useRef, useState } from 'react';
 import { forwardRef } from 'react';
+import AboutBackground from './backgrounds/AboutBackground'
 
 const About = forwardRef((props, ref) => {
     // const { onStrictlyPartlyInView, notOnStrictlyPartlyInView } = props;
@@ -62,7 +63,9 @@ const About = forwardRef((props, ref) => {
     // }, [isPartlyInView, isFullyInView])
 
     return (
-        <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200" ref={ref}>
+        <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200 py-12" ref={ref}>
+            <AboutBackground inView={isInView}/>
+
             {/* <motion.section
                 ref={sectionRef}
                 variants={{
@@ -145,7 +148,7 @@ const About = forwardRef((props, ref) => {
                 </h2>
 
                 <motion.div whileHover={{ y: -7 }}>
-                    <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 min-w-[50%] flex flex-col gap-2 transition duration-200">
+                    <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
                         <p className="text-gray-800 dark:text-white text-lg transition duration-200">
                             Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
                         </p>
