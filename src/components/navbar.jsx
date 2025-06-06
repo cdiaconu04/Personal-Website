@@ -69,18 +69,20 @@ const Navbar = ({intro, about, experience, projects}) => {
                             {theme === "dark" ? 
                                 <motion.div className="group hover:bg-white rounded-full p-1 transition duration-200"
                                     whileHover={{ scale: 1.03 }}
+                                    onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
                                 >
                                     <Sun className="text-white group-hover:bg-white group-hover:text-black rounded-full"
-                                        onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
+                                        
                                     /> 
                                 </motion.div>
                                 
                             
                             :   
-                                <motion.div className="group hover:bg-gray-800 rounded-full p-1 transition duration-200">
-                                    <Moon className="text-gray-800 group-hover:text-white"
-                                        onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
-                                    />
+                                <motion.div className="group hover:bg-gray-800 rounded-full p-1 transition duration-200"
+                                    whileHover={{ scale: 1.03 }}
+                                    onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
+                                >
+                                    <Moon className="text-gray-800 group-hover:text-white"/>
                                 </motion.div>
 
                             }
