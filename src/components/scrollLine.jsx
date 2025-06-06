@@ -59,6 +59,7 @@ export default function ScrollLine({greenSection}) {
                 }}
                 // className={greenSection ? whiteStyle : greenStyle}
                 className={darkModeStyle ? (greenSection ? whiteStyle : greenStyle) : (greenSection ? blackStyle : lightGreenStyle)}
+                // className={greenSection ? whiteStyle : greenStyle}
             />
         </>
     )

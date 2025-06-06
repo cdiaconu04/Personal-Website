@@ -80,7 +80,7 @@ function App() {
 
       <ReactLenis root>
         <IntroPage ref={introRef}/>
-        <About ref={aboutRef}/>
+        <About ref={aboutRef} onStrictlyPartlyInView={() => setGreenSection(false)} notOnStrictlyPartlyInView={() => setGreenSection(true)}/>
         <Experience ref={experienceRef}/>
         <Projects ref={projectsRef}/>
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>

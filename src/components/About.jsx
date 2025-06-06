@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import { forwardRef } from 'react';
 
 const About = forwardRef((props, ref) => {
+    // const { onStrictlyPartlyInView, notOnStrictlyPartlyInView } = props;
+
+
     const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
     const mainControls = useAnimation();
 
@@ -15,7 +18,7 @@ const About = forwardRef((props, ref) => {
 
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
-    
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -39,6 +42,24 @@ const About = forwardRef((props, ref) => {
             }
         };
     }, []);
+
+    // const greenRef = useRef(null);
+    // const isPartlyInView = useInView(greenRef, { amount: 0.01 });
+    // const isFullyInView = useInView(greenRef, { amount: 1 });
+    // const [isStrictlyPartlyInView, setIsStrictlyPartlyInView] = useState(false)
+    // const prev = useRef(null);
+
+    // useEffect(() => {
+    //     const current = isPartlyInView && !isFullyInView
+    //     setIsStrictlyPartlyInView(current)
+
+    //     if (prev.current !== current) {
+    //         if (current) onStrictlyPartlyInView()
+    //         else notOnStrictlyPartlyInView()
+    //     }
+
+        
+    // }, [isPartlyInView, isFullyInView])
 
     return (
         <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200" ref={ref}>
