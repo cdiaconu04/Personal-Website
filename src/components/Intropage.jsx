@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import React from 'react';
 import { useEffect, useRef, useState } from 'react';
+import { MapPin } from 'lucide-react';
 
 import IntroBackground from './backgrounds/IntroBackground'
 import { forwardRef } from 'react';
@@ -135,6 +136,17 @@ const IntroPage = forwardRef((props, ref) => {
                         >
                             <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200">
                                 Software Developer
+                            </p>
+                        </motion.div>
+
+                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full p-1 px-2 flex flex-row gap-1 justify-center items-center"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1, ease: "easeIn", delay: 4}}
+                        >   
+                            <MapPin className="text-green-500" width={15} />
+                            <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200">
+                                Toronto, CA
                             </p>
                         </motion.div>
 
