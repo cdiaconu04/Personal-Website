@@ -3,6 +3,25 @@ import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { useEffect, useRef, useState } from 'react';
 import { forwardRef } from 'react';
 import AboutBackground from './backgrounds/AboutBackground'
+import Marquee from "react-fast-marquee";
+
+import Cplusplus from '../images/techIcons/Cplusplus.png'
+import C from '../images/techIcons/C.png'
+import AL from '../images/techIcons/AL.png'
+import Git from '../images/techIcons/Git.png'
+import Github from '../images/techIcons/Github.png'
+import GithubWhite from '../images/techIcons/GithubWhite.png'
+import HTML from '../images/techIcons/HTML.webp'
+import Java from '../images/techIcons/Java.png'
+import Javascript from '../images/techIcons/Javascript.png'
+import Next from '../images/techIcons/Next.png'
+import PostgreSQL from '../images/techIcons/PostgreSQL.png'
+import Prisma from '../images/techIcons/Prisma.png'
+import Python from '../images/techIcons/Python.png'
+import React from '../images/techIcons/React.webp'
+import Supabase from '../images/techIcons/Supabase.png'
+import Tailwind from '../images/techIcons/Tailwind.png'
+
 
 const About = forwardRef((props, ref) => {
     // const { onStrictlyPartlyInView, notOnStrictlyPartlyInView } = props;
@@ -19,6 +38,28 @@ const About = forwardRef((props, ref) => {
 
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
+
+    const [githubPic, setGithubPic] = useState(GithubWhite)
+
+
+    useEffect(() => {
+        const updateColour = () => {
+            const isDarkMode = document.documentElement.classList.contains('dark');
+            setGithubPic(isDarkMode ? GithubWhite : Github)
+        }
+    
+        updateColour()
+    
+        const observer = new MutationObserver(updateColour);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        })
+    
+        return () => observer.disconnect()
+    
+    }, [])
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -66,66 +107,6 @@ const About = forwardRef((props, ref) => {
         <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200 py-12" ref={ref}>
             <AboutBackground inView={isInView}/>
 
-            {/* <motion.section
-                ref={sectionRef}
-                variants={{
-                    hidden: {opacity: 0 }, 
-                    show: {
-                        opacity: 1,
-                        transition: {
-                            staggerChildren: 0.25,
-                        },
-                    },
-                }}
-                initial="hidden"
-                animate={isInView ? "show" : "hidden"}
-            >
-                <motion.div
-                    initial={{ left: 0 }}
-                    animate={mainControls}
-                    variants={{
-                        visible: { left: "100%", transition: { duration: 0.8, ease: "easeIn" } }
-                    }}
-                    className="absolute top-0 bottom-0 left-0 right-0 h-1/2 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
-                />
-                <motion.div
-                    initial={{ left: 0 }}
-                    animate={mainControls}
-                    variants={{
-                        visible: { right: "100%", transition: { duration: 0.8, ease: "easeIn" } }
-                    }}
-                    className="absolute bottom-0 left-0 right-0 h-1/2 bg-gray-300 z-10 rounded-xl"
-                />
-                <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex items-center justify-between relative overflow-hidden">
-
-                    <div>
-                        <h2 className="text-5xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600">
-                            About me
-                        </h2>
-
-                        <br/>
-                        <br/>
-
-                        <p className="text-gray-800 dark:text-white text-lg">
-                            Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
-                        </p>
-                        <br/>
-                        <p className="text-gray-800 dark:text-white text-lg">
-                            I am interested in this and that and this and that and this and that.
-                        </p>
-                        <br/>
-                        <p className="text-gray-800 dark:text-white text-lg">
-                            In my free time, I love this and that and this and that and this and that.
-                        </p>
-                        <br/>
-                        <p className="text-gray-800 dark:text-white text-lg">
-                            I am currently looking for internships for summer 2026.
-                        </p>
-
-                    </div>
-
-                </div>
-            </motion.section> */}
             <motion.section
                 ref={sectionRef}
                 variants={{
@@ -141,31 +122,126 @@ const About = forwardRef((props, ref) => {
                 animate={isInView ? "show" : "hidden"}
             >
 
-            <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex flex-col gap-11 relative overflow-hidden">
-                
-                <h2 className="text-5xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600 transition duration-200">
-                        About me
-                </h2>
+                <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex flex-col gap-11 relative overflow-hidden">
+                    
+                    <h2 className="text-5xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600 transition duration-200">
+                            About me
+                    </h2>
 
-                <motion.div whileHover={{ y: -7 }}>
-                    <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
-                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                            Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
-                        </p>
-                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                            I am interested in this and that and this and that and this and that.
-                        </p>
-                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                            In my free time, I love weightlifting, making electronic music, and 
-                        </p>
-                        <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                            I am currently looking for internships for summer 2026.
-                        </p>
+                    <motion.div whileHover={{ y: -7 }}>
+                        <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
+                            <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
+                            </p>
+                            <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                I am interested in this and that and this and that and this and that.
+                            </p>
+                            <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                In my free time, I love weightlifting, making electronic music, and 
+                            </p>
+                            <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                I am currently looking for internships for summer 2026.
+                            </p>
+                        </div>
+                    </motion.div>
 
-                    </div>
-                </motion.div>
+                    <h3 className="text-4xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600 transition duration-200">
+                        Technologies I work with
+                    </h3>
 
-            </div>
+                    <Marquee
+                        pauseOnHover={true}
+                        speed={15}
+                        className="flex flex-row gap-5"
+                        direction="right"
+                    >
+                        <div className="flex flex-row gap-5">
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Cplusplus} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> C++ </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Java} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Java </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Supabase} width={50} className="rounded-full"/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Supabase </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Python} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Python </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={React} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> React.js </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={githubPic} width={50} className=""/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Github </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Prisma} width={40} className="dark:bg-white rounded-full"/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Prisma </p>
+                            </div>
+                        </div>
+                    </Marquee>
+
+                    <Marquee
+                        pauseOnHover={true}
+                        speed={15}
+                        className="flex flex-row gap-5"
+                    >
+                        <div className="flex flex-row gap-5">
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={HTML} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> HTML </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Git} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Git </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={AL} width={50} className="rounded-full"/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> AL </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={PostgreSQL} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> PostgreSQL </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Next} width={50} className="dark:bg-white dark:rounded-full"/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Next.js </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Javascript} width={50} className="rounded-lg"/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Javascript </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={C} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> C </p>
+                            </div>
+
+                            <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <img src={Tailwind} width={50}/>
+                                <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Tailwind CSS </p>
+                            </div>
+                        </div>
+                    </Marquee>
+
+                </div>
 
             </motion.section>
 
