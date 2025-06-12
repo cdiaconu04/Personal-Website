@@ -39,6 +39,8 @@ const Navbar = ({intro, about, experience, projects}) => {
                     <Disc3 className="animate-spin text-gray-800 dark:text-white transition duration-200"/>
                 </a>
 
+                
+
                 <div id="navbar-default">
                     <div className="flex flex-row gap-4">
                         <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">

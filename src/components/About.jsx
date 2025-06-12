@@ -158,37 +158,37 @@ const About = forwardRef((props, ref) => {
                             direction="right"
                         >
                             <div className="flex flex-row gap-5">
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Cplusplus} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> C++ </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Java} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Java </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Supabase} width={50} className="rounded-full"/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Supabase </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Python} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Python </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={React} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> React.js </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={githubPic} width={50} className=""/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Github </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Prisma} width={40} className="dark:bg-white rounded-full"/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Prisma </p>
                                 </div>
@@ -201,42 +201,42 @@ const About = forwardRef((props, ref) => {
                             className="flex flex-row gap-5"
                         >
                             <div className="flex flex-row gap-5">
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={HTML} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> HTML </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Git} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Git </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={AL} width={50} className="rounded-full"/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> AL </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={PostgreSQL} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> PostgreSQL </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Next} width={50} className="dark:bg-white dark:rounded-full"/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Next.js </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Javascript} width={50} className="rounded-lg"/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Javascript </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={C} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> C </p>
                                 </div>
 
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-3 px-5 rounded-full transition duration-200">
+                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
                                     <img src={Tailwind} width={50}/>
                                     <p className="text-gray-950 dark:text-white font-bold text-xl transition duration-200"> Tailwind CSS </p>
                                 </div>
