@@ -61,7 +61,8 @@ const Experience = forwardRef((props, ref) => {
                         <br/>
 
                         {/* Experiences */}
-                        <div className="flex flex-row min-w-full justify-between space-x-4">
+                        {/* flex flex-row */}
+                        <div className="grid grid-cols-2 min-w-full justify-between gap-4">
                             
                             {/* Indosoft */}
                             <motion.div whileHover={{ y: -7 }}>
