@@ -129,7 +129,7 @@ const About = forwardRef((props, ref) => {
                         </h2>
 
                         <motion.div whileHover={{ y: -7 }}>
-                            <div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
+                            <div className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
                                 <p className="text-gray-800 dark:text-white text-lg transition duration-200">
                                     Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
                                 </p>

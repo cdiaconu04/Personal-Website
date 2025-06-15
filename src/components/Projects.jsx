@@ -4,6 +4,7 @@ import { forwardRef } from 'react';
 
 import CodeBasketPic from '../images/projectpics/codebasket.png'
 import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
+import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import { Code } from "lucide-react";
 
 const Projects = forwardRef((props, ref) => {
@@ -161,42 +162,36 @@ const Projects = forwardRef((props, ref) => {
 
                                 </motion.div>
                             </motion.div>
-
+                            {/* className="bg-gradient-to-r from-green-400 via-green-500 to-green-500 dark:bg-gradient-to-r dark:from-green-600 dark:via-green-700 dark:to-green-700 rounded-lg p-7 min-w-[32%] transition duration-200" */}
                             {/* Project 3 */}
                             <motion.div whileHover={{ y: -7 }}>
-                                <motion.div className="bg-gradient-to-r from-green-400 via-green-500 to-green-500 dark:bg-gradient-to-r dark:from-green-600 dark:via-green-700 dark:to-green-700 rounded-lg p-7 min-w-[32%] transition duration-200">
-                                    <div className="flex flex-row">
-                                        <div>
+                                <motion.div className="bg-gradient-to-r from-green-400 via-green-500 to-green-500 dark:bg-gradient-to-r dark:from-green-600 dark:via-green-700 dark:to-green-700 rounded-lg min-w-[32%] transition duration-200">
+                                    <div className="inline-block overflow-hidden">
+                                        <img src={YoutubeDownloader} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
+                                    </div>
+                                    
+                                    <div className="p-7">
+                                        <div className="flex flex-col gap-2">
                                             <h3 className="text-3xl text-gray-800 dark:text-white font-bold transition duration-200">
-                                                Project 2
+                                                Youtube Downloader
                                             </h3>
 
-                                        </div> 
+                                            <p className="text-xl text-gray-800 dark:text-white transition duration-200">
+                                                Video downloader
+                                            </p>
+
+                                            <div className="px-8">
+                                                <ul className="list-disc">
+                                                    <li className="text-md text-gray-800 dark:text-white transition duration-200">
+                                                        Download videos from youtube for free
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br/>
 
                                     </div>
-                                    
-                                    
-                                    <br/>
-                                    
-                                    <div className="px-8">
-                                        <ul className="list-disc">
-                                            <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                            </li>
-                                            <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                            </li>
-                                            <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                            </li>
-                                            <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                            </li>
-                                            <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                            </li>
-                                        </ul>
-                                    </div>
+
                                 </motion.div>
                             </motion.div>
                             
