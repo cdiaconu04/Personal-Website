@@ -22,8 +22,6 @@ function drawAnimate(baseDelay, duration) {
 }
 
 const IntroBackground = () => {
-
-    // let colour = isDarkMode ? "#FFFFFF" : "#0a0a0a"
     
     const [circleColour, setCircleColour] = useState("#FFFFFF");
     const [lineColour, setLineColour] = useState("#059669");

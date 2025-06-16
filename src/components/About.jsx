@@ -24,9 +24,6 @@ import Tailwind from '../images/techIcons/Tailwind.png'
 
 
 const About = forwardRef((props, ref) => {
-    // const { onStrictlyPartlyInView, notOnStrictlyPartlyInView } = props;
-
-
     const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
     const mainControls = useAnimation();
 
@@ -85,24 +82,6 @@ const About = forwardRef((props, ref) => {
         };
     }, []);
 
-    // const greenRef = useRef(null);
-    // const isPartlyInView = useInView(greenRef, { amount: 0.01 });
-    // const isFullyInView = useInView(greenRef, { amount: 1 });
-    // const [isStrictlyPartlyInView, setIsStrictlyPartlyInView] = useState(false)
-    // const prev = useRef(null);
-
-    // useEffect(() => {
-    //     const current = isPartlyInView && !isFullyInView
-    //     setIsStrictlyPartlyInView(current)
-
-    //     if (prev.current !== current) {
-    //         if (current) onStrictlyPartlyInView()
-    //         else notOnStrictlyPartlyInView()
-    //     }
-
-        
-    // }, [isPartlyInView, isFullyInView])
-
     return (
         <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200 py-12" ref={ref}>
             <AboutBackground inView={isInView}/>
@@ -125,7 +104,7 @@ const About = forwardRef((props, ref) => {
                 <div className="relative max-w-screen-xl mx-auto p-4 py-10 flex flex-col gap-14 relative overflow-hidden">
                     <div className="flex flex-col gap-11">
                         <h2 className="text-5xl text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600 transition duration-200">
-                                About me
+                            About me
                         </h2>
 
                         <motion.div whileHover={{ y: -7 }}>
@@ -257,103 +236,8 @@ const About = forwardRef((props, ref) => {
                                 <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Tailwind </p>
                             </div>
                         </div>
-
-                        
-
-                        {/* <Marquee
-                            pauseOnHover={true}
-                            speed={15}
-                            className="flex flex-row gap-5"
-                            direction="right"
-                        >
-                            <div className="flex flex-row gap-5">
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Cplusplus} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> C++ </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Java} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Java </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Supabase} width={40} className="rounded-full"/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Supabase </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Python} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Python </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={React} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> React.js </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={githubPic} width={40} className=""/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Github </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Prisma} width={40} className="dark:bg-white rounded-full"/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Prisma </p>
-                                </div>
-                            </div>
-                        </Marquee> */}
-
-                        {/* <Marquee
-                            pauseOnHover={true}
-                            speed={15}
-                            className="flex flex-row gap-5"
-                        >
-                            <div className="flex flex-row gap-5">
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={HTML} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> HTML </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Git} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Git </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={AL} width={40} className="rounded-full"/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> AL </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={PostgreSQL} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> PostgreSQL </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Next} width={40} className="dark:bg-white dark:rounded-full"/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Next.js </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Javascript} width={40} className="rounded-lg"/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Javascript </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={C} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> C </p>
-                                </div>
-
-                                <div className="flex flex-row justify-center items-center gap-3 border border-4 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200">
-                                    <img src={Tailwind} width={40}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> Tailwind CSS </p>
-                                </div>
-                            </div>
-                        </Marquee> */}
                     </div>
                     
-
                 </div>
 
             </motion.section>
