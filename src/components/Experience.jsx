@@ -4,6 +4,7 @@ import { motion } from "motion/react"
 import IndosoftLogo from '../images/IndosoftLogo.jpg';
 import DynamixwareLogo from '../images/DynamixwareLogo.jpg';
 import { forwardRef } from 'react';
+import ExperienceBackground from './backgrounds/ExperienceBackground'
 
 const Experience = forwardRef((props, ref) => {
 
@@ -35,7 +36,8 @@ const Experience = forwardRef((props, ref) => {
     }, []);
 
     return (
-        <div className="w-full bg-white dark:bg-black transition duration-200" ref={ref}>
+        <div className="w-full bg-white dark:bg-black relative inline-block transition duration-200" ref={ref}>
+            <ExperienceBackground inView={isInView}/>
             <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden" >
                 <motion.section
                     ref={sectionRef}
@@ -133,7 +135,7 @@ const Experience = forwardRef((props, ref) => {
                                     
                                     <br/>
                                     
-                                    <div className="px-8">
+                                    <div className="flex flex-col px-8 gap-3">
                                         <ul className="list-disc">
                                             <li className="text-md text-gray-800 dark:text-white transition duration-200">
                                                 Did this and that and this and that and this and that and this and that and this and that and this and that and
@@ -151,7 +153,19 @@ const Experience = forwardRef((props, ref) => {
                                                 Did this and that and this and that and this and that and this and that and this and that and this and that and
                                             </li>
                                         </ul>
+
+                                        <div className="flex flex-row gap-2">
+                                            <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                <p className="text-white text-md font">Application Language (AL)</p>
+                                            </div>
+                                            <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                <p className="text-white text-md font">Microsoft BC</p>
+                                            </div>
+                                        </div>
+
                                     </div>
+
+                                    
                                 </motion.div>
                             </motion.div>
                             

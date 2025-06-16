@@ -73,7 +73,7 @@ const Projects = forwardRef((props, ref) => {
                                     <div className="inline-block overflow-hidden">
                                         <img src={CodeBasketPic} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
                                     </div>
-                                    <div className="p-7">
+                                    <div className="p-7 flex-col gap-3">
                                         <div className="flex flex-col gap-2">
                                             <h3 className="text-3xl text-gray-800 dark:text-white font-bold transition duration-200">
                                                 Code Basket
@@ -83,7 +83,7 @@ const Projects = forwardRef((props, ref) => {
                                                 Code snippet manager
                                             </p>
 
-                                            <div className="px-8">
+                                            <div className="flex flex-col px-8 gap-3">
                                                 <ul className="list-disc">
                                                     <li className="text-md text-gray-800 dark:text-white transition duration-200">
                                                         Organize snippets by language, tags, etc
@@ -95,35 +95,26 @@ const Projects = forwardRef((props, ref) => {
                                                         Supports syntax highlighting for better readability
                                                     </li>
                                                 </ul>
+
+                                                
                                             </div>
 
+                                            <div className="flex flex-row gap-2">
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Next.js</p>
+                                                </div>
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Javascript</p>
+                                                </div>
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">PostgreSQL</p>
+                                                </div>
+                                            </div>
                                             
- 
-
                                         </div>
-                                        <br/>
-                                        
-                                        {/* <div className="px-8">
-                                            <ul className="list-disc">
-                                                <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                    Snippet Manager
-                                                </li>
-                                                <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                            </ul>
-                                        </div> */}
-
                                     </div>
+
+                                    
 
                                 </motion.div>
                             </motion.div>
@@ -148,16 +139,26 @@ const Projects = forwardRef((props, ref) => {
                                             <div className="px-8">
                                                 <ul className="list-disc">
                                                     <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                        Modern ecom platform for Eldi leather products
+                                                        Modern ecom platform for Eldi's leather products
                                                     </li>
                                                     <li className="text-md text-gray-800 dark:text-white transition duration-200">
-                                                        Stripe integration for secure payment
+                                                        Stripe integration for simple and secure payment
                                                     </li>
                                                 </ul>
                                             </div>
-                                        </div>
-                                        <br/>
 
+                                            <div className="flex flex-row gap-2">
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Next.js</p>
+                                                </div>
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Javascript</p>
+                                                </div>
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Stripe</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </motion.div>
@@ -187,8 +188,16 @@ const Projects = forwardRef((props, ref) => {
                                                     </li>
                                                 </ul>
                                             </div>
+
+                                            <div className="flex flex-row gap-2">
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Next.js</p>
+                                                </div>
+                                                <div className="px-3 py-1 rounded-full border-2 border-white">
+                                                    <p className="text-white text-md font">Javascript</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <br/>
 
                                     </div>
 
