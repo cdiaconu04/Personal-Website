@@ -5,6 +5,7 @@ import { forwardRef } from 'react';
 import CodeBasketPic from '../images/projectpics/codebasket.png'
 import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
 import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
+import ProjectsBackground from './backgrounds/ProjectsBackground'
 import { Code } from "lucide-react";
 
 const Projects = forwardRef((props, ref) => {
@@ -37,7 +38,8 @@ const Projects = forwardRef((props, ref) => {
 
 
     return (
-        <div className="w-full bg-white dark:bg-black transition duration-200" ref={ref}>
+        <div className="w-full bg-white dark:bg-black transition duration-200 relative inline-block" ref={ref}>
+            <ProjectsBackground inView={isInView}/>
             <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden">
                 <motion.section
                     ref={sectionRef}
