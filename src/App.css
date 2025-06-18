@@ -37,7 +37,12 @@
   }
 }
 
-::selection {
+.dark ::selection {
   background: #ffffff;
   color: #059669;
+}
+
+::selection {
+  background: #000000;
+  color: #34D399;
 }
