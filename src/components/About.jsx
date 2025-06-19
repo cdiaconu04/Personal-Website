@@ -109,7 +109,7 @@ const About = forwardRef((props, ref) => {
 
                         <motion.div whileHover={{ y: -7 }}>
                             <div className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
-                                <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                {/* <p className="text-gray-800 dark:text-white text-lg transition duration-200">
                                     Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
                                 </p>
                                 <p className="text-gray-800 dark:text-white text-lg transition duration-200">
@@ -120,6 +120,12 @@ const About = forwardRef((props, ref) => {
                                 </p>
                                 <p className="text-gray-800 dark:text-white text-lg transition duration-200">
                                     I am currently looking for internships for summer 2026.
+                                </p> */}
+                                <p className="text-gray-800 dark:text-white text-lg transition duration-200">
+                                    Hi, I'm Cristian. I am a Computer Science student at the University of Waterloo and love building cool things through code. 
+                                        I am interested in fullstack software development. In my free time, I like weightlifting, making electronic music, and biking. 
+                                        I am always open to and opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
+                                        Feel free to check out some of my work down below and on Github. If you'd like to connect, reach out via Linkedin or Email - I'd love to chat.
                                 </p>
                             </div>
                         </motion.div>
