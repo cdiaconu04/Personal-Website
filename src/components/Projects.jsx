@@ -102,14 +102,14 @@ const Projects = forwardRef((props, ref) => {
                                             </div>
 
                                             <div className="flex flex-row gap-2">
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Next.js</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Next.js</p>
                                                 </div>
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Javascript</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Javascript</p>
                                                 </div>
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">PostgreSQL</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">PostgreSQL</p>
                                                 </div>
                                             </div>
                                             
@@ -150,14 +150,14 @@ const Projects = forwardRef((props, ref) => {
                                             </div>
 
                                             <div className="flex flex-row gap-2">
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Next.js</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Next.js</p>
                                                 </div>
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Javascript</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Javascript</p>
                                                 </div>
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Stripe</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Stripe</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -192,11 +192,11 @@ const Projects = forwardRef((props, ref) => {
                                             </div>
 
                                             <div className="flex flex-row gap-2">
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Next.js</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Next.js</p>
                                                 </div>
-                                                <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                    <p className="text-white text-md font">Javascript</p>
+                                                <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                    <p className="text-gray-800 dark:text-white text-md font">Javascript</p>
                                                 </div>
                                             </div>
                                         </div>

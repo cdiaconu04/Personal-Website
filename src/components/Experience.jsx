@@ -155,11 +155,11 @@ const Experience = forwardRef((props, ref) => {
                                         </ul>
 
                                         <div className="flex flex-row gap-2">
-                                            <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                <p className="text-white text-md font">Application Language (AL)</p>
+                                            <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                <p className="text-gray-800 dark:text-white text-md font">Application Language (AL)</p>
                                             </div>
-                                            <div className="px-3 py-1 rounded-full border-2 border-white">
-                                                <p className="text-white text-md font">Microsoft BC</p>
+                                            <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
+                                                <p className="text-gray-800dark:text-white text-md font">Microsoft BC</p>
                                             </div>
                                         </div>
 
