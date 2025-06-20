@@ -159,7 +159,7 @@ const Experience = forwardRef((props, ref) => {
                                                 <p className="text-gray-800 dark:text-white text-md font">Application Language (AL)</p>
                                             </div>
                                             <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white">
-                                                <p className="text-gray-800dark:text-white text-md font">Microsoft BC</p>
+                                                <p className="text-gray-800 dark:text-white text-md font">Microsoft BC</p>
                                             </div>
                                         </div>
 
