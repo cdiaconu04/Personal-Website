@@ -38,7 +38,9 @@ const Navbar = ({intro, about, experience, projects}) => {
             ">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <Disc3 className="animate-spin text-gray-800 dark:text-white transition duration-200"/>
+                    <Disc3 className="animate-spin text-gray-800 dark:text-white transition duration-200
+                        2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
+                    "/>
                 </a>
 
                 
@@ -46,7 +48,7 @@ const Navbar = ({intro, about, experience, projects}) => {
                 <div id="navbar-default">
                     <div className="flex flex-row gap-4">
                         <ul className="font-medium flex flex-row rtl:space-x-reverse
-                            2xl:space-x-2 xl:space-x-2 lg:space-x-1 md:space-x-0.5 space-x-0.5
+                            2xl:space-x-2 xl:space-x-2 lg:space-x-0.5 md:space-x-0.5 space-x-0.5
                         ">
                             <li className="flex flex-col">
                                 <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200
@@ -85,9 +87,9 @@ const Navbar = ({intro, about, experience, projects}) => {
                                     whileHover={{ scale: 1.03 }}
                                     onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
                                 >
-                                    <Sun className="text-white group-hover:bg-white group-hover:text-black rounded-full"
-                                        
-                                    /> 
+                                    <Sun className="text-white group-hover:bg-white group-hover:text-black rounded-full
+                                        2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
+                                    "/> 
                                 </motion.div>
                                 
                             
@@ -96,7 +98,9 @@ const Navbar = ({intro, about, experience, projects}) => {
                                     whileHover={{ scale: 1.03 }}
                                     onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
                                 >
-                                    <Moon className="text-gray-800 group-hover:text-white"/>
+                                    <Moon className="text-gray-800 group-hover:text-white
+                                        2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
+                                    "/>
                                 </motion.div>
 
                             }

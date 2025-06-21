@@ -101,7 +101,7 @@ const IntroPage = forwardRef((props, ref) => {
 
             <div 
                 className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
-                    2xl:p-4 xl:p-20 lg:p-20 p-10
+                    2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
                 "
                 ref={ref}
             >
@@ -161,10 +161,10 @@ const IntroPage = forwardRef((props, ref) => {
                     
 
                     <motion.div className="relative justify-start flex items-center
-                        2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-1 sm:space-x-1
+                        2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
                     ">
 
-                        <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
+                        <motion.a href="https://linkedin.com/in/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <motion.div
                                 whileHover={{ scale: 1.09 }}
                                 initial={{ opacity: 0 }}
@@ -177,7 +177,7 @@ const IntroPage = forwardRef((props, ref) => {
                             </motion.div>
                         </motion.a>
                         
-                        <motion.a href="https://github.com/CristianDiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
+                        <motion.a href="https://github.com/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <motion.div
                                 whileHover={{ scale: 1.09 }}
                                 initial={{ opacity: 0 }}
