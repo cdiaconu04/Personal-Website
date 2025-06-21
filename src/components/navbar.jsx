@@ -33,7 +33,9 @@ const Navbar = ({intro, about, experience, projects}) => {
 
     return (
         <nav className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 fixed top-0 left-0 w-full z-50 transition duration-300">
-            <div className="flex items-center justify-between mx-auto px-4 py-2">
+            <div className="flex items-center justify-between mx-auto
+                xl:px-4 xl:py-2 lg:px-4 lg:py-1 md:px-3 md:py-0.5 px-2 py-0.5
+            ">
                 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
                     <Disc3 className="animate-spin text-gray-800 dark:text-white transition duration-200"/>
@@ -43,24 +45,34 @@ const Navbar = ({intro, about, experience, projects}) => {
 
                 <div id="navbar-default">
                     <div className="flex flex-row gap-4">
-                        <ul className="font-medium flex flex-row space-x-2 rtl:space-x-reverse">
+                        <ul className="font-medium flex flex-row rtl:space-x-reverse
+                            2xl:space-x-2 xl:space-x-2 lg:space-x-1 md:space-x-0.5 space-x-0.5
+                        ">
                             <li className="flex flex-col">
-                                <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200">Home
+                                <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200
+                                    xl:text-base md:text-sm sm:text-xs
+                                ">Home
                                     <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-950 dark:bg-white"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#About" onClick={() => scrollTo(about)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200">About
+                                <a href="#About" onClick={() => scrollTo(about)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200
+                                    xl:text-base md:text-sm sm:text-xs
+                                ">About
                                     <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-950 dark:bg-white"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#Experience" onClick={() => scrollTo(experience)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200">Experience
+                                <a href="#Experience" onClick={() => scrollTo(experience)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200
+                                    xl:text-base md:text-sm sm:text-xs
+                                ">Experience
                                     <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-950 dark:bg-white"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#Projects" onClick={() => scrollTo(projects)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200">Projects
+                                <a href="#Projects" onClick={() => scrollTo(projects)} className="group block py-2 px-3 text-gray-800 dark:text-white rounded-sm border-0 transition duration-200
+                                    xl:text-base md:text-sm sm:text-xs
+                                ">Projects
                                     <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-950 dark:bg-white"></span>
                                 </a>
                             </li>

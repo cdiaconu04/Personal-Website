@@ -14,7 +14,23 @@ import SplitType from 'split-type'
 
 import { gsap } from "gsap";
 
+import { CodeXml } from 'lucide-react';
+
 const IntroPage = forwardRef((props, ref) => {
+    const [windowWidth, setWindowWidth] = useState(0);
+    const [windowHeight, setWindowHeight] = useState(0);
+    const [windowSize, setWindowSize] = useState("");
+
+    function getHeadshotDimensions() {
+        if (windowSize == "xs") return 100
+        else if (windowSize == "sm") return 120;
+        else if (windowSize == "md") return 170;
+        else if (windowSize == "lg") return 210;
+        else if (windowSize == "xl") return 250;
+        else return 330;
+    }
+
+
     // const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
@@ -50,13 +66,34 @@ const IntroPage = forwardRef((props, ref) => {
         }
     }, [isInView]);
 
+    useEffect(() => {
+        const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        setWindowHeight(window.innerHeight);
+
+        if (windowWidth >= 1536) setWindowSize("2xl");
+        else if (windowWidth >= 1280) setWindowSize("xl");
+        else if (windowWidth >= 1024) setWindowSize("lg");
+        else if (windowWidth >= 768) setWindowSize("md");
+        else if (windowWidth >= 640) setWindowSize("sm");
+        else setWindowSize("xs")
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    });
+
 
     return (
         <div className="w-full bg-white dark:bg-black transition duration-200" ref={ref}>
             <IntroBackground/>
 
             <div 
-                className="max-w-screen-xl mx-auto p-4 min-h-screen flex items-center justify-between relative overflow-hidden"
+                className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
+                    2xl:p-4 xl:p-20 lg:p-20 p-10
+                "
                 ref={ref}
             >
             
@@ -82,7 +119,9 @@ const IntroPage = forwardRef((props, ref) => {
                                 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700
                             "
                         />
-                        <motion.p className="relative text-4xl text-gray-800 dark:text-white font-bold transition duration-200" 
+                        <motion.p className="relative text-gray-800 dark:text-white font-bold transition duration-200
+                            2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl
+                        " 
                         >
                             Hello, I'm
                         </motion.p>
@@ -95,7 +134,9 @@ const IntroPage = forwardRef((props, ref) => {
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
                             className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
                         />
-                        <motion.h1 className="relative text-7xl font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200"
+                        <motion.h1 className="relative font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200
+                            2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl
+                        "
                         >
                             Cristian Diaconu
                         </motion.h1>
@@ -132,12 +173,15 @@ const IntroPage = forwardRef((props, ref) => {
                             </motion.div>
                         </motion.a>
 
-                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full p-1 px-2"
+                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full p-1 px-2 flex flex-row gap-1 justify-center items-center"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "easeIn", delay: 3}}
-                        >
-                            <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200">
+                        >   
+                            <CodeXml className="text-green-500" width={15}/>
+                            <p className="flex justify-center items-center font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200
+                                2xl:text-base xl:text-sm lg:text-sm text-xs
+                            ">
                                 Software Developer
                             </p>
                         </motion.div>
@@ -148,7 +192,9 @@ const IntroPage = forwardRef((props, ref) => {
                             transition={{ duration: 1, ease: "easeIn", delay: 4}}
                         >   
                             <MapPin className="text-green-500" width={15} />
-                            <p className="font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200">
+                            <p className="flex justify-center items-center font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200
+                                2xl:text-base xl:text-sm lg:text-sm text-xs
+                            ">
                                 Toronto, CA
                             </p>
                         </motion.div>
@@ -171,8 +217,9 @@ const IntroPage = forwardRef((props, ref) => {
                     transition={{ duration: 0.8, delay: 0.25 }}
                 >
                     <div className="absolute inset-0 bg-green-400 rounded-full blur"></div>
-                    <div>
-                        <img className="relative rounded-full ms-auto w-80 h-80" src={headshot} />
+                    {/*  w-80 h-80 */}
+                    <div> 
+                        <img className="relative rounded-full ms-auto" width={getHeadshotDimensions()} height={getHeadshotDimensions()} src={headshot} />
                     </div>
                 </motion.div>
 
