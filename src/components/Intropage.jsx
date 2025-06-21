@@ -23,7 +23,16 @@ const IntroPage = forwardRef((props, ref) => {
 
     function getHeadshotDimensions() {
         if (windowSize == "xs") return 100
-        else if (windowSize == "sm") return 120;
+        else if (windowSize == "sm") return 150;
+        else if (windowSize == "md") return 170;
+        else if (windowSize == "lg") return 210;
+        else if (windowSize == "xl") return 250;
+        else return 330;
+    }
+
+    function getIconSize() {
+        if (windowSize == "xs") return 100
+        else if (windowSize == "sm") return 150;
         else if (windowSize == "md") return 170;
         else if (windowSize == "lg") return 210;
         else if (windowSize == "xl") return 250;
@@ -105,50 +114,55 @@ const IntroPage = forwardRef((props, ref) => {
                     initial="hidden"
                     animate={mainControls}
                     transition={{ duration: 0.8, delay: 0.25 }}
-                    className="flex flex-col"
-                >
+                    className="flex flex-col 
+                        2xl:gap-4 lg:gap-3 md:gap-2 gap-1
+                ">   
 
-
-                    <div className="relative inline-block">
-                        <motion.div
-                            initial={{ left: 0 }}
-                            animate={{ left: "100%" }}
-                            transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
-                            className="absolute top-0 bottom-0 left-0 right-0 z-10 rounded-xl
-                                bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
-                                dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700
-                            "
-                        />
-                        <motion.p className="relative text-gray-800 dark:text-white font-bold transition duration-200
-                            2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl
-                        " 
-                        >
-                            Hello, I'm
-                        </motion.p>
-                    </div>
-                    
-                    <div className="relative inline-block">
-                        <motion.div
-                            initial={{ right: 0 }}
-                            animate={{ right: "100%" }}
-                            transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
-                            className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
-                        />
-                        <motion.h1 className="relative font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200
-                            2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl
-                        "
-                        >
-                            Cristian Diaconu
-                        </motion.h1>
-                    </div>
-                    
-
-                    <br/>
-                    
-
-                    <motion.div className="relative justify-start flex space-x-3"
+                    <div className="flex flex-col">
+                        <div className="relative inline-block">
+                            <motion.div
+                                initial={{ left: 0 }}
+                                animate={{ left: "100%" }}
+                                transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
+                                className="absolute top-0 bottom-0 left-0 right-0 z-10 rounded-xl
+                                    bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
+                                    dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700
+                                "
+                            />
+                            <motion.p className="relative text-gray-800 dark:text-white font-bold transition duration-200
+                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg
+                            " 
+                            >
+                                Hello, I'm
+                            </motion.p>
+                        </div>
                         
-                    >
+                        <div className="relative inline-block">
+                            <motion.div
+                                initial={{ right: 0 }}
+                                animate={{ right: "100%" }}
+                                transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
+                                className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
+                            />
+                            <motion.h1 className="relative font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200
+                                2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl
+                            "
+                            >
+                                Cristian Diaconu
+                            </motion.h1>
+                        </div>
+                    </div>
+
+
+                    
+                    
+
+                    
+                    
+
+                    <motion.div className="relative justify-start flex items-center
+                        2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-1 sm:space-x-1
+                    ">
 
                         <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <motion.div
@@ -157,7 +171,9 @@ const IntroPage = forwardRef((props, ref) => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1, ease: "easeIn", delay: 1}}
                             >
-                                <FaLinkedin color={buttonColour} className="w-8 h-8 transition duration-200"/>
+                                <FaLinkedin color={buttonColour} className="transition duration-200
+                                    2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                "/>
                             </motion.div>
                         </motion.a>
                         
@@ -169,11 +185,15 @@ const IntroPage = forwardRef((props, ref) => {
                                 transition={{ duration: 1, ease: "easeIn", delay: 2}}
                             >
                                     
-                                <FaGithub color={buttonColour} className="w-8 h-8 transition duration-200"/>
+                                <FaGithub color={buttonColour} className="transition duration-200
+                                    2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                "/>
                             </motion.div>
                         </motion.a>
 
-                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full p-1 px-2 flex flex-row gap-1 justify-center items-center"
+                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full flex flex-row gap-1 justify-center items-center
+                            2xl:py-1 2xl:px-2 lg:py-0.5 lg:px-2 md:py-0 md:px-1 py-0 px-1
+                        "
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "easeIn", delay: 3}}
@@ -186,7 +206,9 @@ const IntroPage = forwardRef((props, ref) => {
                             </p>
                         </motion.div>
 
-                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full p-1 px-2 flex flex-row gap-1 justify-center items-center"
+                        <motion.div className="border border-2 border-green-500 dark:border-green-700 rounded-full flex flex-row gap-1 justify-center items-center
+                            2xl:py-1 2xl:px-2 lg:py-0.5 lg:px-2 md:py-0 md:px-1 py-0 px-1
+                        "
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1, ease: "easeIn", delay: 4}}
