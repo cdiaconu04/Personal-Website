@@ -77,7 +77,10 @@ const IntroPage = forwardRef((props, ref) => {
                             initial={{ left: 0 }}
                             animate={{ left: "100%" }}
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
-                            className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-r from-emerald-600 via-green-600 to-green-700 z-10 rounded-xl"
+                            className="absolute top-0 bottom-0 left-0 right-0 z-10 rounded-xl
+                                bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
+                                dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700
+                            "
                         />
                         <motion.p className="relative text-4xl text-gray-800 dark:text-white font-bold transition duration-200" 
                         >
@@ -90,7 +93,7 @@ const IntroPage = forwardRef((props, ref) => {
                             initial={{ right: 0 }}
                             animate={{ right: "100%" }}
                             transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
-                            className="absolute top-0 bottom-0 left-0 right-0 bg-gray-300 z-10 rounded-xl"
+                            className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
                         />
                         <motion.h1 className="relative text-7xl font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200"
                         >
