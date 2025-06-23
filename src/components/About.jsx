@@ -25,7 +25,7 @@ import Tailwind from '../images/techIcons/Tailwind.png'
 import { tech } from '../data/tech.js'
 
 
-const About = forwardRef((props, ref) => {
+const About = forwardRef(({windowSize}, ref) => {
     const isHalfInView = useInView(ref, { once: true, amount: 0.5 });
     const mainControls = useAnimation();
 
@@ -40,6 +40,14 @@ const About = forwardRef((props, ref) => {
 
     const [githubPic, setGithubPic] = useState(GithubWhite)
 
+    function getTechIconDimensions() {
+        if (windowSize == "xs") return 20
+        else if (windowSize == "sm") return 20;
+        else if (windowSize == "md") return 23;
+        else if (windowSize == "lg") return 25;
+        else if (windowSize == "xl") return 27;
+        else return 30;
+    }
 
     useEffect(() => {
         const updateColour = () => {
@@ -84,6 +92,7 @@ const About = forwardRef((props, ref) => {
         };
     }, []);
 
+
     return (
         <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200 py-12" ref={ref}>
             <AboutBackground inView={isInView}/>
@@ -115,18 +124,6 @@ const About = forwardRef((props, ref) => {
 
                         <motion.div whileHover={{ y: -7 }}>
                             <div className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
-                                {/* <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                                    Hi! I'm Cristian, a CS student at the University of Waterloo with a passion for building cool things through code.
-                                </p>
-                                <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                                    I am interested in this and that and this and that and this and that.
-                                </p>
-                                <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                                    In my free time, I love weightlifting, making electronic music, and 
-                                </p>
-                                <p className="text-gray-800 dark:text-white text-lg transition duration-200">
-                                    I am currently looking for internships for summer 2026.
-                                </p> */}
                                 <p className="text-gray-800 dark:text-white transition duration-200
                                     2xl:text-lg xl:text-lg lg:text-base md:text-sm sm:text-sm text-xs
                                 ">
@@ -146,13 +143,20 @@ const About = forwardRef((props, ref) => {
                             Tech I work with
                         </h3>
 
-                        <div className="grid grid-cols-7 gap-5">
+                        <div className="grid 
+                            lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4
+                            2xl:gap-5 xl:gap-5 lg:gap-4 md:gap-3 gap-2
+                        ">
                             {tech.map((tec, index) => (
-                                <div className="flex flex-row justify-center items-center gap-3 border border-2 border-green-500 dark:border-green-700 py-2 px-5 rounded-xl transition duration-200 
-                                dark:hover:bg-gradient-to-r dark:hover:from-emerald-600 dark:hover:via-green-600 dark:hover:to-green-700
-                                hover:bg-gradient-to-r hover:from-emerald-400 hover:via-green-400 hover:to-green-500">
-                                    <img src={tec.pic} width={30} className={tec.specialStyle}/>
-                                    <p className="text-gray-950 dark:text-white font-bold text-lg transition duration-200"> {tec.name} </p>
+                                <div key={index} className="flex flex-row justify-center items-center gap-3 border border-2 border-green-500 dark:border-green-700 rounded-xl transition duration-200 
+                                    dark:hover:bg-gradient-to-r dark:hover:from-emerald-600 dark:hover:via-green-600 dark:hover:to-green-700
+                                    hover:bg-gradient-to-r hover:from-emerald-400 hover:via-green-400 hover:to-green-500
+                                    py-2 px-8S
+                                ">
+                                    <img src={tec.pic} width={getTechIconDimensions()} className={tec.specialStyle}/>
+                                    <p className="text-gray-950 dark:text-white font-bold transition duration-200
+                                        2xl:text-lg xl:text-base lg:text-sm md:text-sm sm:text-sm
+                                    "> {tec.name} </p>
                                 </div>
                             ))}
                         </div>

@@ -20,7 +20,7 @@ export const tech = [
     { name: "C", pic: C, specialStyle: "" },
     { name: "AL", pic: AL, specialStyle: "" },
     { name: "Git", pic: Git, specialStyle: "" },
-    { name: "Github", pic: Github, specialStyle: "" },
+    { name: "Github", pic: Github, specialStyle: "rounded-full bg-white" },
     // { name: "Github (White)", pic: GithubWhite, specialStyle: "" },
     { name: "HTML", pic: HTML, specialStyle: "" },
     { name: "Java", pic: Java, specialStyle: "" },
@@ -31,5 +31,5 @@ export const tech = [
     { name: "Python", pic: Python, specialStyle: "" },
     { name: "React.js", pic: React, specialStyle: "" },
     { name: "Supabase", pic: Supabase, specialStyle: "rounded-full" },
-    { name: "Tailwind CSS", pic: Tailwind, specialStyle: "" }
+    { name: "Tailwind", pic: Tailwind, specialStyle: "" }
 ];

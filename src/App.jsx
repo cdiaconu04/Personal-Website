@@ -33,6 +33,11 @@ function App() {
   const [greenSection, setGreenSection] = React.useState(false);
 
   const [cursorColour, setCursorColour] = useState('255, 255, 255')
+
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowHeight, setWindowHeight] = useState(0);
+  const [screenSize, setScreenSize] = useState("");
+
   useEffect(() => {
     const updateColour = () => {
     const isDarkMode = document.documentElement.classList.contains('dark');
@@ -49,6 +54,25 @@ function App() {
       
       return () => observer.disconnect()
   }, [])
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+  
+      if (windowWidth >= 1536) setScreenSize("2xl");
+      else if (windowWidth >= 1280) setScreenSize("xl");
+      else if (windowWidth >= 1024) setScreenSize("lg");
+      else if (windowWidth >= 768) setScreenSize("md");
+      else if (windowWidth >= 640) setScreenSize("sm");
+      else setScreenSize("xs");
+    };
+  
+    handleResize();
+  
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  });
 
   return (
     <div className="w-full bg-black">
@@ -79,8 +103,8 @@ function App() {
       <ScrollLine greenSection={greenSection}/>
 
       <ReactLenis root>
-        <IntroPage ref={introRef}/>
-        <About ref={aboutRef}/>
+        <IntroPage ref={introRef} windowSize={screenSize}/>
+        <About ref={aboutRef} windowSize={screenSize}/>
         <Experience ref={experienceRef}/>
         <Projects ref={projectsRef}/>
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>

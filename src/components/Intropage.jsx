@@ -16,10 +16,10 @@ import { gsap } from "gsap";
 
 import { CodeXml } from 'lucide-react';
 
-const IntroPage = forwardRef((props, ref) => {
-    const [windowWidth, setWindowWidth] = useState(0);
-    const [windowHeight, setWindowHeight] = useState(0);
-    const [windowSize, setWindowSize] = useState("");
+const IntroPage = forwardRef(({windowSize}, ref) => {
+    // const [windowWidth, setWindowWidth] = useState(0);
+    // const [windowHeight, setWindowHeight] = useState(0);
+    // const [windowSize, setWindowSize] = useState("");
 
     function getHeadshotDimensions() {
         if (windowSize == "xs") return 100
@@ -75,24 +75,24 @@ const IntroPage = forwardRef((props, ref) => {
         }
     }, [isInView]);
 
-    useEffect(() => {
-        const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-        setWindowHeight(window.innerHeight);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setWindowWidth(window.innerWidth);
+    //         setWindowHeight(window.innerHeight);
 
-        if (windowWidth >= 1536) setWindowSize("2xl");
-        else if (windowWidth >= 1280) setWindowSize("xl");
-        else if (windowWidth >= 1024) setWindowSize("lg");
-        else if (windowWidth >= 768) setWindowSize("md");
-        else if (windowWidth >= 640) setWindowSize("sm");
-        else setWindowSize("xs")
-        };
+    //         // if (windowWidth >= 1536) setWindowSize("2xl");
+    //         // else if (windowWidth >= 1280) setWindowSize("xl");
+    //         // else if (windowWidth >= 1024) setWindowSize("lg");
+    //         // else if (windowWidth >= 768) setWindowSize("md");
+    //         // else if (windowWidth >= 640) setWindowSize("sm");
+    //         // else setWindowSize("xs");
+    //     };
 
-        handleResize();
+    //     handleResize();
 
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    });
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // });
 
 
     return (
