@@ -108,22 +108,7 @@ const Experience = forwardRef((props, ref) => {
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
-                                                    xl:text-base lg:text-sm text-xs 
-                                                ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
-                                                    xl:text-base lg:text-sm text-xs 
-                                                ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
-                                                    xl:text-base lg:text-sm text-xs 
-                                                ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
+                                                    Building a responsive frontend using ReactJS, allowing users to select and interact with LLMs through a unified chat interface, enhancing usability and model comparison
                                                 </li>
                                             </ul>
                                         </div>
@@ -142,7 +127,7 @@ const Experience = forwardRef((props, ref) => {
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Javascript</p>
                                             </div>
-                                            <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white
+                                            {/* <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white
                                                 lg:px-3 lg:py-1 md:px-2 md:py-1
                                             ">
                                                 <p className="text-gray-800 dark:text-white
@@ -155,7 +140,7 @@ const Experience = forwardRef((props, ref) => {
                                                 <p className="text-gray-800 dark:text-white
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Python</p>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </motion.div>
@@ -202,22 +187,17 @@ const Experience = forwardRef((props, ref) => {
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
+                                                    Developed 15+ Microsoft Business Central apps using Application Language (AL) to enable efficient client-side business management
                                                 </li>
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
+                                                    Implemented table flow-fields to automate customer database updates, enhancing data accuracy and system efficiency by 20%
                                                 </li>
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
-                                                </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
-                                                    xl:text-base lg:text-sm text-xs 
-                                                ">
-                                                    Did this and that and this and that and this and that and this and that and this and that and this and that and
+                                                    Collaborated with internal development team to successfully deliver production-ready solutions under tight client deadlines
                                                 </li>
                                             </ul>
 
