@@ -40,7 +40,9 @@ const Projects = forwardRef((props, ref) => {
     return (
         <div className="w-full bg-white dark:bg-black transition duration-200 relative inline-block" ref={ref}>
             <ProjectsBackground inView={isInView}/>
-            <div className="max-w-screen-xl mx-auto min-h-screen p-4 flex items-center justify-between relative overflow-hidden">
+            <div className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
+                2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
+            ">
                 <motion.section
                     ref={sectionRef}
                     variants={{
