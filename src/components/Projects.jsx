@@ -74,8 +74,9 @@ const Projects = forwardRef((props, ref) => {
                                     <div className="inline-block overflow-hidden">
                                         <img src={CodeBasketPic} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
                                     </div>
-                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex-col gap-3">
-                                        <div className="flex flex-col gap-2">
+
+                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
+                                        <div className="flex flex-col gap-1">
                                             <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
                                                 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
                                             ">
@@ -87,6 +88,7 @@ const Projects = forwardRef((props, ref) => {
                                             ">
                                                 Code snippet manager
                                             </p>
+                                        </div>
 
                                             <div className="flex flex-col gap-3
                                                 2xl:px-8 lg:px-7 px-7
@@ -136,7 +138,7 @@ const Projects = forwardRef((props, ref) => {
                                                 </div>
                                             </div>
                                             
-                                        </div>
+                                        
                                     </div>
 
                                     
@@ -151,8 +153,8 @@ const Projects = forwardRef((props, ref) => {
                                         <img src={EldiEcomStore} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
                                     </div>
                                     
-                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3">
-                                        <div className="flex flex-col gap-2">
+                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
+                                        <div className="flex flex-col gap-1">
                                             <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
                                                 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
                                             ">
@@ -164,46 +166,47 @@ const Projects = forwardRef((props, ref) => {
                                             ">
                                                 Ecom store
                                             </p>
+                                        </div>
 
-                                            <div className="2xl:px-8 lg:px-7 px-7">
-                                                <ul className="list-disc">
-                                                    <li className="text-gray-800 dark:text-white transition duration-200
-                                                        xl:text-base lg:text-sm text-xs 
-                                                    ">
-                                                        Modern ecom platform for Eldi's leather products
-                                                    </li>
-                                                    <li className="text-gray-800 dark:text-white transition duration-200
-                                                        xl:text-base lg:text-sm text-xs 
-                                                    ">
-                                                        Stripe integration for simple and secure payment
-                                                    </li>
-                                                </ul>
+                                        <div className="2xl:px-8 lg:px-7 px-7">
+                                            <ul className="list-disc">
+                                                <li className="text-gray-800 dark:text-white transition duration-200
+                                                    xl:text-base lg:text-sm text-xs 
+                                                ">
+                                                    Modern ecom platform for Eldi's leather products
+                                                </li>
+                                                <li className="text-gray-800 dark:text-white transition duration-200
+                                                    xl:text-base lg:text-sm text-xs 
+                                                ">
+                                                    Stripe integration for simple and secure payment
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="flex flex-row gap-2">
+                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                                lg:px-3 lg:py-1 md:px-2 md:py-1
+                                            ">
+                                                <p className="text-gray-800 dark:text-white
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Next.js</p>
                                             </div>
-
-                                            <div className="flex flex-row gap-2">
-                                                <div className="rounded-full border-2 border-gray-800 dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Next.js</p>
-                                                </div>
-                                                <div className="rounded-full border-2 border-gray-800 dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Javascript</p>
-                                                </div>
-                                                <div className="rounded-full border-2 border-gray-800 dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Stripe</p>
-                                                </div>
+                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                                lg:px-3 lg:py-1 md:px-2 md:py-1
+                                            ">
+                                                <p className="text-gray-800 dark:text-white
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Javascript</p>
+                                            </div>
+                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                                lg:px-3 lg:py-1 md:px-2 md:py-1
+                                            ">
+                                                <p className="text-gray-800 dark:text-white
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Stripe</p>
                                             </div>
                                         </div>
+                                        
                                     </div>
 
                                 </motion.div>
@@ -216,8 +219,8 @@ const Projects = forwardRef((props, ref) => {
                                         <img src={YoutubeDownloader} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
                                     </div>
                                     
-                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3">
-                                        <div className="flex flex-col gap-2">
+                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
+                                        <div className="flex flex-col gap-1">
                                             <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
                                                 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
                                             ">
@@ -229,35 +232,34 @@ const Projects = forwardRef((props, ref) => {
                                             ">
                                                 Video downloader
                                             </p>
-
-                                            <div className="2xl:px-8 lg:px-7 px-7">
-                                                <ul className="list-disc">
-                                                    <li className="text-gray-800 dark:text-white transition duration-200
-                                                        xl:text-base lg:text-sm text-xs 
-                                                    ">
-                                                        Download videos from youtube for free
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <div className="flex flex-row gap-2">
-                                                <div className="rounded-full border-2 border-gray-800 dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Next.js</p>
-                                                </div>
-                                                <div className="rounded-full border-2 border-gray-800 dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Javascript</p>
-                                                </div>
-                                            </div>
                                         </div>
 
+                                        <div className="2xl:px-8 lg:px-7 px-7">
+                                            <ul className="list-disc">
+                                                <li className="text-gray-800 dark:text-white transition duration-200
+                                                    xl:text-base lg:text-sm text-xs 
+                                                ">
+                                                    Download videos from youtube for free
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div className="flex flex-row gap-2">
+                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                                lg:px-3 lg:py-1 md:px-2 md:py-1
+                                            ">
+                                                <p className="text-gray-800 dark:text-white
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Next.js</p>
+                                            </div>
+                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                                lg:px-3 lg:py-1 md:px-2 md:py-1
+                                            ">
+                                                <p className="text-gray-800 dark:text-white
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Javascript</p>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </motion.div>
