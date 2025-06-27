@@ -51,8 +51,10 @@ const Footer = ({onInView, onOutOfView}) => {
 
     return (
         <div className="w-full bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-400 dark:border-emerald-600 z-10 transition duration-200" ref={ref}>
-            <div className="relative max-w-screen-xl mx-auto py-6 flex items-center justify-between relative overflow-hidden
+            <div className="relative max-w-screen-xl mx-auto  flex items-center justify-between relative overflow-hidden
                 2xl:px-4 xl:px-20 lg:px-20 md:px-20 px-10
+                2xl:py-6 xl:py-6 lg:py-5 md:py-4 py-3
+
             ">
                 <div className="flex flex-col gap-3">
                     <h1 className="text-gray-800 dark:text-white font-bold transition duration-200
