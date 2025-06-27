@@ -114,13 +114,13 @@ const Experience = forwardRef((props, ref) => {
                                         </div>
 
                                         <div className="flex flex-row gap-2">
-                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
                                                 lg:px-3 lg:py-1 md:px-2 md:py-1">
                                                 <p className="text-gray-800 dark:text-white
                                                     xl:text-base lg:text-sm text-xs
                                                 ">React.js</p>
                                             </div>
-                                            <div className="px-3 py-1 rounded-full border-2 border-gray-800 dark:border-white
+                                            <div className="px-3 py-1 rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
                                                 lg:px-3 lg:py-1 md:px-2 md:py-1
                                             ">
                                                 <p className="text-gray-800 dark:text-white
@@ -206,14 +206,14 @@ const Experience = forwardRef((props, ref) => {
                                         </div>
 
                                         <div className="flex flex-row gap-2">
-                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
                                                 lg:px-3 lg:py-1 md:px-2 md:py-1
                                             ">
                                                 <p className="text-gray-800 dark:text-white
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Application Language (AL)</p>
                                             </div>
-                                            <div className="rounded-full border-2 border-gray-800 dark:border-white
+                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
                                                 lg:px-3 lg:py-1 md:px-2 md:py-1
                                             ">
                                                 <p className="text-gray-800 dark:text-white 
