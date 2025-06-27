@@ -55,21 +55,29 @@ const Footer = ({onInView, onOutOfView}) => {
                 2xl:px-4 xl:px-20 lg:px-20 md:px-20 px-10
             ">
                 <div className="flex flex-col gap-3">
-                    <h1 className="text-gray-800 dark:text-white text-4xl font-bold transition duration-200">Cristian Diaconu</h1>
-                    <p className="text-gray-800 dark:text-white transition duration-200"> cristian.diaconu0423@gmail.com </p>
+                    <h1 className="text-gray-800 dark:text-white font-bold transition duration-200
+                        2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg
+                    ">Cristian Diaconu</h1>
+                    <p className="text-gray-800 dark:text-white transition duration-200
+                        lg:text-base text-sm
+                    "> cristian.diaconu0423@gmail.com </p>
                 </div>
 
                 <div className="flex flex-row gap-3">
                     <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
-                            <FaLinkedin color={buttonColour} className="w-8 h-8 transition duration-200"/>
+                            <FaLinkedin color={buttonColour} className="transition duration-200
+                                2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                            "/>
                         </div>
                     </motion.a>
                                             
                     <motion.a href="https://github.com/CristianDiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
                                                         
-                            <FaGithub color={buttonColour} className="w-8 h-8 transition duration-200"/>
+                            <FaGithub color={buttonColour} className="transition duration-200
+                                2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                            "/>
                         </div>
                     </motion.a>
                 </div>

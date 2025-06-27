@@ -152,14 +152,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                             </motion.h1>
                         </div>
                     </div>
-
-
                     
-                    
-
-                    
-                    
-
                     <motion.div className="relative justify-start flex items-center
                         2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
                     ">
