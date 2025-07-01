@@ -23,7 +23,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
 
     function getHeadshotDimensions() {
         if (windowSize == "xs") return 100
-        else if (windowSize == "sm") return 150;
+        else if (windowSize == "sm") return 140;
         else if (windowSize == "md") return 170;
         else if (windowSize == "lg") return 210;
         else if (windowSize == "xl") return 250;

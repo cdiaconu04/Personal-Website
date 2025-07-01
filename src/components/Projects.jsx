@@ -117,28 +117,17 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 
                                             </div>
 
-                                            <div className="flex flex-row gap-2">
-                                                <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Next.js</p>
-                                                </div>
-                                                <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">Javascript</p>
-                                                </div>
-                                                <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                    lg:px-3 lg:py-1 md:px-2 md:py-1
-                                                ">
-                                                    <p className="text-gray-800 dark:text-white
-                                                        xl:text-base lg:text-sm text-xs
-                                                    ">PostgreSQL</p>
-                                                </div>
+                                            <div className="flex flex-row 
+                                                lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                                <p className="text-gray-800 dark:text-white font-bold
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Next.js</p>
+                                                <p className="text-gray-800 dark:text-white font-bold
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Express.js</p>
+                                                <p className="text-gray-800 dark:text-white font-bold
+                                                    xl:text-base lg:text-sm text-xs
+                                                ">Javascript</p>
                                             </div>
                                             
                                         
@@ -186,29 +175,18 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                             </ul>
                                         </div>
 
-                                        <div className="flex flex-row gap-2">
-                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                lg:px-3 lg:py-1 md:px-2 md:py-1
-                                            ">
-                                                <p className="text-gray-800 dark:text-white
+                                        <div className="flex flex-row 
+                                                lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                                <p className="text-gray-800 dark:text-white font-bold
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Next.js</p>
-                                            </div>
-                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                lg:px-3 lg:py-1 md:px-2 md:py-1
-                                            ">
-                                                <p className="text-gray-800 dark:text-white
+                                                <p className="text-gray-800 dark:text-white font-bold
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Javascript</p>
-                                            </div>
-                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                lg:px-3 lg:py-1 md:px-2 md:py-1
-                                            ">
-                                                <p className="text-gray-800 dark:text-white
+                                                <p className="text-gray-800 dark:text-white font-bold
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Stripe</p>
                                             </div>
-                                        </div>
                                         
                                     </div>
 
@@ -247,21 +225,14 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                             </ul>
                                         </div>
 
-                                        <div className="flex flex-row gap-2">
-                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                lg:px-3 lg:py-1 md:px-2 md:py-1
-                                            ">
-                                                <p className="text-gray-800 dark:text-white
-                                                    xl:text-base lg:text-sm text-xs
-                                                ">Next.js</p>
-                                            </div>
-                                            <div className="rounded-full sm:border-2 sm:border-gray-800 sm:dark:border-white
-                                                lg:px-3 lg:py-1 md:px-2 md:py-1
-                                            ">
-                                                <p className="text-gray-800 dark:text-white
-                                                    xl:text-base lg:text-sm text-xs
-                                                ">Javascript</p>
-                                            </div>
+                                        <div className="flex flex-row 
+                                            lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                            <p className="text-gray-800 dark:text-white font-bold
+                                                xl:text-base lg:text-sm text-xs
+                                            ">Next.js</p>
+                                            <p className="text-gray-800 dark:text-white font-bold
+                                                xl:text-base lg:text-sm text-xs
+                                            ">Javascript</p>
                                         </div>
                                     </div>
 
