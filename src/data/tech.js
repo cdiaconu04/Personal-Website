@@ -26,10 +26,10 @@ export const tech = [
     { name: "Java", pic: Java, specialStyle: "" },
     { name: "JavaScript", pic: Javascript, specialStyle: "rounded-md" },
     { name: "Next.js", pic: Next, specialStyle: "bg-white rounded-full" },
-    { name: "PostgreSQL", pic: PostgreSQL, specialStyle: "" },
-    { name: "Prisma", pic: Prisma, specialStyle: "bg-white rounded-full" },
+    // { name: "PostgreSQL", pic: PostgreSQL, specialStyle: "" },
+    // { name: "Prisma", pic: Prisma, specialStyle: "bg-white rounded-full" },
     { name: "Python", pic: Python, specialStyle: "" },
     { name: "React.js", pic: React, specialStyle: "" },
-    { name: "Supabase", pic: Supabase, specialStyle: "rounded-full" },
+    // { name: "Supabase", pic: Supabase, specialStyle: "rounded-full" },
     { name: "Tailwind", pic: Tailwind, specialStyle: "" }
 ];
