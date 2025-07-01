@@ -8,7 +8,7 @@ import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
 import { Code } from "lucide-react";
 
-const Projects = forwardRef((props, ref) => {
+const Projects = forwardRef(({windowSize}, ref) => {
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
     
@@ -39,7 +39,8 @@ const Projects = forwardRef((props, ref) => {
 
     return (
         <div className="w-full bg-white dark:bg-black transition duration-200 relative inline-block" ref={ref}>
-            <ProjectsBackground inView={isInView}/>
+            {windowSize === "xs" ? <div/> : <ProjectsBackground inView={isInView}/>}
+
             <div className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
                 2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
             ">

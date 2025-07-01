@@ -6,7 +6,7 @@ import DynamixwareLogo from '../images/DynamixwareLogo.jpg';
 import { forwardRef } from 'react';
 import ExperienceBackground from './backgrounds/ExperienceBackground'
 
-const Experience = forwardRef((props, ref) => {
+const Experience = forwardRef(({windowSize}, ref) => {
 
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
@@ -37,7 +37,8 @@ const Experience = forwardRef((props, ref) => {
 
     return (
         <div className="w-full bg-white dark:bg-black relative inline-block transition duration-200" ref={ref}>
-            <ExperienceBackground inView={isInView}/>
+            {windowSize === "xs" ? <div/> : <ExperienceBackground inView={isInView}/>}
+
             <div className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
                 2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
             " >

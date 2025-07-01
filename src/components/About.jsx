@@ -95,7 +95,7 @@ const About = forwardRef(({windowSize}, ref) => {
 
     return (
         <div className="w-full bg-white dark:bg-black relative inline-block z-10 transition duration-200 py-12" ref={ref}>
-            <AboutBackground inView={isInView}/>
+            {windowSize === "xs" ? <div/> : <AboutBackground inView={isInView}/>}
 
             <motion.section
                 ref={sectionRef}

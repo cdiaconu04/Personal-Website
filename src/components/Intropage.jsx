@@ -66,7 +66,6 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
         
     }, [])
 
-
     useEffect(() => {
         if (isInView) {
             mainControls.start("visible");
@@ -75,29 +74,9 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
         }
     }, [isInView]);
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setWindowWidth(window.innerWidth);
-    //         setWindowHeight(window.innerHeight);
-
-    //         // if (windowWidth >= 1536) setWindowSize("2xl");
-    //         // else if (windowWidth >= 1280) setWindowSize("xl");
-    //         // else if (windowWidth >= 1024) setWindowSize("lg");
-    //         // else if (windowWidth >= 768) setWindowSize("md");
-    //         // else if (windowWidth >= 640) setWindowSize("sm");
-    //         // else setWindowSize("xs");
-    //     };
-
-    //     handleResize();
-
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // });
-
-
     return (
         <div className="w-full bg-white dark:bg-black transition duration-200" ref={ref}>
-            <IntroBackground/>
+            {windowSize === "xs" ? <div/> : <IntroBackground/>}
 
             <div 
                 className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden

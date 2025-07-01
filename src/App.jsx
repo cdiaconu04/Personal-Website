@@ -105,8 +105,8 @@ function App() {
       <ReactLenis root>
         <IntroPage ref={introRef} windowSize={screenSize}/>
         <About ref={aboutRef} windowSize={screenSize}/>
-        <Experience ref={experienceRef}/>
-        <Projects ref={projectsRef}/>
+        <Experience ref={experienceRef} windowSize={screenSize}/>
+        <Projects ref={projectsRef} windowSize={screenSize}/>
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>
       </ReactLenis>
 
