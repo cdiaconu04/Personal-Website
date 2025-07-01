@@ -22,7 +22,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
     // const [windowSize, setWindowSize] = useState("");
 
     function getHeadshotDimensions() {
-        if (windowSize == "xs") return 100
+        if (windowSize == "xs") return 140
         else if (windowSize == "sm") return 140;
         else if (windowSize == "md") return 170;
         else if (windowSize == "lg") return 210;
@@ -79,8 +79,11 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
             {windowSize === "xs" ? <div/> : <IntroBackground/>}
 
             <div 
-                className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
+                className="max-w-screen-xl mx-auto min-h-screen items-center relative overflow-hidden
                     2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
+                    flex sm:flex-row flex-col
+                    sm:gap-0 gap-10
+                    sm:justify-between justify-center
                 "
                 ref={ref}
             >
@@ -109,7 +112,8 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                 "
                             />
                             <motion.p className="relative text-gray-800 dark:text-white font-bold transition duration-200
-                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg
+                                2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg text-lg
+                                sm:text-left text-center
                             " 
                             >
                                 Hello, I'm
@@ -124,7 +128,8 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                 className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
                             />
                             <motion.h1 className="relative font-bold dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text leading-relaxed transition duration-200
-                                2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl
+                                2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-3xl
+                                sm:text-left text-center
                             "
                             >
                                 Cristian Diaconu
@@ -134,6 +139,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                     
                     <motion.div className="relative justify-start flex items-center
                         2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                        space-x-2
                     ">
 
                         <motion.a href="https://linkedin.com/in/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
