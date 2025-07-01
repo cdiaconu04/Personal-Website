@@ -68,14 +68,16 @@ const Projects = forwardRef(({windowSize}, ref) => {
                         </h2>
 
                         {/* Projects */}
-                        <div className="grid grid-cols-3 min-w-full justify-between gap-4">
+                        <div className="grid min-w-full justify-between gap-4
+                            sm:grid-cols-3 grid-cols-1
+                        ">
                             
                             {/* Proj1 */}
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="bg-gradient-to-r from-emerald-400 via-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-emerald-600 dark:to-green-600 rounded-lg min-w-[32%] transition duration-200">
 
                                     <div className="inline-block overflow-hidden">
-                                        <img src={CodeBasketPic} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
+                                        <img src={CodeBasketPic} className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
 
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -118,7 +120,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                             </div>
 
                                             <div className="flex flex-row 
-                                                lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                                lg:gap-5 md:gap-4 sm:gap-2 gap-1">
                                                 <p className="text-gray-800 dark:text-white font-bold
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Next.js</p>
@@ -142,7 +144,8 @@ const Projects = forwardRef(({windowSize}, ref) => {
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="bg-green-400 dark:bg-green-600 rounded-lg min-w-[32%] transition duration-200">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={EldiEcomStore} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
+                                        {/* hover:scale-105 */}
+                                        <img src={EldiEcomStore} className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -176,7 +179,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                         </div>
 
                                         <div className="flex flex-row 
-                                                lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                                lg:gap-5 md:gap-4 sm:gap-2 gap-1">
                                                 <p className="text-gray-800 dark:text-white font-bold
                                                     xl:text-base lg:text-sm text-xs
                                                 ">Next.js</p>
@@ -197,7 +200,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="bg-gradient-to-r from-green-400 via-green-500 to-green-500 dark:bg-gradient-to-r dark:from-green-600 dark:via-green-700 dark:to-green-700 rounded-lg min-w-[32%] transition duration-200">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={YoutubeDownloader} className="w-full rounded-t-lg hover:scale-105 transition-transform duration-500"/>
+                                        <img src={YoutubeDownloader} className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -226,7 +229,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                         </div>
 
                                         <div className="flex flex-row 
-                                            lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+                                            lg:gap-5 md:gap-4 sm:gap-2 gap-1">
                                             <p className="text-gray-800 dark:text-white font-bold
                                                 xl:text-base lg:text-sm text-xs
                                             ">Next.js</p>

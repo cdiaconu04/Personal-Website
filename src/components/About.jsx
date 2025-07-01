@@ -144,7 +144,7 @@ const About = forwardRef(({windowSize}, ref) => {
                         </h3>
 
                         <div className="grid 
-                            lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4
+                            lg:grid-cols-6 md:grid-cols-5 sm:grid-cols-4 grid-cols-3
                             2xl:gap-5 xl:gap-5 lg:gap-4 md:gap-3 gap-2
                         ">
                             {tech.map((tec, index) => (

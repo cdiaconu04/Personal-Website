@@ -68,11 +68,13 @@ const Experience = forwardRef(({windowSize}, ref) => {
 
                         {/* Experiences */}
                         {/* flex flex-row */}
-                        <div className="grid grid-cols-2 min-w-full justify-between gap-4">
+                        <div className="grid min-w-full justify-between gap-4
+                            sm:grid-cols-2 grid-cols-1
+                        ">
                             
                             {/* Indosoft */}
                             <motion.div whileHover={{ y: -7 }}>
-                                <motion.div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg p-7 min-w-[50%] transition duration-200
+                                <motion.div className="bg-gradient-to-r from-emerald-400 to-green-400 dark:bg-gradient-to-r dark:from-emerald-600 dark:to-green-600 rounded-lg min-w-[50%] transition duration-200
                                     2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
                                 ">
                                     <div className="flex flex-col gap-6">
@@ -87,7 +89,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 <h3 className="text-gray-800 dark:text-white transition duration-200
                                                     2xl:text-xl xl:text-xl lg:text-lg
                                                 ">
-                                                    Software Developer Intern
+                                                    Software Developer
                                                 </h3>
                                             </div>  
 
