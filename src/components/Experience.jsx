@@ -76,7 +76,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[50%] transition duration-200
                                     2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
-                                    sm:bg-gradient-to-r sm:from-emerald-400 sm:o-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:to-green-600 
+                                    sm:bg-gradient-to-r sm:from-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 
                                 ">
                                     <div className="flex flex-col gap-6">

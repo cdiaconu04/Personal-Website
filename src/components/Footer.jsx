@@ -66,7 +66,7 @@ const Footer = ({onInView, onOutOfView}) => {
                 </div>
 
                 <div className="flex flex-row gap-3">
-                    <motion.a href="https://linkedin.com/in/cristian-diaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
+                    <motion.a href="https://linkedin.com/in/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
                             <FaLinkedin color={buttonColour} className="transition duration-200
                                 2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
@@ -74,7 +74,7 @@ const Footer = ({onInView, onOutOfView}) => {
                         </div>
                     </motion.a>
                                             
-                    <motion.a href="https://github.com/CristianDiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
+                    <motion.a href="https://github.com/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                         <div>
                                                         
                             <FaGithub color={buttonColour} className="transition duration-200

@@ -77,27 +77,31 @@ function App() {
   return (
     <div className="w-full bg-black">
 
-      <AnimatedCursor
-        innerSize={15}
-        outerSize={0}
-        color={cursorColour}
-        outerAlpha={0}
-        innerScale={1.4}
-        outerScale={0}
-        clickables={[
-          'a',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link'
-        ]}
-      />
+      {screenSize === "xs" ? <div/> 
+        :
+        <AnimatedCursor
+          innerSize={15}
+          outerSize={0}
+          color={cursorColour}
+          outerAlpha={0}
+          innerScale={1.4}
+          outerScale={0}
+          clickables={[
+            'a',
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            'label[for]',
+            'select',
+            'textarea',
+            'button',
+            '.link'
+          ]}
+        />
+      }
+      
 
       <Navbar intro={introRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
       <ScrollLine greenSection={greenSection}/>

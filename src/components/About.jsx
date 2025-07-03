@@ -154,8 +154,9 @@ const About = forwardRef(({windowSize}, ref) => {
                                     py-2 px-8S
                                 ">
                                     <img src={tec.pic} width={getTechIconDimensions()} className={tec.specialStyle}/>
-                                    <p className="text-gray-950 dark:text-white font-bold transition duration-200
-                                        2xl:text-lg xl:text-base lg:text-sm md:text-sm sm:text-sm
+                                    <p className="text-gray-950 dark:text-white transition duration-200
+                                        sm:font-bold
+                                        2xl:text-lg xl:text-base lg:text-sm md:text-sm sm:text-sm text-xs
                                     "> {tec.name} </p>
                                 </div>
                             ))}
