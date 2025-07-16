@@ -123,13 +123,14 @@ const About = forwardRef(({windowSize}, ref) => {
                         </h2>
 
                         <motion.div whileHover={{ y: -7 }}>
-                            <div className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 rounded-lg p-7 flex flex-col gap-2 transition duration-200">
+                            <div className="dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 rounded-lg flex flex-col gap-2 transition duration-200">
                                 <p className="text-gray-800 dark:text-white transition duration-200
                                     2xl:text-lg xl:text-lg lg:text-base md:text-sm sm:text-sm text-xs
+                                    2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
                                 ">
                                     Hi, I'm Cristian. I am a Computer Science student at the University of Waterloo and love building cool things through code. 
                                         I am interested in fullstack software development. In my free time, I like weightlifting, making electronic music, and biking. 
-                                        I am always open to and opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
+                                        I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
                                         Feel free to check out some of my work down below and on Github. If you'd like to connect, reach out via Linkedin or Email - I'd love to chat.
                                 </p>
                             </div>
