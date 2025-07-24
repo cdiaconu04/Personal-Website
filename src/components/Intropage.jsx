@@ -1,4 +1,4 @@
-import headshot from '../images/1727488282356.jpg';
+import headshot from '../images/myheadshot.png';
 import '../App.css';
 import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { FaLinkedin } from "react-icons/fa6";
