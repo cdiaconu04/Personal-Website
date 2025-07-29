@@ -19,6 +19,7 @@ import Experience from "./components/Experience"
 import IntroPage from "./components/Intropage"
 import About from './components/About';
 import Projects from './components/Projects'
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ReactLenis } from "lenis/dist/lenis-react"
 import React, { useRef, useState, useEffect } from "react";
@@ -29,6 +30,7 @@ function App() {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
   const [greenSection, setGreenSection] = React.useState(false);
 
@@ -111,6 +113,7 @@ function App() {
         <About ref={aboutRef} windowSize={screenSize}/>
         <Experience ref={experienceRef} windowSize={screenSize}/>
         <Projects ref={projectsRef} windowSize={screenSize}/>
+        <Contact ref={contactRef} windowSize={screenSize}/>
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>
       </ReactLenis>
 

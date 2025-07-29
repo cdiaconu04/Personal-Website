@@ -29,6 +29,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
         else if (windowSize == "xl") return 250;
         else return 330;
     }
+    
 
     function getIconSize() {
         if (windowSize == "xs") return 100
