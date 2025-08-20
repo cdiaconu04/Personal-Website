@@ -89,7 +89,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 </h3>
 
                                                 <h3 className="text-gray-800 dark:text-white transition duration-200
-                                                    2xl:text-xl xl:text-xl lg:text-lg
+                                                    2xl:text-xl xl:text-xl lg:text-lg font-semibold
                                                 ">
                                                     Software Developer
                                                 </h3>
@@ -99,7 +99,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 <img className="ms-auto rounded-full
                                                     xl:w-9 xl:h-9 w-8 h-8
                                                 " src={IndosoftLogo} />
-                                                <p className="text-gray-800 dark:text-white transition duration-200
+                                                <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                     lg:text-base text-xs
                                                 "> May - August (2025)</p>
                                             </div>
@@ -122,11 +122,11 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                             lg:gap-5 md:gap-4 sm:gap-3 gap-2
                                         ">
                                             
-                                            <p className="text-gray-800 dark:text-white font-bold
+                                            <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
                                             ">React.js</p>
                                             
-                                            <p className="text-gray-800 dark:text-white font-bold
+                                            <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
                                             ">Javascript</p>
                                             
@@ -151,7 +151,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                     Dynamixware
                                                 </h3>
 
-                                                <h3 className="text-gray-800 dark:text-white transition duration-200
+                                                <h3 className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                     2xl:text-xl xl:text-xl lg:text-lg
                                                 ">
                                                     Junior Developer
@@ -162,7 +162,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 <img className="ms-auto rounded-full
                                                     xl:w-9 xl:h-9 w-8 h-8 
                                                 " src={DynamixwareLogo} />
-                                                <p className="text-gray-800 dark:text-white transition duration-200
+                                                <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                     lg:text-base text-xs
                                                 "> May - August (2023)</p>
                                             </div>
@@ -200,12 +200,12 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                             lg:gap-5 md:gap-4 sm:gap-3 gap-2
                                         ">
                                             
-                                            <p className="text-gray-800 dark:text-white font-bold
+                                            <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
                                             ">Application Language (AL)</p>
                                             
                                             
-                                            <p className="text-gray-800 dark:text-white font-bold
+                                            <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
                                             ">Microsoft BC</p>
                                             

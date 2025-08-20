@@ -7,10 +7,31 @@ import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
 import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
 import { Code } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = forwardRef(({windowSize}, ref) => {
     const sectionRef = useRef(null);
     const [isInView, setIsInView] = useState(false);
+
+    const [buttonColour, setButtonColour] = useState("white");
+
+    useEffect(() => {
+            const updateColour = () => {
+                const isDarkMode = document.documentElement.classList.contains('dark');
+                setButtonColour(isDarkMode ? "white" : "#1f2937")
+            }
+            
+            updateColour()
+            
+            const observer = new MutationObserver(updateColour);
+            observer.observe(document.documentElement, {
+                attributes: true,
+                attributeFilter: ['class']
+            })
+            
+            return () => observer.disconnect()
+            
+        }, [])
     
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -91,7 +112,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 Code Basket
                                             </h3>
 
-                                            <p className="text-gray-800 dark:text-white transition duration-200
+                                            <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                 2xl:text-xl xl:text-xl lg:text-lg
                                             ">
                                                 Code snippet manager
@@ -124,14 +145,14 @@ const Projects = forwardRef(({windowSize}, ref) => {
 
                                             <div className="flex flex-row 
                                                 lg:gap-5 md:gap-4 sm:gap-2 gap-1">
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
+                                                <p className="text-gray-800 dark:text-white font-semibold
+                                                    xl:text-base lg:text-sm text-xs duration-200
                                                 ">Next.js</p>
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
+                                                <p className="text-gray-800 dark:text-white font-semibold
+                                                    xl:text-base lg:text-sm text-xs duration-200
                                                 ">Express.js</p>
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
+                                                <p className="text-gray-800 dark:text-white font-semibold
+                                                    xl:text-base lg:text-sm text-xs duration-200
                                                 ">Javascript</p>
                                             </div>
                                             
@@ -161,7 +182,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 Eldi Store
                                             </h3>
 
-                                            <p className="text-gray-800 dark:text-white transition duration-200
+                                            <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                 2xl:text-xl xl:text-xl lg:text-lg
                                             ">
                                                 Ecom store
@@ -184,17 +205,34 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                         </div>
 
                                         <div className="flex flex-row 
-                                                lg:gap-5 md:gap-4 sm:gap-2 gap-1">
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
-                                                ">Next.js</p>
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
-                                                ">Javascript</p>
-                                                <p className="text-gray-800 dark:text-white font-bold
-                                                    xl:text-base lg:text-sm text-xs
-                                                ">Stripe</p>
-                                            </div>
+                                            lg:gap-5 md:gap-4 sm:gap-2 gap-1">
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs duration-200
+                                            ">Next.js</p>
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs duration-200
+                                            ">Javascript</p>
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs duration-200
+                                            ">Stripe</p>
+                                        </div>
+                                        
+                                        <motion.div className="relative justify-start flex items-center
+                                            2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                                            space-x-2
+                                        ">
+                                            <motion.a href="https://github.com/cdiaconu04/Eldi-Ecom-Store" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <FaGithub color={buttonColour} className="transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+
+                                        </motion.div>
+                                        
                                         
                                     </div>
 
@@ -219,7 +257,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 Youtube Downloader
                                             </h3>
 
-                                            <p className="text-gray-800 dark:text-white transition duration-200
+                                            <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                 2xl:text-xl xl:text-xl lg:text-lg
                                             ">
                                                 Video downloader
@@ -238,13 +276,29 @@ const Projects = forwardRef(({windowSize}, ref) => {
 
                                         <div className="flex flex-row 
                                             lg:gap-5 md:gap-4 sm:gap-2 gap-1">
-                                            <p className="text-gray-800 dark:text-white font-bold
-                                                xl:text-base lg:text-sm text-xs
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs duration-200
                                             ">Next.js</p>
-                                            <p className="text-gray-800 dark:text-white font-bold
-                                                xl:text-base lg:text-sm text-xs
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs duration-200
                                             ">Javascript</p>
                                         </div>
+
+                                        <motion.div className="relative justify-start flex items-center
+                                            2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                                            space-x-2
+                                        ">
+                                            <motion.a href="https://github.com/cdiaconu04/Youtube-Downloader" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <FaGithub color={buttonColour} className="transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+
+                                        </motion.div>
                                     </div>
 
                                 </motion.div>
