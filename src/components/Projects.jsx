@@ -61,7 +61,9 @@ const Projects = forwardRef(({windowSize}, ref) => {
 
 
     return (
-        <div className="w-full bg-white dark:bg-black transition duration-200 relative inline-block py-52" ref={ref}>
+        <div className="w-full bg-white dark:bg-black transition duration-200 relative inline-block
+            2xl:py-52 xl:py-20 sm:py-10 py-0
+        " ref={ref}>
             {windowSize === "xs" ? <div/> : <ProjectsBackground inView={isInView}/>}
 
             <div className="max-w-screen-xl mx-auto min-h-screen flex items-center justify-between relative overflow-hidden
