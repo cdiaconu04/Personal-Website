@@ -321,7 +321,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                             {/* Project 4 */}
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[32%] transition duration-200
-                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-500 sm:to-green-500 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-700 sm:dark:to-green-700 
+                                    sm:bg-gradient-to-r sm:from-emerald-400 sm:via-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:via-emerald-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
