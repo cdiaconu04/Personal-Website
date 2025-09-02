@@ -14,6 +14,8 @@ import Python from '../images/techIcons/Python.png';
 import React from '../images/techIcons/React.webp';
 import Supabase from '../images/techIcons/Supabase.png';
 import Tailwind from '../images/techIcons/Tailwind.png';
+import Typescript from '../images/techIcons/Typescript.png';
+import Express from '../images/techIcons/expressjs.svg';
 
 export const tech = [
     { name: "C++", pic: Cplusplus, specialStyle: "" },
@@ -22,9 +24,11 @@ export const tech = [
     { name: "Git", pic: Git, specialStyle: "" },
     { name: "Github", pic: Github, specialStyle: "rounded-full bg-white" },
     // { name: "Github (White)", pic: GithubWhite, specialStyle: "" },
+    { name: "Express", pic: Express, specialStyle: "bg-white rounded-full" },
     { name: "HTML", pic: HTML, specialStyle: "" },
     { name: "Java", pic: Java, specialStyle: "" },
     { name: "JavaScript", pic: Javascript, specialStyle: "rounded-md" },
+    { name: "Typescript", pic: Typescript, specialStyle: "rounded-md" },
     { name: "Next.js", pic: Next, specialStyle: "bg-white rounded-full" },
     // { name: "PostgreSQL", pic: PostgreSQL, specialStyle: "" },
     // { name: "Prisma", pic: Prisma, specialStyle: "bg-white rounded-full" },
