@@ -150,8 +150,8 @@ const About = forwardRef(({windowSize}, ref) => {
                         ">
                             {tech.map((tec, index) => (
                                 <div key={index} className="flex flex-row justify-center items-center gap-3 border border-2 border-green-500 dark:border-green-700 rounded-xl transition duration-200 
-                                    dark:hover:bg-gradient-to-r dark:hover:from-emerald-600 dark:hover:via-green-600 dark:hover:to-green-700
-                                    hover:bg-gradient-to-r hover:from-emerald-400 hover:via-green-400 hover:to-green-500
+                                    dark:hover:ring dark:hover:ring-2 dark:hover:ring-green-700
+                                    hover:ring hover:ring-2 hover:ring-green-500
                                     py-2 px-8S
                                 ">
                                     <img src={tec.pic} width={getTechIconDimensions()} className={tec.specialStyle}/>

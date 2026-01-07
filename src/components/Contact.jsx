@@ -142,7 +142,7 @@ const Contact = forwardRef(({ windowSize }, ref) => {
                                     />
                                     {/* hover:bg-gradient-to-r hover:from-emerald-500 hover:via-green-500 hover:to-green-600 */}
                                     <motion.button type="submit" 
-                                        whileHover={{ scale: 1.01 }}
+                                        // whileHover={{ scale: 1.01 }}
                                         whileTap={{ scale: 0.99 }}
                                         className="rounded-lg font-bold
                                         text-white transition duration-200
