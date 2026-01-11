@@ -2,7 +2,7 @@ import { motion } from "motion/react"
 import React, { useState, useEffect, useRef } from 'react';
 import { forwardRef } from 'react';
 
-import CodeBasketPic from '../images/projectpics/codebasket.png'
+import Landui from '../images/projectpics/landui.png'
 import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
 import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import GuessRealorAI from '../images/projectpics/guessRealOrAI.png'
@@ -105,7 +105,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                 ">
 
                                     <div className="inline-block overflow-hidden">
-                                        <img src={CodeBasketPic} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={Landui} className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
 
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -113,13 +113,13 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                             <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
                                                 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
                                             ">
-                                                Code Basket
+                                                LandUI
                                             </h3>
 
                                             <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                 2xl:text-xl xl:text-xl lg:text-lg
                                             ">
-                                                Code snippet manager
+                                                React Component Library
                                             </p>
                                         </div>
 
@@ -130,17 +130,12 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                     <li className="text-gray-800 dark:text-white transition duration-200
                                                         xl:text-base lg:text-sm text-xs 
                                                     ">
-                                                        Organize snippets by language, tags, etc
+                                                        16 customizable react components to make your next website with
                                                     </li>
                                                     <li className="text-gray-800 dark:text-white transition duration-200
                                                         xl:text-base lg:text-sm text-xs 
                                                     ">
-                                                        One-click copy to keyboard
-                                                    </li>
-                                                    <li className="text-gray-800 dark:text-white transition duration-200
-                                                        xl:text-base lg:text-sm text-xs 
-                                                    ">
-                                                        Supports syntax highlighting for better readability
+                                                        Detailed documentation and examples to help you get started quickly
                                                     </li>
                                                 </ul>
 
@@ -154,12 +149,24 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 ">Next.js</p>
                                                 <p className="text-gray-800 dark:text-white font-semibold
                                                     xl:text-base lg:text-sm text-xs duration-200
-                                                ">Express.js</p>
-                                                <p className="text-gray-800 dark:text-white font-semibold
-                                                    xl:text-base lg:text-sm text-xs duration-200
-                                                ">Javascript</p>
+                                                ">TypeScript</p>
                                             </div>
-                                            
+                                        
+                                        <motion.div className="relative justify-start flex items-center
+                                            2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                                            space-x-2
+                                        ">
+                                            <motion.a href="https://github.com/cdiaconu04/Land-UI" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <FaGithub color={buttonColour} className="transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+
+                                        </motion.div>
                                         
                                     </div>
 
