@@ -75,8 +75,8 @@ const Experience = forwardRef(({windowSize}, ref) => {
                             sm:grid-cols-2 grid-cols-1
                         ">
                             {/* Xennial Innovations */}
-                            <motion.div whileHover={{ y: -7 }} className="h-full">
-                                <motion.div className="rounded-lg min-w-[50%] transition duration-200 h-full
+                            <motion.div whileHover={{ y: -7 }} className="h-full w-full">
+                                <motion.div className="rounded-lg w-full transition duration-200
                                     2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
                                     sm:bg-gradient-to-r sm:from-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
@@ -124,13 +124,13 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                             lg:gap-5 md:gap-4 sm:gap-3 gap-2
                                         ">
                                             
-                                            {/* <p className="text-gray-800 dark:text-white font-semibold
+                                            <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
                                             ">React.js</p>
                                             
                                             <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
-                                            ">Javascript</p> */}
+                                            ">TypeScript</p>
                                             
                                         </div>
                                     </div>
@@ -138,8 +138,8 @@ const Experience = forwardRef(({windowSize}, ref) => {
                             </motion.div>
                             
                             {/* Indosoft */}
-                            <motion.div whileHover={{ y: -7 }}>
-                                <motion.div className="rounded-lg min-w-[50%] transition duration-200
+                            <motion.div whileHover={{ y: -7 }} className="w-full">
+                                <motion.div className="rounded-lg w-full transition duration-200
                                     2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
                                     sm:bg-gradient-to-r sm:from-green-400 sm:to-green-500 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:to-green-700 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
@@ -178,9 +178,14 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Built a responsive frontend using ReactJS, allowing users to select and interact with 5+ Large Language Models (LLMs) through a unified chat interface, enhancing usability and model comparison
+                                                    Developed company-specific LLM website using ReactJS and Django
                                                 </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
+                                                {/* <li className="text-gray-800 dark:text-white transition duration-200
+                                                    xl:text-base lg:text-sm text-xs 
+                                                ">
+                                                    Built a responsive frontend using ReactJS, allowing users to select and interact with 5+ Large Language Models (LLMs) through a unified chat interface, enhancing usability and model comparison
+                                                </li> */}
+                                                {/* <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
                                                     Integrated backend services using Django to handle API requests and efficiently route queries to LLMs, ensuring scalability and low-latency responses
@@ -189,7 +194,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
                                                     Conducted usability testing and gathered user feedback, iterating on the interface leading to a more intuitive design and higher user engagement
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </div>
 
@@ -203,7 +208,15 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                             
                                             <p className="text-gray-800 dark:text-white font-semibold
                                                 xl:text-base lg:text-sm text-xs
-                                            ">Javascript</p>
+                                            ">JavaScript</p>
+
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs
+                                            ">Django</p>
+
+                                            <p className="text-gray-800 dark:text-white font-semibold
+                                                xl:text-base lg:text-sm text-xs
+                                            ">Python</p>
                                             
                                         </div>
                                     </div>
@@ -211,8 +224,8 @@ const Experience = forwardRef(({windowSize}, ref) => {
                             </motion.div>
 
                             {/* Dynamixware */}
-                            <motion.div whileHover={{ y: -7 }}>
-                                <motion.div className="rounded-lg min-w-[50%] transition duration-200
+                            <motion.div whileHover={{ y: -7 }} className="w-full">
+                                <motion.div className="rounded-lg w-full transition duration-200
                                     2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3
                                     sm:bg-gradient-to-r sm:from-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
@@ -253,9 +266,9 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                 <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
-                                                    Developed 15+ Microsoft Business Central apps using Application Language (AL) to enable efficient client-side business management
+                                                    Developed Microsoft Business Central apps in AL
                                                 </li>
-                                                <li className="text-gray-800 dark:text-white transition duration-200
+                                                {/* <li className="text-gray-800 dark:text-white transition duration-200
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
                                                     Implemented table flow-fields to automate customer database updates, enhancing data accuracy and system efficiency by 20%
@@ -264,7 +277,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                                                     xl:text-base lg:text-sm text-xs 
                                                 ">
                                                     Collaborated with internal development team to successfully deliver production-ready solutions under tight client deadlines
-                                                </li>
+                                                </li> */}
                                             </ul>
 
                                             
