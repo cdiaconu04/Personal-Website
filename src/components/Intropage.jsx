@@ -196,7 +196,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                             <p className="flex justify-center items-center font-bold bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 text-transparent bg-clip-text leading-relaxed transition duration-200
                                 2xl:text-base xl:text-sm lg:text-sm text-xs
                             ">
-                                Toronto, CA
+                                Toronto, ON
                             </p>
                         </motion.div>
 

@@ -79,7 +79,7 @@ function App() {
   return (
     <div className="w-full bg-black">
 
-      {screenSize === "xs" ? <div/> 
+      {/* {screenSize === "xs" ? <div/> 
         :
         <AnimatedCursor
           innerSize={15}
@@ -102,7 +102,7 @@ function App() {
             '.link'
           ]}
         />
-      }
+      } */}
       
 
       <Navbar intro={introRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>

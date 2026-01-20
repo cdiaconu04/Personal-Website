@@ -2,12 +2,12 @@ import { motion } from "motion/react"
 import React, { useState, useEffect, useRef } from 'react';
 import { forwardRef } from 'react';
 
-import CodeBasketPic from '../images/projectpics/codebasket.png'
+import Landui from '../images/projectpics/landui.png'
 import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
 import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import GuessRealorAI from '../images/projectpics/guessRealOrAI.png'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
-import { Code } from "lucide-react";
+import EasySpeech from '../images/projectpics/EasySpeech.png'
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'lucide-react';
 
@@ -96,8 +96,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                         <div className="grid min-w-full justify-between gap-4
                             sm:grid-cols-3 grid-cols-1
                         ">
-                            
-                            {/* Proj1 */}
+                            {/* EasySpeech */}
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[32%] transition duration-200
                                     sm:bg-gradient-to-r sm:from-emerald-400 sm:via-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:via-emerald-600 sm:dark:to-green-600 
@@ -105,7 +104,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                 ">
 
                                     <div className="inline-block overflow-hidden">
-                                        <img src={CodeBasketPic} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={EasySpeech} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
 
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -113,13 +112,13 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                             <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
                                                 2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
                                             ">
-                                                Code Basket
+                                                EasySpeech
                                             </h3>
 
                                             <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
                                                 2xl:text-xl xl:text-xl lg:text-lg
                                             ">
-                                                Code snippet manager
+                                                AI Speaking-Coach
                                             </p>
                                         </div>
 
@@ -130,17 +129,12 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                     <li className="text-gray-800 dark:text-white transition duration-200
                                                         xl:text-base lg:text-sm text-xs 
                                                     ">
-                                                        Organize snippets by language, tags, etc
+                                                        Allows users to practice their speaking skills in mock scenarios
                                                     </li>
                                                     <li className="text-gray-800 dark:text-white transition duration-200
                                                         xl:text-base lg:text-sm text-xs 
                                                     ">
-                                                        One-click copy to keyboard
-                                                    </li>
-                                                    <li className="text-gray-800 dark:text-white transition duration-200
-                                                        xl:text-base lg:text-sm text-xs 
-                                                    ">
-                                                        Supports syntax highlighting for better readability
+                                                        Scores users and provides feedback on their tone, eye-contact, response quality, etc
                                                     </li>
                                                 </ul>
 
@@ -154,12 +148,107 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                 ">Next.js</p>
                                                 <p className="text-gray-800 dark:text-white font-semibold
                                                     xl:text-base lg:text-sm text-xs duration-200
-                                                ">Express.js</p>
+                                                ">TypeScript</p>
+                                            </div>
+                                        
+                                        <motion.div className="relative justify-start flex items-center
+                                            2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                                            space-x-2
+                                        ">
+                                            <motion.a href="https://github.com/JohnCassavetes/teknikly-nexhacks" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <FaGithub color={buttonColour} className="transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+
+                                            <motion.a href="https://easyspeech.vercel.app/" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <Link className="text-gray-900 dark:text-white transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+                                        </motion.div>
+                                    </div>
+                                </motion.div>
+                            </motion.div>
+                            
+                            
+                            {/* LandUI */}
+                            <motion.div whileHover={{ y: -7 }}>
+                                <motion.div className="rounded-lg min-w-[32%] transition duration-200
+                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-600 sm:dark:to-green-600 
+                                    dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
+                                ">
+
+                                    <div className="inline-block overflow-hidden">
+                                        <img src={Landui} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
+                                    </div>
+
+                                    <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
+                                        <div className="flex flex-col gap-1">
+                                            <h3 className="text-gray-800 dark:text-white font-bold transition duration-200
+                                                2xl:text-3xl xl:text-3xl lg:text-2xl md:text-xl 
+                                            ">
+                                                LandUI
+                                            </h3>
+
+                                            <p className="text-gray-800 dark:text-white transition duration-200 font-semibold
+                                                2xl:text-xl xl:text-xl lg:text-lg
+                                            ">
+                                                React Component Library
+                                            </p>
+                                        </div>
+
+                                            <div className="flex flex-col gap-3
+                                                2xl:px-8 lg:px-7 px-7
+                                            ">
+                                                <ul className="list-disc">
+                                                    <li className="text-gray-800 dark:text-white transition duration-200
+                                                        xl:text-base lg:text-sm text-xs 
+                                                    ">
+                                                        16 customizable react components to make your next website with
+                                                    </li>
+                                                    <li className="text-gray-800 dark:text-white transition duration-200
+                                                        xl:text-base lg:text-sm text-xs 
+                                                    ">
+                                                        Detailed documentation and examples to help you get started quickly
+                                                    </li>
+                                                </ul>
+
+                                                
+                                            </div>
+
+                                            <div className="flex flex-row 
+                                                lg:gap-5 md:gap-4 sm:gap-2 gap-1">
                                                 <p className="text-gray-800 dark:text-white font-semibold
                                                     xl:text-base lg:text-sm text-xs duration-200
-                                                ">Javascript</p>
+                                                ">Next.js</p>
+                                                <p className="text-gray-800 dark:text-white font-semibold
+                                                    xl:text-base lg:text-sm text-xs duration-200
+                                                ">TypeScript</p>
                                             </div>
-                                            
+                                        
+                                        <motion.div className="relative justify-start flex items-center
+                                            2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                                            space-x-2
+                                        ">
+                                            <motion.a href="https://github.com/cdiaconu04/Land-UI" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <FaGithub color={buttonColour} className="transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
+                                        </motion.div>
                                         
                                     </div>
 
@@ -171,11 +260,11 @@ const Projects = forwardRef(({windowSize}, ref) => {
                             {/* Eldi store */}
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[32%] transition duration-200
-                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-600 sm:dark:to-green-600 
+                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-500 sm:to-green-500 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-700 sm:dark:to-green-700 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={EldiEcomStore} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={EldiEcomStore} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -242,15 +331,14 @@ const Projects = forwardRef(({windowSize}, ref) => {
 
                                 </motion.div>
                             </motion.div>
-                            {/* className="bg-gradient-to-r from-green-400 via-green-500 to-green-500 dark:bg-gradient-to-r dark:from-green-600 dark:via-green-700 dark:to-green-700 rounded-lg p-7 min-w-[32%] transition duration-200" */}
-                            {/* Project 3 */}
+
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[32%] transition duration-200
-                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-500 sm:to-green-500 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-700 sm:dark:to-green-700 
+                                    sm:bg-gradient-to-r sm:from-emerald-400 sm:via-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:via-emerald-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={GuessRealorAI} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={GuessRealorAI} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -321,11 +409,11 @@ const Projects = forwardRef(({windowSize}, ref) => {
                             {/* Project 4 */}
                             <motion.div whileHover={{ y: -7 }}>
                                 <motion.div className="rounded-lg min-w-[32%] transition duration-200
-                                    sm:bg-gradient-to-r sm:from-emerald-400 sm:via-emerald-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-emerald-600 sm:dark:via-emerald-600 sm:dark:to-green-600 
+                                    sm:bg-gradient-to-r sm:from-green-400 sm:via-green-400 sm:to-green-400 sm:dark:bg-gradient-to-r sm:dark:from-green-600 sm:dark:via-green-600 sm:dark:to-green-600 
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={YoutubeDownloader} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={YoutubeDownloader} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
