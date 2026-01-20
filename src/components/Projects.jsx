@@ -8,7 +8,6 @@ import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import GuessRealorAI from '../images/projectpics/guessRealOrAI.png'
 import ProjectsBackground from './backgrounds/ProjectsBackground'
 import EasySpeech from '../images/projectpics/EasySpeech.png'
-import { Code } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'lucide-react';
 
@@ -105,7 +104,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                 ">
 
                                     <div className="inline-block overflow-hidden">
-                                        <img src={EasySpeech} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={EasySpeech} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
 
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -189,7 +188,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                 ">
 
                                     <div className="inline-block overflow-hidden">
-                                        <img src={Landui} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={Landui} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
 
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -265,7 +264,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={EldiEcomStore} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={EldiEcomStore} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -339,7 +338,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={GuessRealorAI} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={GuessRealorAI} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
@@ -414,7 +413,7 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                     dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500
                                 ">
                                     <div className="inline-block overflow-hidden">
-                                        <img src={YoutubeDownloader} className="w-full rounded-t-lg transition-transform duration-500"/>
+                                        <img src={YoutubeDownloader} alt="" className="w-full rounded-t-lg transition-transform duration-500"/>
                                     </div>
                                     
                                     <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
