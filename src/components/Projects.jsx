@@ -248,12 +248,18 @@ const Projects = forwardRef(({windowSize}, ref) => {
                                                     "/>
                                                 </motion.div>
                                             </motion.a>
+
+                                            <motion.a href="https://land-ui-cd.vercel.app/" target="_blank">
+                                                <motion.div
+                                                    whileHover={{ scale: 1.09 }}
+                                                >
+                                                    <Link className="text-gray-900 dark:text-white transition duration-200
+                                                        2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                                                    "/>
+                                                </motion.div>
+                                            </motion.a>
                                         </motion.div>
-                                        
                                     </div>
-
-                                    
-
                                 </motion.div>
                             </motion.div>
 
