@@ -1,5 +1,5 @@
-import headshot from '../images/myheadshot.png';
-import '../App.css';
+import headshot from '../../images/myheadshot.png';
+import '../../App.css';
 import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -7,7 +7,7 @@ import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { MapPin } from 'lucide-react';
 
-import IntroBackground from './backgrounds/IntroBackground'
+import IntroBackground from '../backgrounds/IntroBackground'
 import { forwardRef } from 'react';
 
 import SplitType from 'split-type'

@@ -1,28 +1,28 @@
-import '../App.css';
+import '../../App.css';
 import { motion, useInView, useAnimate, useAnimation } from "motion/react"
 import { useEffect, useRef, useState } from 'react';
 import { forwardRef } from 'react';
-import AboutBackground from './backgrounds/AboutBackground'
+import AboutBackground from '../backgrounds/AboutBackground'
 import Marquee from "react-fast-marquee";
 
-import Cplusplus from '../images/techIcons/Cplusplus.png'
-import C from '../images/techIcons/C.png'
-import AL from '../images/techIcons/AL.png'
-import Git from '../images/techIcons/Git.png'
-import Github from '../images/techIcons/Github.png'
-import GithubWhite from '../images/techIcons/GithubWhite.png'
-import HTML from '../images/techIcons/HTML.webp'
-import Java from '../images/techIcons/Java.png'
-import Javascript from '../images/techIcons/Javascript.png'
-import Next from '../images/techIcons/Next.png'
-import PostgreSQL from '../images/techIcons/PostgreSQL.png'
-import Prisma from '../images/techIcons/Prisma.png'
-import Python from '../images/techIcons/Python.png'
-import React from '../images/techIcons/React.webp'
-import Supabase from '../images/techIcons/Supabase.png'
-import Tailwind from '../images/techIcons/Tailwind.png'
+import Cplusplus from '../../images/techIcons/Cplusplus.png'
+import C from '../../images/techIcons/C.png'
+import AL from '../../images/techIcons/AL.png'
+import Git from '../../images/techIcons/Git.png'
+import Github from '../../images/techIcons/Github.png'
+import GithubWhite from '../../images/techIcons/GithubWhite.png'
+import HTML from '../../images/techIcons/HTML.webp'
+import Java from '../../images/techIcons/Java.png'
+import Javascript from '../../images/techIcons/Javascript.png'
+import Next from '../../images/techIcons/Next.png'
+import PostgreSQL from '../../images/techIcons/PostgreSQL.png'
+import Prisma from '../../images/techIcons/Prisma.png'
+import Python from '../../images/techIcons/Python.png'
+import React from '../../images/techIcons/React.webp'
+import Supabase from '../../images/techIcons/Supabase.png'
+import Tailwind from '../../images/techIcons/Tailwind.png'
 
-import { tech } from '../data/tech.js'
+import { tech } from '../../data/tech.js'
 
 
 const About = forwardRef(({windowSize}, ref) => {

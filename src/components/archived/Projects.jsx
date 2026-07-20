@@ -2,12 +2,12 @@ import { motion } from "motion/react"
 import React, { useState, useEffect, useRef } from 'react';
 import { forwardRef } from 'react';
 
-import Landui from '../images/projectpics/landui.png'
-import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
-import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
-import GuessRealorAI from '../images/projectpics/guessRealOrAI.png'
-import ProjectsBackground from './backgrounds/ProjectsBackground'
-import EasySpeech from '../images/projectpics/EasySpeech.png'
+import Landui from '../../images/projectpics/landui.png'
+import EldiEcomStore from '../../images/projectpics/eldiecomstore.png'
+import YoutubeDownloader from '../../images/projectpics/youtubedownloader.png'
+import GuessRealorAI from '../../images/projectpics/guessRealOrAI.png'
+import ProjectsBackground from '../backgrounds/ProjectsBackground'
+import EasySpeech from '../../images/projectpics/EasySpeech.png'
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'lucide-react';
 

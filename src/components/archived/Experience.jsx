@@ -1,11 +1,11 @@
-import '../App.css';
+import '../../App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from "motion/react"
-import IndosoftLogo from '../images/IndosoftLogo.jpg';
-import DynamixwareLogo from '../images/DynamixwareLogo.jpg';
-import XennialLogo from '../images/xennialLogo.jpg';
+import IndosoftLogo from '../../images/IndosoftLogo.jpg';
+import DynamixwareLogo from '../../images/DynamixwareLogo.jpg';
+import XennialLogo from '../../images/xennialLogo.jpg';
 import { forwardRef } from 'react';
-import ExperienceBackground from './backgrounds/ExperienceBackground'
+import ExperienceBackground from '../backgrounds/ExperienceBackground'
 
 const Experience = forwardRef(({windowSize}, ref) => {
 
