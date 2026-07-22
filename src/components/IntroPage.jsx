@@ -49,7 +49,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
 
             <div
                 className="max-w-screen-xl mx-auto min-h-screen items-center relative overflow-hidden
-                    2xl:p-4 xl:p-20 lg:p-20 md:p-20 p-10
+                    2xl:p-4 xl:p-20 xl:px-40 lg:p-20 md:p-20 p-10
                     flex sm:flex-row flex-col
                     sm:gap-0 gap-10
                     sm:justify-between justify-center
@@ -81,7 +81,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                 className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
                             /> */}
                             <h1 className="relative font-bold leading-tight transition duration-200
-                                2xl:text-8xl xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl text-4xl
+                                2xl:text-8xl xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-4xl
                                 sm:text-left text-center
                             "
                             >
@@ -89,7 +89,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                 {/* <p className="block dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text">
                                     Diaconu
                                 </p> */}
-                                <p className="dark:text-green-600 text-green-600">
+                                <p className="dark:text-green-500 text-green-600">
                                     Diaconu
                                 </p>
                             </h1>

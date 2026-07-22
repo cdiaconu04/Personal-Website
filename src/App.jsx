@@ -10,7 +10,8 @@ import AnimatedCursor from "react-animated-cursor"
 
 import Experience from "./components/archived/Experience"
 import IntroPage from "./components/IntroPage"
-import About from './components/archived/About';
+import About from './components/About';
+import Tech from './components/Tech';
 import Projects from './components/archived/Projects'
 import Contact from './components/archived/Contact';
 import Footer from './components/archived/Footer';
@@ -77,6 +78,7 @@ function App() {
       {/* <ReactLenis root> */}
         <IntroPage ref={introRef} windowSize={screenSize}/>
         <About ref={aboutRef} windowSize={screenSize}/>
+        <Tech windowSize={screenSize}/>
         <Experience ref={experienceRef} windowSize={screenSize}/>
         <Projects ref={projectsRef} windowSize={screenSize}/>
         <Contact ref={contactRef} windowSize={screenSize}/>
