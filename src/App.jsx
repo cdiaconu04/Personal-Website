@@ -8,13 +8,13 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { useScroll, useTransform } from "motion/react";
 import AnimatedCursor from "react-animated-cursor"
 
-import Experience from "./components/archived/Experience"
+import Experience from "./components/Experience"
 import IntroPage from "./components/IntroPage"
 import About from './components/About';
 import Tech from './components/Tech';
-import Projects from './components/archived/Projects'
+import Projects from './components/Projects'
 import Contact from './components/archived/Contact';
-import Footer from './components/archived/Footer';
+import Footer from './components/Footer';
 import { ReactLenis } from "lenis/dist/lenis-react"
 import React, { useRef, useState, useEffect } from "react";
 
@@ -81,7 +81,7 @@ function App() {
         <Tech windowSize={screenSize}/>
         <Experience ref={experienceRef} windowSize={screenSize}/>
         <Projects ref={projectsRef} windowSize={screenSize}/>
-        <Contact ref={contactRef} windowSize={screenSize}/>
+        {/* <Contact ref={contactRef} windowSize={screenSize}/> */}
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>
       {/* </ReactLenis> */}
 

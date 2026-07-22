@@ -62,7 +62,7 @@ const Tech = forwardRef(({windowSize}, ref) => {
                     2xl:p-4 xl:p-20 xl:px-40 lg:p-20 md:p-20 p-10
                 ">
                     <div className="flex flex-col gap-11">
-                        <h3 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-emerald-600 transition duration-200
+                        <h3 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
                             2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl
                         ">
                             Tech I work with
