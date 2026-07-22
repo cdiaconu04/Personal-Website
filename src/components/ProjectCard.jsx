@@ -33,12 +33,13 @@ const ProjectCard = ({ image, title, subtitle, bullets = [], techs = [], githubU
                     ))}
                 </ul>
 
-                <div className="flex flex-row flex-wrap
-                    lg:gap-5 md:gap-4 sm:gap-3 gap-2
-                ">
+                <div className="border-t border-gray-200 dark:border-white/10"></div>
+
+                <div className="flex flex-row flex-wrap gap-2">
                     {techs.map((tech, index) => (
-                        <span key={index} className="text-gray-500 dark:text-gray-400 font-mono transition duration-200
+                        <span key={index} className="rounded-md border border-green-600/40 dark:border-green-500/40 text-green-700 dark:text-green-400 font-mono transition duration-200
                             2xl:text-sm xl:text-sm text-xs
+                            px-2 py-1
                         ">
                             {tech}
                         </span>
