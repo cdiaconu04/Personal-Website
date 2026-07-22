@@ -9,7 +9,7 @@ import { useScroll, useTransform } from "motion/react";
 import AnimatedCursor from "react-animated-cursor"
 
 import Experience from "./components/archived/Experience"
-import IntroPage from "./components/archived/Intropage"
+import IntroPage from "./components/IntroPage"
 import About from './components/archived/About';
 import Projects from './components/archived/Projects'
 import Contact from './components/archived/Contact';
@@ -74,14 +74,14 @@ function App() {
       <Navbar intro={introRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
       <ScrollLine greenSection={greenSection}/>
 
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         <IntroPage ref={introRef} windowSize={screenSize}/>
         <About ref={aboutRef} windowSize={screenSize}/>
         <Experience ref={experienceRef} windowSize={screenSize}/>
         <Projects ref={projectsRef} windowSize={screenSize}/>
         <Contact ref={contactRef} windowSize={screenSize}/>
         <Footer onInView={() => setGreenSection(true)} onOutOfView={() => setGreenSection(false)}/>
-      </ReactLenis>
+      {/* </ReactLenis> */}
 
     </div>
     
