@@ -20,7 +20,7 @@ const ExperienceCard = ({ title, company, dateRange, bullets = [], techs = [] })
                     </p>
                 </div>
 
-                <span className="shrink-0 rounded-md border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-300 font-mono transition duration-200
+                <span className="shrink-0 rounded-sm border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-300 font-mono transition duration-200
                     2xl:text-sm xl:text-sm text-xs
                     px-3 py-1.5
                 ">
@@ -43,7 +43,7 @@ const ExperienceCard = ({ title, company, dateRange, bullets = [], techs = [] })
 
             <div className="flex flex-row flex-wrap gap-2">
                 {techs.map((tech, index) => (
-                    <span key={index} className="rounded-md border border-green-600/40 dark:border-green-500/40 text-green-700 dark:text-green-400 font-mono transition duration-200
+                    <span key={index} className="rounded-sm border border-green-600/40 dark:border-green-500/40 text-green-700 dark:text-green-400 font-mono transition duration-200
                         2xl:text-sm xl:text-sm text-xs
                         px-2 py-1
                     ">

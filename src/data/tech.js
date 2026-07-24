@@ -13,6 +13,8 @@ import Express from '../images/techIcons/expressjs.svg';
 import Django from '../images/techIcons/Django.svg';
 import CSS from '../images/techIcons/CSS.png';
 import Java from '../images/techIcons/Java.png';
+import SQL from '../images/techIcons/SQL.webp';
+import PostgreSQL from '../images/techIcons/PostgreSQL.png';
 
 export const tech = [
     { name: "JavaScript", pic: Javascript, specialStyle: "rounded-md" },
@@ -27,7 +29,9 @@ export const tech = [
     { name: "HTML", pic: HTML, specialStyle: "" },
     { name: "CSS", pic: CSS, specialStyle: "" },
     { name: "Tailwind", pic: Tailwind, specialStyle: "" },
+    { name: "SQL", pic: SQL, specialStyle: "" },
+    { name: "PostgreSQL", pic: PostgreSQL, specialStyle: "" },
+    { name: "Supabase", pic: Supabase, specialStyle: "" },
     { name: "Git", pic: Git, specialStyle: "" },
     // { name: "Github", pic: Github, specialStyle: "rounded-full bg-white" },
-    
 ];

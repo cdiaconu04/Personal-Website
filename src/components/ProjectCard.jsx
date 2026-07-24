@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react';
 
 const ProjectCard = ({ image, title, subtitle, bullets = [], techs = [], githubUrl, liveUrl, buttonColour }) => {
     return (
-        <div className="rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-neutral-800/20 transition duration-200 overflow-hidden flex flex-col h-full w-full">
+        <div className="rounded-md border border-gray-200 dark:border-white/10 bg-white dark:bg-neutral-800/20 transition duration-200 overflow-hidden flex flex-col h-full w-full">
             <div className="overflow-hidden">
                 <img src={image} alt={title} className="w-full rounded-t-lg transition-transform duration-500"/>
             </div>
@@ -37,7 +37,7 @@ const ProjectCard = ({ image, title, subtitle, bullets = [], techs = [], githubU
 
                 <div className="flex flex-row flex-wrap gap-2">
                     {techs.map((tech, index) => (
-                        <span key={index} className="rounded-md border border-green-600/40 dark:border-green-500/40 text-green-700 dark:text-green-400 font-mono transition duration-200
+                        <span key={index} className="rounded-sm border border-green-600/40 dark:border-green-500/40 text-green-700 dark:text-green-400 font-mono transition duration-200
                             2xl:text-sm xl:text-sm text-xs
                             px-2 py-1
                         ">

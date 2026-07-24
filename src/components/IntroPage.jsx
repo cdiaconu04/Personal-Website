@@ -74,24 +74,35 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                         </div>
 
                         <div className="relative inline-block">
-                            {/* <motion.div
-                                initial={{ right: 0 }}
-                                animate={{ right: "100%" }}
-                                transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
-                                className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
-                            /> */}
-                            <h1 className="relative font-heading font-bold leading-tight transition duration-200
+                            
+                            <h1 className="relative flex flex-col font-heading font-bold leading-tight transition duration-200
                                 2xl:text-8xl xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-4xl
                                 sm:text-left text-center
                             "
                             >
-                                <p className="block text-white">Cristian</p>
-                                {/* <p className="block dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 text-transparent bg-clip-text">
-                                    Diaconu
-                                </p> */}
-                                <p className="dark:text-green-500 text-green-600">
-                                    Diaconu
-                                </p>
+                                <div className="relative inline-block">
+                                    <motion.div
+                                        initial={{ left: 0 }}
+                                        animate={{ left: "100%" }}
+                                        transition={{ duration: 1, ease: "easeIn", delay: 0.1}}
+                                        className="absolute top-0 bottom-0 left-0 right-0 bg-green-600 z-10 rounded-md"
+                                    />
+                                    <p className="relative block text-white">
+                                        Cristian
+                                    </p>
+                                </div>
+
+                                <div className="relative inline-block">
+                                    <motion.div
+                                        initial={{ right: 0 }}
+                                        animate={{ right: "100%" }}
+                                        transition={{ duration: 1, ease: "easeIn", delay: 0.1}}
+                                        className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-white z-10 rounded-md"
+                                    />
+                                    <p className="relative dark:text-green-500 text-green-600">
+                                        Diaconu
+                                    </p>
+                                </div>
                             </h1>
                         </div>
                     </div>

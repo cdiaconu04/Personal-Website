@@ -3,15 +3,30 @@ import EldiEcomStore from '../images/projectpics/eldiecomstore.png'
 import YoutubeDownloader from '../images/projectpics/youtubedownloader.png'
 import GuessRealorAI from '../images/projectpics/guessRealOrAI.png'
 import EasySpeech from '../images/projectpics/EasySpeech.png'
+import JobMax from '../images/projectpics/JobMax.png'
 
 export const projects = [
+    {
+        image: JobMax,
+        title: "JobMax",
+        subtitle: "Resume Management Platform",
+        bullets: [
+            "Store resumes, get AI feedback tailored to each job description",
+            // "Scores users and provides feedback on their tone, eye-contact, response quality, etc",
+        ],
+        techs: ["React.js", "Express.js", "Supabase"],
+        // githubUrl: "https://github.com/JohnCassavetes/teknikly-nexhacks",
+        // liveUrl: "https://easyspeech.vercel.app/",
+    },
+    //     title: "Guess Real or AI",
+
     {
         image: EasySpeech,
         title: "EasySpeech",
         subtitle: "AI Speaking-Coach",
         bullets: [
-            "Allows users to practice their speaking skills in mock scenarios",
-            "Scores users and provides feedback on their tone, eye-contact, response quality, etc",
+            "Users can practice their speaking skills in mock scenarios",
+            // "Scores users and provides feedback on their tone, eye-contact, response quality, etc",
         ],
         techs: ["Next.js", "TypeScript"],
         githubUrl: "https://github.com/JohnCassavetes/teknikly-nexhacks",
@@ -23,7 +38,7 @@ export const projects = [
         subtitle: "React Component Library",
         bullets: [
             "16 customizable react components to make your next website with",
-            "Detailed documentation and examples to help you get started quickly",
+            // "Detailed documentation and examples to help you get started quickly",
         ],
         techs: ["Next.js", "TypeScript"],
         githubUrl: "https://github.com/cdiaconu04/Land-UI",
@@ -35,7 +50,6 @@ export const projects = [
         subtitle: "Ecom store",
         bullets: [
             "Modern ecom platform for Eldi's leather products",
-            "Stripe integration for simple and secure payment",
         ],
         techs: ["Next.js", "Javascript", "Stripe"],
         githubUrl: "https://github.com/cdiaconu04/Eldi-Ecom-Store",

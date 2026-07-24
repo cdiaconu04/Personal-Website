@@ -13,22 +13,22 @@ const Projects = forwardRef(({windowSize}, ref) => {
     const [buttonColour, setButtonColour] = useState("white");
 
     useEffect(() => {
-            const updateColour = () => {
-                const isDarkMode = document.documentElement.classList.contains('dark');
-                setButtonColour(isDarkMode ? "white" : "#1f2937")
-            }
+        const updateColour = () => {
+            const isDarkMode = document.documentElement.classList.contains('dark');
+            setButtonColour(isDarkMode ? "white" : "#1f2937")
+        }
 
-            updateColour()
+        updateColour()
 
-            const observer = new MutationObserver(updateColour);
-            observer.observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['class']
-            })
+        const observer = new MutationObserver(updateColour);
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['class']
+        })
 
-            return () => observer.disconnect()
+        return () => observer.disconnect()
 
-        }, [])
+    }, [])
 
     useEffect(() => {
         const observer = new IntersectionObserver(
