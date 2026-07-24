@@ -62,7 +62,7 @@ const Tech = forwardRef(({windowSize}, ref) => {
                     2xl:p-4 xl:p-20 xl:px-40 lg:p-20 md:p-20 p-10
                 ">
                     <div className="flex flex-col gap-11">
-                        <h3 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
+                        <h3 className="text-gray-800 dark:text-white font-heading font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
                             2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl
                         ">
                             Tech I work with
@@ -74,7 +74,7 @@ const Tech = forwardRef(({windowSize}, ref) => {
                         ">
                             {tech.map((tec, index) => (
                                 <div key={index} className="flex flex-row justify-center items-center gap-3 
-                                    border border-green-500 dark:border-neutral-700 rounded-full transition duration-200
+                                    border border-green-500 dark:border-neutral-700 rounded-md transition duration-200
                                     dark:hover:ring dark:hover:ring-1 dark:hover:ring-neutral-700
                                     hover:ring hover:ring-2 hover:ring-green-500
                                     py-2 px-8S

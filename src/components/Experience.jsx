@@ -62,7 +62,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                     <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
                         className="flex flex-col gap-11"
                     >
-                        <h2 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
+                        <h2 className="text-gray-800 dark:text-white font-heading font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
                             2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl
                         ">
                             Experience

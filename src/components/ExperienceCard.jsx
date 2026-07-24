@@ -2,13 +2,13 @@ import { ChevronRight } from 'lucide-react';
 
 const ExperienceCard = ({ title, company, dateRange, bullets = [], techs = [] }) => {
     return (
-        <div className="rounded-lg border border-gray-200 dark:border-white/10 bg-white dark:bg-neutral-800/20 transition duration-200
+        <div className="rounded-md border border-gray-200 dark:border-white/10 bg-white dark:bg-neutral-800/20 transition duration-200
             2xl:p-8 xl:p-7 lg:p-6 md:p-5 p-4
             flex flex-col gap-6 h-full w-full
         ">
             <div className="flex flex-row items-start justify-between gap-4">
                 <div className="flex flex-col gap-1">
-                    <h3 className="text-gray-900 dark:text-white font-bold transition duration-200
+                    <h3 className="text-gray-900 dark:text-white font-heading font-bold transition duration-200
                         2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg text-base
                     ">
                         {title}

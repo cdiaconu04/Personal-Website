@@ -40,25 +40,25 @@ export const projects = [
         techs: ["Next.js", "Javascript", "Stripe"],
         githubUrl: "https://github.com/cdiaconu04/Eldi-Ecom-Store",
     },
-    {
-        image: GuessRealorAI,
-        title: "Guess Real or AI",
-        subtitle: "Web Game",
-        bullets: [
-            "Guess if the person is real or AI generated",
-        ],
-        techs: ["Next.js", "Typescript"],
-        githubUrl: "https://github.com/cdiaconu04/Guess-Real-Or-AI",
-        liveUrl: "https://guess-real-or-ai.vercel.app/",
-    },
-    {
-        image: YoutubeDownloader,
-        title: "Youtube Downloader",
-        subtitle: "Video downloader",
-        bullets: [
-            "Download videos from youtube for free",
-        ],
-        techs: ["Next.js", "Javascript"],
-        githubUrl: "https://github.com/cdiaconu04/Youtube-Downloader",
-    },
+    // {
+    //     image: GuessRealorAI,
+    //     title: "Guess Real or AI",
+    //     subtitle: "Web Game",
+    //     bullets: [
+    //         "Guess if the person is real or AI generated",
+    //     ],
+    //     techs: ["Next.js", "Typescript"],
+    //     githubUrl: "https://github.com/cdiaconu04/Guess-Real-Or-AI",
+    //     liveUrl: "https://guess-real-or-ai.vercel.app/",
+    // },
+    // {
+    //     image: YoutubeDownloader,
+    //     title: "Youtube Downloader",
+    //     subtitle: "Video downloader",
+    //     bullets: [
+    //         "Download videos from youtube for free",
+    //     ],
+    //     techs: ["Next.js", "Javascript"],
+    //     githubUrl: "https://github.com/cdiaconu04/Youtube-Downloader",
+    // },
 ]

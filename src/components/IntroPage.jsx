@@ -80,7 +80,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                 transition={{ duration: 1, ease: "easeIn", delay: 0.4}}
                                 className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-gray-300 z-10 rounded-xl"
                             /> */}
-                            <h1 className="relative font-bold leading-tight transition duration-200
+                            <h1 className="relative font-heading font-bold leading-tight transition duration-200
                                 2xl:text-8xl xl:text-8xl lg:text-6xl md:text-5xl sm:text-4xl text-4xl
                                 sm:text-left text-center
                             "
@@ -130,17 +130,17 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                         space-x-2
                     ">
 
-                        <a href="https://linkedin.com/in/cdiaconu04" target="_blank">
+                        <motion.a href="https://linkedin.com/in/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <FaLinkedin color={buttonColour} className="transition duration-200
                                 2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
                             "/>
-                        </a>
+                        </motion.a>
 
-                        <a href="https://github.com/cdiaconu04" target="_blank">
+                        <motion.a href="https://github.com/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
                             <FaGithub color={buttonColour} className="transition duration-200
                                 2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
                             "/>
-                        </a>
+                        </motion.a>
 
                     </motion.div>
 

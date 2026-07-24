@@ -11,7 +11,7 @@ const ProjectCard = ({ image, title, subtitle, bullets = [], techs = [], githubU
 
             <div className="2xl:p-7 xl:p-6 lg:p-5 md:p-4 p-3 flex flex-col gap-5">
                 <div className="flex flex-col gap-1">
-                    <h3 className="text-gray-900 dark:text-white font-bold transition duration-200
+                    <h3 className="text-gray-900 dark:text-white font-heading font-bold transition duration-200
                         2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg text-base
                     ">
                         {title}
