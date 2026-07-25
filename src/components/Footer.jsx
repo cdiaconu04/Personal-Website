@@ -33,7 +33,7 @@ const Footer = ({onInView, onOutOfView}) => {
 
     return (
         <div className="w-full bg-white dark:bg-zinc-950 relative inline-block border-t border-gray-200 dark:border-white/10 overflow-hidden transition duration-200" ref={ref}>
-            <p className="absolute inset-0 flex items-center justify-end pr-10 xl:pr-32 text-[10rem] xl:text-[16rem] font-extrabold text-black/5 dark:text-white/5 select-none pointer-events-none leading-none transition duration-200">
+            <p className="absolute inset-0 flex items-center justify-end pr-10 xl:pr-32 text-[10rem] xl:text-[16rem] font-heading font-medium text-black/5 dark:text-white/5 select-none pointer-events-none leading-none transition duration-200">
                 CD
             </p>
 
@@ -42,7 +42,7 @@ const Footer = ({onInView, onOutOfView}) => {
                 2xl:py-8 xl:py-8 lg:py-6 md:py-5 py-4
             ">
                 <div className="flex flex-col gap-1">
-                    <h3 className="text-gray-900 dark:text-white font-bold transition duration-200
+                    <h3 className="text-gray-900 dark:text-white font-heading font-medium transition duration-200
                         2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg text-base
                     ">
                         Cristian Diaconu

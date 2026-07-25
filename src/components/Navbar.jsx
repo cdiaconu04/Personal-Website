@@ -38,32 +38,32 @@ const Navbar = ({intro, about, experience, projects}) => {
 
                 <div id="navbar-default">
                     <div className="flex flex-row items-center gap-4">
-                        <ul className="font-medium flex flex-row rtl:space-x-reverse
+                        <ul className="font-normal flex flex-row rtl:space-x-reverse
                             2xl:space-x-2 xl:space-x-2 lg:space-x-0.5 md:space-x-0.5 space-x-0.5
                         ">
                             <li className="flex flex-col">
-                                <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
+                                <a href="#Home" onClick={() => scrollTo(intro)} className="group block py-2 px-3 font-heading text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
                                     xl:text-base md:text-sm sm:text-xs
                                 ">Home
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600 dark:bg-green-400"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#About" onClick={() => scrollTo(about)} className="group block py-2 px-3 text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
+                                <a href="#About" onClick={() => scrollTo(about)} className="group block py-2 px-3 font-heading text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
                                     xl:text-base md:text-sm sm:text-xs
                                 ">About
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600 dark:bg-green-400"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#Experience" onClick={() => scrollTo(experience)} className="group block py-2 px-3 text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
+                                <a href="#Experience" onClick={() => scrollTo(experience)} className="group block py-2 px-3 font-heading text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
                                     xl:text-base md:text-sm sm:text-xs
                                 ">Experience
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600 dark:bg-green-400"></span>
                                 </a>
                             </li>
                             <li className="flex flex-col">
-                                <a href="#Projects" onClick={() => scrollTo(projects)} className="group block py-2 px-3 text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
+                                <a href="#Projects" onClick={() => scrollTo(projects)} className="group block py-2 px-3 font-heading text-gray-700 dark:text-zinc-400 hover:text-green-600 dark:hover:text-green-400 rounded-sm border-0 transition duration-200
                                     xl:text-base md:text-sm sm:text-xs
                                 ">Projects
                                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-green-600 dark:bg-green-400"></span>
