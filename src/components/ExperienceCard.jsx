@@ -39,7 +39,7 @@ const ExperienceCard = ({ title, company, dateRange, bullets = [], techs = [] })
                 ))}
             </ul>
 
-            <div className="border-t border-gray-200 dark:border-white/10"></div>
+            <div className="border-t border-gray-200 dark:border-white/10 transition duration-200"></div>
 
             <div className="flex flex-row flex-wrap gap-2">
                 {techs.map((tech, index) => (

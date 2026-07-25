@@ -66,7 +66,7 @@ const About = forwardRef(({windowSize}, ref) => {
                             2xl:text-lg xl:text-lg lg:text-base md:text-sm sm:text-sm text-xs
                         ">
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                <span className="font-normal dark:text-white">Hi, I'm Cristian.
+                                <span className="font-normal dark:text-white transition duration-200">Hi, I'm Cristian.
                                 </span> I am a Computer Science student at the University of Waterloo and love building cool things through code. I am interested in fullstack software development.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">

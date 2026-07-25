@@ -12,13 +12,9 @@ const Navbar = ({intro, about, experience, projects}) => {
     }
 
     useEffect(() => {
-        const saved = localStorage.getItem("theme");
-
-        if (saved) {
-            setTheme(saved);
-            document.documentElement.classList.toggle("dark", saved === "dark");
-        }
-
+        const saved = localStorage.getItem("theme") || "dark";
+        setTheme(saved);
+        document.documentElement.classList.toggle("dark", saved === "dark");
     }, []);
 
     useEffect(() => {
@@ -35,7 +31,7 @@ const Navbar = ({intro, about, experience, projects}) => {
             ">
 
                 <a className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <Disc3 className="animate-spin text-gray-800 dark:text-white transition duration-200
+                    <Disc3 className="animate-spin text-gray-700 dark:text-zinc-400 transition duration-200
                         2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
                     "/>
                 </a>
@@ -77,25 +73,23 @@ const Navbar = ({intro, about, experience, projects}) => {
 
                         <button>
                             {theme === "dark" ?
-                                <motion.div className="group hover:bg-white rounded-full p-1 transition duration-200"
-                                    whileHover={{ scale: 1.03 }}
+                                <div className="group rounded-full p-1 transition duration-200"
                                     onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
                                 >
-                                    <Sun className="text-white group-hover:bg-white group-hover:text-black rounded-full
-                                        2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
+                                    <Sun className="text-gray-700 dark:text-zinc-400 group-hover:text-green-600 transition duration-200
+                                        2xl:w-6 2xl:h-6 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
                                     "/>
-                                </motion.div>
+                                </div>
 
 
                             :
-                                <motion.div className="group hover:bg-gray-800 rounded-full p-1 transition duration-200"
-                                    whileHover={{ scale: 1.03 }}
+                                <div className="group rounded-full p-1 transition duration-200"
                                     onClick={() => {theme === "light" ? setTheme("dark") : setTheme("light")}}
                                 >
-                                    <Moon className="text-gray-800 group-hover:text-white
-                                        2xl:w-7 2xl:h-7 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
+                                    <Moon className="text-gray-700 dark:text-zinc-400 group-hover:text-green-600 transition duration-200
+                                        2xl:w-6 2xl:h-6 lg:w-6 lg:h-6 md:w-5 md:h-5 w-4 h-4
                                     "/>
-                                </motion.div>
+                                </div>
 
                             }
                         </button>

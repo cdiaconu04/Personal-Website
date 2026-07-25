@@ -33,7 +33,7 @@ const Footer = ({onInView, onOutOfView}) => {
 
     return (
         <div className="w-full bg-white dark:bg-zinc-950 relative inline-block border-t border-gray-200 dark:border-white/10 overflow-hidden transition duration-200" ref={ref}>
-            <p className="absolute inset-0 flex items-center justify-end pr-10 xl:pr-32 text-[10rem] xl:text-[16rem] font-extrabold text-black/5 dark:text-white/5 select-none pointer-events-none leading-none">
+            <p className="absolute inset-0 flex items-center justify-end pr-10 xl:pr-32 text-[10rem] xl:text-[16rem] font-extrabold text-black/5 dark:text-white/5 select-none pointer-events-none leading-none transition duration-200">
                 CD
             </p>
 

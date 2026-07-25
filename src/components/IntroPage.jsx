@@ -63,7 +63,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                     <div className="flex flex-col
                         2xl:gap-3 lg:gap-2 gap-1
                     ">
-                        <div className="inline-flex items-center border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm w-fit
+                        <div className="inline-flex items-center border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm w-fit transition duration-200
                             2xl:py-1.5 2xl:px-3 lg:py-1 lg:px-2.5 md:py-1 md:px-2 py-1 px-2
                         ">
                             <p className="text-gray-800 dark:text-white font-semibold transition duration-200
@@ -87,7 +87,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                         transition={{ duration: 1, ease: "easeIn", delay: 0.1}}
                                         className="absolute top-0 bottom-0 left-0 right-0 bg-green-600 z-10 rounded-md"
                                     />
-                                    <p className="relative block text-white">
+                                    <p className="relative block text-gray-900 dark:text-white transition duration-200">
                                         Cristian
                                     </p>
                                 </div>
@@ -97,9 +97,9 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                                         initial={{ right: 0 }}
                                         animate={{ right: "100%" }}
                                         transition={{ duration: 1, ease: "easeIn", delay: 0.1}}
-                                        className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-white z-10 rounded-md"
+                                        className="absolute top-0 bottom-0 left-0 right-0 bg-gray-800 dark:bg-white z-10 rounded-md transition duration-200"
                                     />
-                                    <p className="relative dark:text-green-500 text-green-600">
+                                    <p className="relative dark:text-green-500 text-green-600 transition duration-200">
                                         Diaconu
                                     </p>
                                 </div>
@@ -112,7 +112,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                         space-x-2
                     ">
 
-                        <div className="border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm flex flex-row gap-1.5 justify-center items-center
+                        <div className="border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm flex flex-row gap-1.5 justify-center items-center transition duration-200
                             2xl:py-1.5 2xl:px-3 lg:py-1 lg:px-2.5 md:py-1 md:px-2 py-1 px-2
                         ">
                             <CodeXml className="text-green-500" width={15}/>
@@ -123,7 +123,7 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                             </p>
                         </div>
 
-                        <div className="border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm flex flex-row gap-1.5 justify-center items-center
+                        <div className="border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm flex flex-row gap-1.5 justify-center items-center transition duration-200
                             2xl:py-1.5 2xl:px-3 lg:py-1 lg:px-2.5 md:py-1 md:px-2 py-1 px-2
                         ">
                             <MapPin className="text-green-500" width={15} />
