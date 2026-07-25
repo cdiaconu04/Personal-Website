@@ -56,11 +56,11 @@ const IntroPage = forwardRef(({windowSize}, ref) => {
                 "
             >
 
-                <div className="flex flex-col
+                <div className="flex flex-col items-center sm:items-start
                         2xl:gap-8 lg:gap-6 md:gap-5 gap-4
                 ">
 
-                    <div className="flex flex-col
+                    <div className="flex flex-col items-center sm:items-start
                         2xl:gap-3 lg:gap-2 gap-1
                     ">
                         <div className="inline-flex items-center border border-gray-300 dark:border-white/10 bg-gray-100 dark:bg-white/5 rounded-sm w-fit transition duration-200

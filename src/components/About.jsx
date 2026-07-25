@@ -67,13 +67,13 @@ const About = forwardRef(({windowSize}, ref) => {
                         ">
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
                                 <span className="font-normal dark:text-white transition duration-200">Hi, I'm Cristian.
-                                </span> I am a Computer Science student at the University of Waterloo and love building cool things through code. I am interested in fullstack software development.
+                                </span> I'm a Computer Science student at the University of Waterloo, interested in fullstack software engineering.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                In my free time, I like weightlifting, making electronic music, and biking. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
+                                In my free time, I like weightlifting, watching The Sopranos, and biking. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                Feel free to check out some of my work down below and on Github. If you'd like to connect, reach out via Linkedin or Email - I'd love to chat.
+                                Feel free to reach out by email or message, I'm always happy to connect.
                             </p>
                         </div>
                     </div>
