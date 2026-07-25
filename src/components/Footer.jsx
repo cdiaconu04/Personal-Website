@@ -1,30 +1,12 @@
+import { Mail } from 'lucide-react';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "motion/react"
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 const Footer = ({onInView, onOutOfView}) => {
     const ref = useRef(null);
-    const [buttonColour, setButtonColour] = useState("white")
 
-    useEffect(() => {
-        const updateColour = () => {
-        const isDarkMode = document.documentElement.classList.contains('dark');
-            setButtonColour(isDarkMode ? "white" : "#1f2937")
-        }
-            
-        updateColour()
-            
-        const observer = new MutationObserver(updateColour);
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ['class']
-        })
-            
-        return () => observer.disconnect()
-            
-    }, [])
-        
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -34,14 +16,14 @@ const Footer = ({onInView, onOutOfView}) => {
                     onOutOfView();
                 }
             },
-        
+
             { threshold: 0.01 }
         );
-            
+
         if (ref.current) {
             observer.observe(ref.current);
         }
-            
+
         return () => {
             if (ref.current) {
                 observer.unobserve(ref.current);
@@ -50,37 +32,43 @@ const Footer = ({onInView, onOutOfView}) => {
     }, [onInView, onOutOfView]);
 
     return (
-        <div className="w-full bg-gradient-to-r from-emerald-400 via-green-400 to-green-500 dark:bg-gradient-to-r dark:from-emerald-600 dark:via-green-600 dark:to-green-700 relative inline-block border-b-2 border-t-2 border-emerald-400 dark:border-emerald-600 z-10 transition duration-200" ref={ref}>
-            <div className="relative max-w-screen-xl mx-auto  flex items-center justify-between relative overflow-hidden
-                2xl:px-4 xl:px-20 lg:px-20 md:px-20 px-10
-                2xl:py-6 xl:py-6 lg:py-5 md:py-4 py-3
+        <div className="w-full bg-white dark:bg-zinc-950 relative inline-block border-t border-gray-200 dark:border-white/10 overflow-hidden transition duration-200" ref={ref}>
+            <p className="absolute inset-0 flex items-center justify-end pr-10 xl:pr-32 text-[10rem] xl:text-[16rem] font-heading font-medium text-black/5 dark:text-white/5 select-none pointer-events-none leading-none transition duration-200">
+                CD
+            </p>
 
+            <div className="relative max-w-screen-xl mx-auto flex items-center justify-between overflow-hidden
+                2xl:px-4 xl:px-40 lg:px-20 md:px-20 px-10
+                2xl:py-8 xl:py-8 lg:py-6 md:py-5 py-4
             ">
-                <div className="flex flex-col gap-3">
-                    <h1 className="text-gray-800 dark:text-white font-bold transition duration-200
-                        2xl:text-4xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg
-                    ">Cristian Diaconu</h1>
-                    <p className="text-gray-800 dark:text-white transition duration-200
-                        lg:text-base text-sm
-                    "> cristian.diaconu0423@gmail.com </p>
+                <div className="flex flex-col gap-1">
+                    <h3 className="text-gray-900 dark:text-white font-heading font-medium transition duration-200
+                        2xl:text-2xl xl:text-2xl lg:text-xl md:text-lg text-base
+                    ">
+                        Cristian Diaconu
+                    </h3>
                 </div>
 
-                <div className="flex flex-row gap-3">
+                <div className="flex flex-row items-center
+                    2xl:space-x-3 xl:space-x-2 lg:space-x-2 md:space-x-2 sm:space-x-1
+                    space-x-2
+                ">
                     <motion.a href="https://linkedin.com/in/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
-                        <div>
-                            <FaLinkedin color={buttonColour} className="transition duration-200
-                                2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
-                            "/>
-                        </div>
+                        <FaLinkedin className="text-gray-600 dark:text-gray-300 transition duration-200
+                            2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                        "/>
                     </motion.a>
-                                            
+
                     <motion.a href="https://github.com/cdiaconu04" target="_blank" whileHover={{ scale: 1.09 }}>
-                        <div>
-                                                        
-                            <FaGithub color={buttonColour} className="transition duration-200
-                                2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
-                            "/>
-                        </div>
+                        <FaGithub className="text-gray-600 dark:text-gray-300 transition duration-200
+                            2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                        "/>
+                    </motion.a>
+
+                    <motion.a href="mailto:cristian.diaconu0423@gmail.com" whileHover={{ scale: 1.09 }}>
+                        <Mail className="text-gray-600 dark:text-gray-300 transition duration-200
+                            2xl:w-8 2xl:h-8 lg:w-7 lg:h-7 md:w-6 md:h-6 w-6 h-6
+                        "/>
                     </motion.a>
                 </div>
             </div>

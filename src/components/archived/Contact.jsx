@@ -1,8 +1,8 @@
-import '../App.css';
+import '../../App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from "motion/react";
 import { forwardRef } from 'react';
-import ContactBackground from './backgrounds/ContactBackground';
+import ContactBackground from '../backgrounds/ContactBackground';
 import emailjs from "emailjs-com";
 
 const Contact = forwardRef(({ windowSize }, ref) => {

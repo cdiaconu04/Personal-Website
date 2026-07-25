@@ -12,20 +12,26 @@ import Typescript from '../images/techIcons/Typescript.png';
 import Express from '../images/techIcons/expressjs.svg';
 import Django from '../images/techIcons/Django.svg';
 import CSS from '../images/techIcons/CSS.png';
+import Java from '../images/techIcons/Java.png';
+import SQL from '../images/techIcons/SQL.webp';
+import PostgreSQL from '../images/techIcons/PostgreSQL.png';
 
 export const tech = [
     { name: "JavaScript", pic: Javascript, specialStyle: "rounded-md" },
     { name: "Typescript", pic: Typescript, specialStyle: "rounded-md" },
     { name: "Python", pic: Python, specialStyle: "" },
-    { name: "C++", pic: Cplusplus, specialStyle: "" },
+    { name: "Java", pic: Java, specialStyle: "" },
+    // { name: "C++", pic: Cplusplus, specialStyle: "" },
     { name: "React.js", pic: React, specialStyle: "" },
-    { name: "Django", pic: Django, specialStyle: "" },
+    // { name: "Django", pic: Django, specialStyle: "" },
     { name: "Express", pic: Express, specialStyle: "bg-white rounded-full" },
     { name: "Next.js", pic: Next, specialStyle: "bg-white rounded-full" },
     { name: "HTML", pic: HTML, specialStyle: "" },
     { name: "CSS", pic: CSS, specialStyle: "" },
     { name: "Tailwind", pic: Tailwind, specialStyle: "" },
+    { name: "SQL", pic: SQL, specialStyle: "" },
+    { name: "PostgreSQL", pic: PostgreSQL, specialStyle: "" },
+    { name: "Supabase", pic: Supabase, specialStyle: "" },
     { name: "Git", pic: Git, specialStyle: "" },
-    { name: "Github", pic: Github, specialStyle: "rounded-full bg-white" },
-    // { name: "Java", pic: Java, specialStyle: "" },
+    // { name: "Github", pic: Github, specialStyle: "rounded-full bg-white" },
 ];
