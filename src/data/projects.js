@@ -15,7 +15,7 @@ export const projects = [
             // "Scores users and provides feedback on their tone, eye-contact, response quality, etc",
         ],
         techs: ["React.js", "Express.js", "Supabase"],
-        // githubUrl: "https://github.com/JohnCassavetes/teknikly-nexhacks",
+        githubUrl: "https://github.com/cdiaconu04/JobMax",
         // liveUrl: "https://easyspeech.vercel.app/",
     },
     //     title: "Guess Real or AI",
