@@ -1,5 +1,12 @@
 export const experiences = [
     {
+        title: "AI Developer Intern",
+        company: "Revvity",
+        dateRange: "Sep - Dec 2026",
+        bullets: ["Marketing Product Development Team"],
+        techs: ["React.js", "JavaScript"],
+    },
+    {
         title: "Full-Stack Engineer Intern",
         company: "Xennial Innovations",
         dateRange: "Jan - May 2026",
