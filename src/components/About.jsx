@@ -70,7 +70,7 @@ const About = forwardRef(({windowSize}, ref) => {
                                 </span> I'm a Computer Science student at the University of Waterloo, interested in fullstack software engineering.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                In my free time, I like weightlifting, watching The Sopranos, and biking. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
+                                In my free time, I like weightlifting, watching The Sopranos, and making music on Ableton Live. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
                                 Feel free to reach out by email or message, I'm always happy to connect.
