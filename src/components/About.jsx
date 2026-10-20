@@ -56,7 +56,7 @@ const About = forwardRef(({windowSize}, ref) => {
                     2xl:p-4 xl:p-20 xl:px-40 lg:p-20 md:p-20 p-10
                 ">
                     <div className="flex flex-col gap-11">
-                        <h2 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
+                        <h2 className="text-gray-800 dark:text-white font-heading font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
                             2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl
                         ">
                             About me
@@ -66,14 +66,14 @@ const About = forwardRef(({windowSize}, ref) => {
                             2xl:text-lg xl:text-lg lg:text-base md:text-sm sm:text-sm text-xs
                         ">
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                <span className="font-normal dark:text-white">Hi, I'm Cristian.
-                                </span> I am a Computer Science student at the University of Waterloo and love building cool things through code. I am interested in fullstack software development.
+                                <span className="font-normal dark:text-white transition duration-200">Hi, I'm Cristian.
+                                </span> I'm a Computer Science student at the University of Waterloo, interested in fullstack software engineering.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                In my free time, I like weightlifting and making music in Ableton Live. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
+                                In my free time, I like weightlifting, watching The Sopranos, and biking. I am always open to opportunities for projects, collaborations, or internships that allow me to contribute to meaningful work.
                             </p>
                             <p className="text-gray-800 dark:text-neutral-300/80 transition duration-200">
-                                Feel free to check out some of my work down below and on Github. If you'd like to connect, reach out via Linkedin or Email - I'd love to chat.
+                                Feel free to reach out by email or message, I'm always happy to connect.
                             </p>
                         </div>
                     </div>

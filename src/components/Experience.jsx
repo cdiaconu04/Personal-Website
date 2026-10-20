@@ -4,30 +4,7 @@ import { motion } from "motion/react"
 import { forwardRef } from 'react';
 import ExperienceCard from './ExperienceCard'
 // import ExperienceBackground from './backgrounds/ExperienceBackground'
-
-const experiences = [
-    {
-        title: "Full-Stack Engineer Intern",
-        company: "Xennial Innovations",
-        dateRange: "Jan - May 2026",
-        bullets: ["Starting as a Full-Stack Engineer"],
-        techs: ["React.js", "TypeScript"],
-    },
-    {
-        title: "Software Developer",
-        company: "Indosoft Inc.",
-        dateRange: "May - August 2025",
-        bullets: ["Developed company-specific LLM website using ReactJS and Django"],
-        techs: ["React.js", "JavaScript", "Django", "Python"],
-    },
-    {
-        title: "Developer Intern",
-        company: "Dynamixware",
-        dateRange: "May - August 2023",
-        bullets: ["Developed Microsoft Business Central apps in AL"],
-        techs: ["Application Language (AL)", "Microsoft BC"],
-    },
-]
+import { experiences } from '../data/experiences'
 
 const Experience = forwardRef(({windowSize}, ref) => {
 
@@ -85,7 +62,7 @@ const Experience = forwardRef(({windowSize}, ref) => {
                     <motion.div variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
                         className="flex flex-col gap-11"
                     >
-                        <h2 className="text-gray-800 dark:text-white font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
+                        <h2 className="text-gray-800 dark:text-white font-heading font-bold underline decoration-emerald-400 dark:decoration-green-600 transition duration-200
                             2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-xl
                         ">
                             Experience
